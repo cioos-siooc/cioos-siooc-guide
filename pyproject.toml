@@ -1,0 +1,10 @@
+[project]
+name = "ogsl-guide-de-gestion"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "mkdocs-material>=9.6.4",
+    "mkdocs>=1.6.1",
+]

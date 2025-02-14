@@ -1,0 +1,20 @@
+site_name: Guide de gestion de données
+
+site_url: https://mydomain.org/mysite
+theme:
+  name: material
+  logo: assets/ogsl-logo-white.png
+  palette:  
+    primary: "white"
+    accent: "light-blue"
+
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+
+nav:
+  - Accueil: index.md
+  - Guide: draft.md
+  - A propos: about.md
