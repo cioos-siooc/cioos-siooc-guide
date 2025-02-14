@@ -13,8 +13,18 @@ theme:
     - navigation.tracking
     - navigation.tabs
     - navigation.tabs.sticky
+    - header.autohide
+    # - navigation.footer
 
 nav:
   - Accueil: index.md
   - Guide: draft.md
-  - A propos: about.md
+  - A propos: a-propos.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/OGSL-SLGO
+
+markdown_extensions:
+  - attr_list
