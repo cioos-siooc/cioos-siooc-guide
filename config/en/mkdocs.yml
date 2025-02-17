@@ -1,0 +1,55 @@
+site_name: Guide de gestion de données
+docs_dir: ./../..docs/en 
+site_dir: ./../../site/en
+site_url: https://mydomain.org/mysite
+theme:
+  name: material
+  logo: images/cioos-national_EN_W-01.png
+  favicon: images/favicon.png
+  custom_dir: ./../../overrides
+  language: en
+  palette:  
+    primary: teal
+    accent: blue
+  font:
+    text: Roboto
+
+
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - header.autohide
+    # - navigation.footer
+
+extra_css:
+  - assets/styles/header.css    
+
+nav:
+  - Home: index.md
+  - Guide: guide.md
+  - About: about.md
+
+extra:
+  alternate:  
+      # Switch to English
+    - name: English
+      link: /en/
+      lang: en
+    # Switch to French
+    - name: Français
+      link: /fr/
+      lang: fr
+
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/OGSL-SLGO
+
+plugins:
+  - search:                                         
+      lang: en
+
+
+markdown_extensions:
+  - attr_list

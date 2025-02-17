@@ -1,4 +1,4 @@
-![main logo](assets/ogsl-logo-white.png){ align=center }
+![main logo](./../../assets/cioos-national_EN_W-01.png){ align=center }
 
 # Bienvenu
 
