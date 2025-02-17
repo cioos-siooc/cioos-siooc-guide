@@ -4,7 +4,7 @@ De vastes quantités d’information sont aujourd’hui disponibles en ligne et 
 
 Il s’agit de principes directeurs, c’est-à-dire de concepts permettant de guider les gestionnaires de données dans la normalisation et la structuration de leurs données en vue de l’archivage et de la diffusion. Ces principes ont été définis en 2015 lors d’un atelier tenu à Leiden, aux Pays-Bas.
 
-![Principes FAIR](./../../../../../images/guide/fair-fr.png)
+![Principes FAIR](../assets/images/guide/fair-fr.png)
 
 ## Découvrable
 

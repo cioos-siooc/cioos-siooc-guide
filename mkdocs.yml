@@ -1,0 +1,85 @@
+site_name: Guide de gestion de données
+site_url: https://mydomain.org/mysite
+repo_url: http://10.0.4.9:1410/sandbox-ogsl/ogsl-guide-de-gestion
+edit_uri: edit/main/docs/
+theme:
+  name: material
+  logo: assets/logos/favicon.svg
+  favicon: assets/logos/favicon.png
+  palette:  
+    primary: teal
+    accent: blue
+  font:
+    text: Montserrat
+
+
+  features:
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - header.autohide
+    # - navigation.footer
+    - navigation.path
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.action.edit
+
+extra_css:
+  - assets/styles/header.css
+
+nav:
+  - Home: index.md
+  - Guide:
+    - ./guide/fair.md
+    - ./guide/care.md
+    - ./guide/recommendations.md
+  - Regional Associations: ra.md
+
+extra:
+  alternate:  
+      # Switch to English
+    - name: English
+      link: /en/
+      lang: en
+    # Switch to French
+    - name: Français
+      link: /fr/
+      lang: fr
+
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/cioos-siooc
+
+plugins:
+  - search:                                         
+      lang: fr  
+  - i18n:
+      docs_structure: suffix
+      reconfigure_material: true
+      reconfigure_search: true
+      languages:
+        - locale: en
+          name: English
+          site_name: Candian Integrated Ocean Observatories Sytems<br>Data Management Guide
+          build: true
+        - locale: fr
+          name: Français
+          site_name: Système intégré d'observation océanique du Canada<br>Guide de gestion de données
+          default: true
+          build: true
+          nav_translations:
+            Home: Accueil
+            Guide: Guide
+            Regional Associations: Associations régionales
+  # - git-revision-date-localized:
+  #     enable_creation_date: true
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - pymdownx.blocks.caption
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences

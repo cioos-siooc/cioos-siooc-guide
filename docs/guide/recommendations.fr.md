@@ -1,88 +1,39 @@
-**Guide de gestion de données**
+# Conventions
 
-Contexte- Ébauche préliminaire, printemps 2024 Le guide actuel de gestion de données, daté d’avril 2024, est une ébauche décrivant les principes généraux pour une gestion de données efficace et une collecte adéquate des variables sur le terrain. Son objectif principal est d’outiller les utilisateurs pour les étapes ultimes du cycle de vie de la donnée. Essentiellement, il vise à décrire de façon détaillée les normes et les structures de données propres à l’archivage en vue de faciliter leur diffusion et donc leur réutilisation. En plus des principes généraux, ce guide aborde également des concepts de gestion de données spécifiques à des types de données particuliers, tels que les données de biodiversité.  Il est prévu que ce document évoluera dans le temps et sera enrichi, notamment pour répondre aux besoins du réseau des ZIP marines lors de son utilisation. Il est par conséquent recommandé d’utiliser ce guide avec précaution
+La page suivante présente un résumé des bonnes pratiques et conventions à appliquer en lien avec la gestion de données.
 
-## Principes FAIR
+## Nom des fichiers
 
-De vastes quantités d’information sont aujourd’hui disponibles en ligne et continuent d’être générées quotidiennement par une science de plus en plus technologique. Afin d’assurer que les données soient toujours facilement découvrables et accessibles, certaines pratiques peuvent être mises en place pour guider cette démarche. Les principes FAIR (*Findable, Accessible, Interoperable, Reusable*) visent à rendre les données découvrables, accessibles, interopérables et réutilisables.
-
-Il s’agit de principes directeurs, c’est-à-dire de concepts permettant de guider les gestionnaires de données dans la normalisation et la structuration de leurs données en vue de l’archivage et de la diffusion. Ces principes ont été définis en 2015 lors d’un atelier tenu à Leiden, aux Pays-Bas.
-
-![][image1]
-
-### Découvrable
-
-Les données devraient être faciles à trouver pour les personnes intéressées par leur utilisation. Cela signifie qu'elles doivent être associées à des métadonnées riches en informations et être indexées de manière à être repérables par des moteurs de recherche ou des catalogues de données, comme celui de l’OGSL.
-
-### Accessible
-
-Les données devraient être accessibles, c'est-à-dire qu'elles devraient être disponibles pour être récupérées par les personnes qui en ont besoin. Cela implique souvent l'utilisation de protocoles et de technologies normalisées pour faciliter le téléchargement ou l'accès via des interfaces programmables (API). Des licences régissant la façon dont devrait être utilisées les données peuvent être appliquées aux données ouvertes.
-
-### Interopérable
-
-Les données devraient être interopérables, ce qui signifie qu'elles devraient pouvoir être combinées et utilisées de manière efficace avec d'autres données, qu'elles proviennent de sources différentes ou qu'elles utilisent des formats différents. Cela nécessite souvent l'utilisation de variables et structures normalisées de manière à en permettre un usage rapide et efficace.
-
-### Réutilisable
-
-Les données devraient être réutilisables, ce qui signifie qu'elles devraient être bien documentées et accompagnées de licences appropriées régissant la façon dont elles devraient être utilisées. Cela implique également de fournir des informations sur la provenance des données, leur qualité et leur contexte d'utilisation.
-
-## Principes CARE
-
-Les principes CARE ont été développés en 2018 lors du Indigenous Data Sovereignty Principles for the Governance of Indigenous Data Workshop, à Gaborone, au Botswana.
-
-Ces principes cherchent à mettre de l’avant les personnes et les communautés touchées par la collecte des données et s’intéressent à ses objectifs et ses finalités. Ils s’inscrivent ainsi en compléments aux principes FAIR qui, eux, posent les données au centre de la réflexion.
-
-Historiquement confrontées à des enjeux d’inégalité et d’exploitation liés à la saisie de données sur leurs communautés et leurs territoires, les populations autochtones insistent sur la nécessité d’intégrer leurs connaissances et leurs approches dans les pratiques et politiques en matière de données. Cela revêt une importance accrue dans un contexte où le volume et la volonté de réutiliser des données augmentent. Confrontés à une volonté grandissante de rendre les données ouvertes, les peuples autochtones articulent leurs droits et leurs intérêts sur les données afin d’en réclamer le contrôle (Russo Carroll et al., 2020). Ces éléments s’expriment dans les principes CARE.
-
-![][image2]
-Source de l’image: [https://www.gida-global.org/care](https://www.gida-global.org/care)
-
-### Collectivement bénéfique
-
-Les systèmes de données doivent permettre un développement inclusif, une meilleure gouvernance, une implication citoyenne accrue et des retombées équitables pour les communautés autochtones.
-
-### Autorité de contrôle
-
-Les droits et les intérêts des personnes autochtones sur leurs données doivent être reconnus et respectés. Le pouvoir de contrôler ces données doit leur être habilité.
-
-### Responsabilité
-
-Travailler avec les données autochtones requiert une responsabilité accrue de développer des relations positives et respectueuses.
-
-### Éthique
-
-Minimiser les dommages et maximiser les gains, sans stigmatisation ou dévalorisation des peuples autochtones, leurs cultures ou leurs savoirs. Les usages futurs potentiels sont pris en compte dans la gouvernance des données. Les limites et les obligations se rapportant aux données sont indiquées.
-
-## Notions de base
-
-* Il est recommandé d’enregistrer et d’envoyer les fichiers de données tabulaires sous un format .xlsx ou .csv.
+Il est recommandé d’enregistrer et d’envoyer les fichiers de données tabulaires sous un format .xlsx ou .csv.
 
 Essayez de nommer vos fichiers de **manière concise et descriptive**. Les noms des fichiers doivent rester courts, sans caractère spéciaux et sans espace.
+
 ![][image3]
+
 Pour séparer les mots dans un nom de fichier ou dossier, utilisez l’underscore ( \_ ) ou le tiret ( \- ). Évitez les points dans les noms des fichiers, leur utilisation peut créer des problèmes de compatibilité dans certains systèmes. Limitez l’utilisation des accents.
 
 Exemple de bonnes et mauvaises pratiques:
+
 ![][image4]
-![][image5]  2024\_BLABLA\_Rimouski.xlsx
-
-Figure 1.temperature.csv
-
+![][image5]  
+/// caption
 Projet de caractérisation, dans la baie des chaleurs données de température année 1990-1995.xlsx
+///
 
-* Trois règles essentielles pour favoriser une bonne structure des fichiers tabulaires de données :
+Trois règles essentielles pour favoriser une bonne structure des fichiers tabulaires de données :
 
-1. Chaque variable doit avoir sa propre colonne;
-2. Chaque observation doit avoir sa propre ligne;
+1. Chaque variable doit avoir sa propre colonne.
+2. Chaque observation doit avoir sa propre ligne.
 3. Chaque valeur doit avoir sa propre cellule.
 
 ![][image6]
 
 ![Une image contenant tableDescription générée automatiquement][image7]
-**Figure 1\. Données verticales et données horizontales.**
+///caption
+Données verticales et données horizontales.
+///
 
-## Normes générales
-
-### Dates et Heures
+## Dates et Heures
 
 En gestion de données, l’entrée des dates et des heures doit répondre à la norme ISO 8601\. On peut la décomposer de cette manière :
 
@@ -106,7 +57,7 @@ Dans une perspective d’archivage, il n’est donc pas obligatoire d’entrer l
 
 **Néanmoins le format d’entrée de date doit rester constant.**
 
-### Coordonnées Géographiques
+## Coordonnées Géographiques
 
 Les coordonnées géographiques sont notées sous deux variables distinctes : **latitude** et **longitude**.
 
@@ -114,9 +65,9 @@ Elles devraient toujours être notées en utilisant les degrés décimaux (ne pa
 
 Dans la mesure du possible, dans le cas de données de biodiversité, chaque observation devrait avoir ses propres coordonnées géographiques. Autrement dit, l’identification d’un spécimen devrait aussi s’accompagner de la prise de la position GPS.
 
-### Organisation des dossiers
+## Organisation des dossiers
 
-#### Exemples de structure de fichier
+### Exemples de structure de fichier
 
 **Inventaires de poissons**
 
@@ -146,13 +97,13 @@ Dans la mesure du possible, dans le cas de données de biodiversité, chaque obs
 | 2024-07-16T17:30-04:00 | 48.1331  | \-69.1706 | P01       | Rivière Brochu | sonde            | 7.73                    | 1.54           | 7.6 | 1.98                                 |
 | 2024-07-16T18:30-04:00 | 48.1331  | \-69.1706 | P01       | Rivière Brochu | sonde            | 7.93                    | 1.16           | 7.8 | 1.52                                 |
 
-**Légende**
+!!! Note "Légende"
 
-> Ces exemples sont des suggestions de template, à partir de données fictives. À l’exception des variables obligatoires, toutes autres variables peuvent être ajoutées, supprimées ou modifiées. L’important étant de rester constant dans le remplissage de chaque variable et de conserver les bonnes pratiques pour garantir la cohérence des données.**
+  Ces exemples sont des suggestions de template, à partir de données fictives. À l’exception des variables obligatoires, toutes autres variables peuvent être ajoutées, supprimées ou modifiées. L’important étant de rester constant dans le remplissage de chaque variable et de conserver les bonnes pratiques pour garantir la cohérence des données.
 
-### Erreurs à éviter
+## Erreurs à éviter
 
-**Tableau général avec des erreurs**
+### Tableau général avec des erreurs
 
 | \#id         | Date        | Coordonnées       |              | Méthode                                                         | Ville           | Température |
 | :----------- | :---------- | :----------------- | :----------- | :--------------------------------------------------------------- | :-------------- | :----------- |
@@ -160,10 +111,9 @@ Dans la mesure du possible, dans le cas de données de biodiversité, chaque obs
 | HMSC-2023-P1 | 9 Sept 2023 | 50.11072           | 66.79432     | La végétation et les sédiments ont été échantillonnés….. | Port-Cartier    | 12,4         |
 | HMSC-2023-P3 | 02-11-2023  | 50°6'39.592"      | 66°53'6592" | La végétation et les sédiments ont été échantillonnés….. |                 |              |
 
-**Les erreurs à éviter:**
+### Les erreurs à éviter:
 
-
-**Tableau général corrigé**
+### Tableau général corrigé
 
 | eventID      | eventDate  | decimalLatitude | decimalLongitude | stationID | samplingProtocol      | location        | measurementType      | measurementValue | measurementUnit |
 | :----------- | :--------- | :-------------- | :--------------- | :-------- | :-------------------- | :-------------- | :------------------- | :--------------- | :-------------- |
@@ -256,8 +206,7 @@ La ***bonne pratique*** aurait été de prendre des decimalLatitude/decimalLongi
 
 ### Données de biodiversité et définition des termes
 
-| Depuis janvier 2021, l’OGSL a choisi d’adhérer à la structure d’archivage du Darwin Core tel que proposé par OBIS. Il s’agit d’une structure de données soumise pour validation à la communauté scientifique océanographique et est donc révisée par les pairs. Cette annexe a pour objectif de fournir de l’information sur le format DarwinCore, l’application du format DarwinCore pour le partage de données avec l’OGSL n’est pas requis. L’OGSL ayant développé une expertise et des outils facilitant la transformation des données. Cette section a pour objectif de vous familiariser avec le format normalisé et standardisé utilisé |
-| :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|Depuis janvier 2021, l’OGSL a choisi d’adhérer à la structure d’archivage du Darwin Core tel que proposé par OBIS. Il s’agit d’une structure de données soumise pour validation à la communauté scientifique océanographique et est donc révisée par les pairs. Cette annexe a pour objectif de fournir de l’information sur le format DarwinCore, l’application du format DarwinCore pour le partage de données avec l’OGSL n’est pas requis. L’OGSL ayant développé une expertise et des outils facilitant la transformation des données. Cette section a pour objectif de vous familiariser avec le format normalisé et standardisé utilisé
 
 La structure de format DarwinCore se base sur les principes des EventCore (ou événements), auxquels s’associent des tables d’occurrence (Occurrence Extension) et éventuellement des mesures étendues tirées des occurrences et des événements (Occurrence et Event EMoF).
 
@@ -283,7 +232,9 @@ Une table d’événements nous informe donc sur les lieux où ont été réalis
 Dans la figure 2 ci-dessous, il y a un quatrième tableau qui correspond aux mesures étendues prises sur les événements. Néanmoins, le présent guide ne s’intéressera pas à ce tableau. Les mesures physico-chimiques prises lors des événements (Event EMoF), comme la température de l’eau, la qualification du substrat marin, le niveau de l’eau, etc. peuvent être intégrées directement dans le tableau des événements (Event Core).
 
 ![][image16]
-**Figure 2\. Tableaux relationnels du Darwin Core.**
+/// caption
+Tableaux relationnels du Darwin Core.
+///
 
 Quelques définitions
 
@@ -314,7 +265,9 @@ Pour l’instant, nous pouvons nous attarder aux notions plus basiques. Il faut 
 Lorsque des données de biodiversité sont prélevées, comme un inventaire, il est requis de créer un tableur spécifiquement dédié à marquer les observations, c’est-à-dire les occurrences.
 
 ![][image17]
-**Image 1\. Structure minimale d’une structure d’archivage répondant aux normes du Darwin Core.**
+/// caption
+Structure minimale d’une structure d’archivage répondant aux normes du Darwin Core.
+///
 
 **Identifiant unique**
 
