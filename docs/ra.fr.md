@@ -1,7 +1,20 @@
-# Associations Régionalles
+# Associations régionales
 
-Observatoire global du Saint-Laurent
+![Logo OGSL](./assets/logos/cioos-national-color.fr.svg){ width="300"}
+/// caption
+CIOOS National
+///
 
-SIOOC du Pacifique
+![SLGO Logo](./assets/logos/OGSL_Logo.png){ width="300"}
+/// caption
+St-Lawrence Global Observatory
+///
 
-SIOOC de l'Atantique
+![CIOOS Pacific](./assets/logos/pacific_fr.png){ width="300"}
+/// caption
+CIOOS Pacific
+///
+
+/// caption
+CIOOS Atlantic
+///
