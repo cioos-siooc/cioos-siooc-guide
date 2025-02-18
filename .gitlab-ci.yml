@@ -13,7 +13,6 @@
     - ssh $SSH_OPTS $TARGET_SRV "sudo /datadrive/app-resources/common/scripts/app_manage.sh $APP_NAME" build
     - ssh $SSH_OPTS $TARGET_SRV "sudo /datadrive/app-resources/common/scripts/app_manage.sh $APP_NAME" stop
     - ssh $SSH_OPTS $TARGET_SRV "sudo /datadrive/app-resources/common/scripts/app_manage.sh $APP_NAME" start
-
   tags:
     - ogsl
 
