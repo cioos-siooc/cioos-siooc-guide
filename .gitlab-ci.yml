@@ -1,0 +1,34 @@
+.deploy-common: &deploy-common
+  image: alpine:latest
+  script:
+    - APP_NAME=cioos-data-management-guide
+    - apk add openssh-client
+    - echo "$GITLAB_PRIVATE_KEY" >> ~/private_key
+    - chmod 600 ~/private_key
+    - SSH_OPTS="-o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i ~/private_key"
+    - ssh $SSH_OPTS $TARGET_SRV "rm -rf ~/$APP_NAME && mkdir -p ~/$APP_NAME"
+    - cp ./config/$CONFIG/configs.ini ./config/
+    - scp $SSH_OPTS -r * $TARGET_SRV:~/$APP_NAME
+    - ssh $SSH_OPTS $TARGET_SRV "sudo /datadrive/app-resources/common/scripts/copy_src.sh $APP_NAME ~/$APP_NAME"
+    - ssh $SSH_OPTS $TARGET_SRV "sudo /datadrive/app-resources/common/scripts/app_manage.sh $APP_NAME" build
+    - ssh $SSH_OPTS $TARGET_SRV "sudo /datadrive/app-resources/common/scripts/app_manage.sh $APP_NAME" stop
+    - ssh $SSH_OPTS $TARGET_SRV "sudo /datadrive/app-resources/common/scripts/app_manage.sh $APP_NAME" start
+
+  tags:
+    - ogsl
+    - 
+run-deploy-preprod:
+  <<: *deploy-common
+  variables:
+    TARGET_SRV: gitlab@$SRV_PREPROD_DIVERS_0
+    CONFIG: preprod
+  only:
+    - main
+
+# run-deploy-production:
+#   <<: *deploy-common
+#   variables:
+#     TARGET_SRV: gitlab@$SRV_PRODUCTION_DIVERS_0
+#     CONFIG: production
+#   only:
+#     - production
