@@ -16,7 +16,7 @@
 
   tags:
     - ogsl
-    - 
+
 run-deploy-preprod:
   <<: *deploy-common
   variables:
@@ -25,10 +25,10 @@ run-deploy-preprod:
   only:
     - main
 
-# run-deploy-production:
-#   <<: *deploy-common
-#   variables:
-#     TARGET_SRV: gitlab@$SRV_PRODUCTION_DIVERS_0
-#     CONFIG: production
-#   only:
-#     - production
+run-deploy-production:
+  <<: *deploy-common
+  variables:
+    TARGET_SRV: gitlab@$SRV_PRODUCTION_DIVERS_0
+    CONFIG: production
+  only:
+    - production
