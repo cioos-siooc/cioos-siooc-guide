@@ -9,4 +9,5 @@
 .md-header__topic:first-child {
     font-weight: 300;
     line-height: 1.2;
+    margin: 4px;
 }
