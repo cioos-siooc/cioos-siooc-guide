@@ -62,7 +62,7 @@ plugins:
       languages:
         - locale: en
           name: English
-          site_name: Candian Integrated Ocean Observatories Sytems<br>Data Management Guide
+          site_name: Canadian Integrated Ocean Observatories Sytems<br>Data Management Guide
           build: true
         - locale: fr
           name: Français

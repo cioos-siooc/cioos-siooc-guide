@@ -1,6 +1,6 @@
 # Associations Régionalles
 
-Organisme de Gestion du Saint-Laurent
+Observatoire global du Saint-Laurent
 
 SIOOC du Pacifique
 
