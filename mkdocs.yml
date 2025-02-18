@@ -62,11 +62,11 @@ plugins:
       languages:
         - locale: en
           name: English
-          site_name: Canadian Integrated Ocean Observatories Sytems<br>Data Management Guide
+          site_name: Canadian Integrated Ocean Observing System<br>Data Management Guide
           build: true
         - locale: fr
           name: Français
-          site_name: Système intégré d'observation océanique du Canada<br>Guide de gestion de données
+          site_name: Système intégré d'observation des océans du Canada<br>Guide de gestion de données
           default: true
           build: true
           nav_translations:
