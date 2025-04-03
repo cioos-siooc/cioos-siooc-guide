@@ -12,9 +12,9 @@ Pour séparer les mots dans un nom de fichier ou dossier, utilisez l’underscor
 
 Exemple de bonnes et mauvaises pratiques:  
 
-:heavy_check_mark: 2024_BLABLA_Rimouski.xlsx  
-:x: Figure 1.temperature.csv  
-:x: Projet de caractérisation, baie des chaleurs-données de température année 1990-1995.xlsx  
+**✔** 2024_BLABLA_Rimouski.xlsx  
+**X** Figure 1.temperature.csv  
+**X** Projet de caractérisation, baie des chaleurs-données de température année 1990-1995.xlsx  
 
 - Trois règles essentielles pour favoriser une bonne structure des fichiers tabulaires de données :
 
@@ -23,7 +23,8 @@ Exemple de bonnes et mauvaises pratiques:
 3. Chaque valeur doit avoir sa propre cellule.
 
 
-![tbxvariables](../assets/images/tbxvariables.PNG)
+![tbxvariables](../assets/images/tbxvariable.PNG)  
+![exempletable](../assets/images/exempletable.PNG)  
 /// caption
 Figure 1. Données verticales et données horizontales.
 ///
