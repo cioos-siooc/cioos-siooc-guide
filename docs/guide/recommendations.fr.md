@@ -103,26 +103,58 @@ Dans la mesure du possible, dans le cas de données de biodiversité, chaque obs
 
 ## Erreurs à éviter
 
-### Tableau général avec des erreurs
+Cette section vise à présenter les erreurs les plus courantes à éviter lors de la construction des bases de données. Le tableau ci-dessous contient des erreurs à la fois dans la structure et le contenu des cellules qui compliquent ou rendent impossible son analyse.  
 
-| \#id         | Date        | Coordonnées       |              | Méthode                                                         | Ville           | Température |
-| :----------- | :---------- | :----------------- | :----------- | :--------------------------------------------------------------- | :-------------- | :----------- |
-| HMSC-2023-P1 | 7/28/2023   | 50.10088,-66.70125 |              | La végétation et les sédiments ont été échantillonnés….. | Rivière Brochu | 16.6 °C     |
-| HMSC-2023-P1 | 9 Sept 2023 | 50.11072           | 66.79432     | La végétation et les sédiments ont été échantillonnés….. | Port-Cartier    | 12,4         |
-| HMSC-2023-P3 | 02-11-2023  | 50°6'39.592"      | 66°53'6592" | La végétation et les sédiments ont été échantillonnés….. |                 |              |
+### Contre-exemple de base de données général contenant des erreurs
 
-### Les erreurs à éviter:
+![Tableau contenant des erreurs](../assets/images/ContreExemple_BdD2.png)
 
-### Tableau général corrigé
+Parmis ces erreurs on notera notemment : 
+- **Caractères spéciaux :** Évitez d'inclure des caractères spéciaux dans le nom des variables
+- **Identifiants :** Ajouter un identifiant unique par évènement 
+- **Date :** Utiliser le format ISO 8601 pour renseigner la date et rester consistant sur le format utilisé dans l'ensemble de la base de données
+- **Information unique par case :**
+    - Les coordonnées longitude et latitude doivent être renseignées dans des cases séparées
+    - L'unité de mesure doit être fournies dans une case séparée et jamais directement avec la valeur 
+- **Coordonnées :** Les coordonnées doivent être fournies en degrés-décimaux et non en degrés-minutes-secondes
+- **Lisibilité :** Résumer le contenu du texte de manière à le rendre le plus concis possible
+- **Structure du tableau :** Ne jamais fusioner des cellules
+- **séparateur décimal :** Utiliser des points et non des virgules 
+- **Absence de valeurs :** Ecrire *NA* pour indiquer une cellule sans donnée et ne pas laisser un cellules vides.
 
-| eventID      | eventDate  | decimalLatitude | decimalLongitude | stationID | samplingProtocol      | location        | measurementType      | measurementValue | measurementUnit |
+Le tableau N+1 présente la même information mais dans un format comprehensible et interopérable. 
+
+**Tableau N+1 : Base de données corrigée contenant les informations du tableau N**
+
+| eventID      | eventDate  | <span style="background-color:green">decimalLatitude</span> | <span style="background-color:green">decimalLongitude</span> | stationID | samplingProtocol      | location        | measurementType      | measurementValue | <span style="background-color:green">measurementUnit</span> |
 | :----------- | :--------- | :-------------- | :--------------- | :-------- | :-------------------- | :-------------- | :------------------- | :--------------- | :-------------- |
-| HMSC-2023-P1 | 2023-07-28 | 50.10088        | \-66.70125       | P1        | Seine                 | Rivière Brochu | temperature\_surface | 16.6             | degree\_C       |
-| HMSC-2023-P2 | 2023-09-09 | 50.11072        | \-66.79432       | P2        | Fyke Net              | Port-Cartier    | temperature\_surface | 12.4             | degree\_C       |
-| HMSC-2023-P3 | 2023-11-02 | 50.11099        | \-66.89432       | P3        | Carotte de sédiments | Port-Cartier    | temperature\_surface | NA               | NA              |
+| HMSC-2023-<span style="background-color:green">P1</span> | <span style="background-color:green">2023-07-28</span> | 50.10088        | \-66.70125       | P1        | Seine                 | Rivière Brochu | temperature\_surface | 16.6             | degree\_C       |
+| HMSC-2023-<span style="background-color:green">P2</span> | <span style="background-color:green">2023-09-09</span> | 50.11072        | \-66.79432       | P2        | Fyke Net              | Port-Cartier    | temperature\_surface | 12.4             | degree\_C       |
+| HMSC-2023-<span style="background-color:green">P3</span> | <span style="background-color:green">2023-11-02</span> | 50.11099        | \-66.89432       | P3        | Carotte de sédiments | Port-Cartier    | temperature\_surface | <span style="background-color:green">NA</span>               | <span style="background-color:green">NA</span>              |
 
-| *Les erreurs courantes à éviter:* \-   	Les noms de variables ne doivent pas être des valeurs \-   	Les variables ne doivent pas être contenues à la fois dans les lignes et les colonnes \-   	Chaque type d’unité d’observation doit être stocké dans sa propre table \-	Les cellules ne doivent pas être fusionnées \-	Évitez d'inclure des caractères spéciaux dans les variables (ex., \#) \-	Évitez de laisser le titre de la variable vide *Bonnes pratiques:*  \-	Utilisez le format ISO 8601 pour les dates \-	Ajoutez un identifiant unique par évènement \-	Séparez la latitude et la longitude \-	Indiquez les coordonnées en décimales degrés \-	Résumez le contenu du texte (méthodologie) pour le rendre le plus concis possible \-	Utilisez le point comme séparateur décimal dans les fichiers tabulaires \- 	Insérez 'NA' pour les cellules vides \- 	Indiquez les unités des mesures  \- 	Ajouter stationID (si possible et pertinent) \- 	Ajouter sampleID (si possible et pertinent) \- 	Créez un dictionnaire de données (si possible et pertinent) |
-| :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+> ### Pour résumer 
+> 
+> ***A éviter :***
+> - Les noms de variables ne doivent pas être des valeurs 
+> - Les variables ne doivent pas être contenues à la fois dans les lignes et les colonnes 
+> - Chaque type d’unité d’observation doit être stocké dans sa propre table 
+> - Les cellules ne doivent pas être fusionnées 
+> - Évitez d'inclure des caractères spéciaux dans les variables (ex., \#) 
+> - Évitez de laisser le titre de la variable vide 
+> 
+> ***Bonnes pratiques :***  
+> - Utilisez le format ISO 8601 pour les dates
+> - Ajoutez un identifiant unique par évènement
+> - Séparez la latitude et la longitude
+> - Indiquez les coordonnées en décimales degrés
+> - Résumez le contenu du texte (méthodologie) pour le rendre le plus concis possible
+> - Utilisez le point comme séparateur décimal dans les fichiers tabulaires 
+> - Insérez 'NA' pour les cellules vides
+> - Indiquez les unités des mesures
+> - Ajouter stationID (si possible et pertinent)
+> - Ajouter sampleID (si possible et pertinent)
+> - Créez un dictionnaire de données (si possible et pertinent)  
+
 
 ### Ressources utiles
 
