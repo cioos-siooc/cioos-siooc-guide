@@ -1,36 +1,31 @@
-# Conventions
+# Guide détaillée
 
 La page suivante présente un résumé des bonnes pratiques et conventions à appliquer en lien avec la gestion de données.
 
-## Nom des fichiers
+## Notions de base
 
-Il est recommandé d’enregistrer et d’envoyer les fichiers de données tabulaires sous un format .xlsx ou .csv.
 
-Essayez de nommer vos fichiers de **manière concise et descriptive**. Les noms des fichiers doivent rester courts, sans caractère spéciaux et sans espace.
+- Il est recommandé d’enregistrer et d’envoyer les fichiers de données tabulaires sous un format .xlsx ou .csv.   
 
-![][image3]
-
+Essayez de nommer vos fichiers de **manière concise et descriptive**. Les noms des fichiers doivent rester courts, sans caractère spéciaux et sans espace.  
 Pour séparer les mots dans un nom de fichier ou dossier, utilisez l’underscore ( \_ ) ou le tiret ( \- ). Évitez les points dans les noms des fichiers, leur utilisation peut créer des problèmes de compatibilité dans certains systèmes. Limitez l’utilisation des accents.
 
-Exemple de bonnes et mauvaises pratiques:
+Exemple de bonnes et mauvaises pratiques:  
 
-![][image4]
-![][image5]  
-/// caption
-Projet de caractérisation, dans la baie des chaleurs données de température année 1990-1995.xlsx
-///
+:heavy_check_mark: 2024_BLABLA_Rimouski.xlsx  
+:x: Figure 1.temperature.csv  
+:x: Projet de caractérisation, baie des chaleurs-données de température année 1990-1995.xlsx  
 
-Trois règles essentielles pour favoriser une bonne structure des fichiers tabulaires de données :
+- Trois règles essentielles pour favoriser une bonne structure des fichiers tabulaires de données :
 
 1. Chaque variable doit avoir sa propre colonne.
 2. Chaque observation doit avoir sa propre ligne.
 3. Chaque valeur doit avoir sa propre cellule.
 
-![][image6]
 
-![Une image contenant tableDescription générée automatiquement][image7]
-///caption
-Données verticales et données horizontales.
+![tbxvariables](../assets/images/tbxvariables.PNG)
+/// caption
+Figure 1. Données verticales et données horizontales.
 ///
 
 ## Dates et Heures
