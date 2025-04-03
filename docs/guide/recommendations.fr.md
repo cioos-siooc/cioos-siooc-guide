@@ -12,9 +12,9 @@ Pour séparer les mots dans un nom de fichier ou dossier, utilisez l’underscor
 
 Exemple de bonnes et mauvaises pratiques:  
 
-:heavy_check_mark: 2024_BLABLA_Rimouski.xlsx  
-:x: Figure 1.temperature.csv  
-:x: Projet de caractérisation, baie des chaleurs-données de température année 1990-1995.xlsx  
+**✔** 2024_BLABLA_Rimouski.xlsx  
+**X** Figure 1.temperature.csv  
+**X** Projet de caractérisation, baie des chaleurs-données de température année 1990-1995.xlsx  
 
 - Trois règles essentielles pour favoriser une bonne structure des fichiers tabulaires de données :
 
@@ -23,20 +23,22 @@ Exemple de bonnes et mauvaises pratiques:
 3. Chaque valeur doit avoir sa propre cellule.
 
 
-![tbxvariables](../assets/images/tbxvariables.PNG)
+![tbxvariables](../assets/images/tbxvariable.PNG)  
+![exempletable](../assets/images/exempletable.PNG)  
 /// caption
 Figure 1. Données verticales et données horizontales.
 ///
 
-## Dates et Heures
+## Normes générales
+### Dates et heures
 
 En gestion de données, l’entrée des dates et des heures doit répondre à la norme ISO 8601\. On peut la décomposer de cette manière :
 
-aaaa-mm-jjThh:mm:ss-00:00		Année, mois, jour, T, heure, minute, seconde, UTC
+aaaa-mm-jjThh:mm:ss-00:00	équivaut à **Année, mois, jour, T, heure, minute, seconde, UTC**
 
-2021-09-09T07:38:00-04:00		Heure d’été de l’est, donc UTC-4\*
+2021-09-09T07:38:00-04:00	équivaut à **Heure d’été de l’est, donc UTC-4\***
 
-2021-09-09T07:38:00-05:00		Heure normale de l’est, donc UTC-5\*
+2021-09-09T07:38:00-05:00	équivaut à **Heure normale de l’est, donc UTC-5\***
 
 \*Ces UTC correspondent aux heures d’été et aux heures normales du Québec.
 
@@ -52,7 +54,7 @@ Dans une perspective d’archivage, il n’est donc pas obligatoire d’entrer l
 
 **Néanmoins le format d’entrée de date doit rester constant.**
 
-## Coordonnées Géographiques
+### Coordonnées Géographiques
 
 Les coordonnées géographiques sont notées sous deux variables distinctes : **latitude** et **longitude**.
 
