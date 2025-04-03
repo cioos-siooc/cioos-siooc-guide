@@ -71,7 +71,7 @@ Dans la mesure du possible, dans le cas de données de biodiversité, chaque obs
 
 **Inventaires de poissons**
 
-| eventDate  | decimalLatitude | decimalLongitude | stationID | samplingProtocol | event   | vernacularName       | scientificName   | occurrenceStatus | basisOfRecord  | longueur\_cm | individualCount |
+| eventDate  | decimalLatitude | decimalLongitude | stationID | samplingProtocol | event   | vernacularName       | scientificName       | occurrenceStatus | basisOfRecord  | longueur\_cm | individualCount |
 | ---------- | --------------- | ---------------- | --------- | ---------------- | ------- | -------------------- | ---------------- | ---------------- | -------------- | ------------ | --------------- |
 | 2024-10-16 | 48.1331         | \-69.1706        | P01       | senne            | trait 1 | Bar rayé            | Morone saxatilis | present          | livingSpecimen | 4.5          | 10              |
 | 2024-07-16 | 48.1331         | \-69.1706        | P01       | senne            | trait 1 | Bar rayé            | Morone saxatilis | present          | livingSpecimen | NA           | 95              |
@@ -90,7 +90,7 @@ Dans la mesure du possible, dans le cas de données de biodiversité, chaque obs
 
 **Qualité de l’eau** (mesures indépendantes et non simultanées à l'identification des espèces)
 
-| eventDate              | latitude | longitude | stationID | location        | samplingProtocol | température\_degree\_C | salinité\_psu | pH  | conductivité\_millisiemens\_per\_cm |
+| eventDate                      | latitude | longitude | stationID | location             | samplingProtocol | temperature\_degree\_C | salinite\_psu | pH | conductivite\_millisiemens\_per\_cm |
 | ---------------------- | -------- | --------- | --------- | :-------------- | :--------------- | ----------------------- | -------------- | --- | ------------------------------------ |
 | 2024-10-16T15:30-04:00 | 48.1331  | \-69.1706 | P01       | Rivière Brochu | sonde            | 6.76                    | 3.13           | 7.8 | 3.76                                 |
 | 2024-07-16T16:30-04:00 | 48.1331  | \-69.1706 | P01       | Rivière Brochu | sonde            | 7.35                    | 2.74           | 7.9 | 3.38                                 |
