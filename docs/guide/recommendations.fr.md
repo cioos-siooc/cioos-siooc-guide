@@ -12,9 +12,9 @@ Pour séparer les mots dans un nom de fichier ou dossier, utilisez l’underscor
 
 Exemple de bonnes et mauvaises pratiques:  
 
-**✔** 2024_BLABLA_Rimouski.xlsx  
-**X** Figure 1.temperature.csv  
-**X** Projet de caractérisation, baie des chaleurs-données de température année 1990-1995.xlsx  
+✔️ 2024_BLABLA_Rimouski.xlsx  
+❌ Figure 1.temperature.csv  
+❌ Projet de caractérisation, baie des chaleurs-données de température année 1990-1995.xlsx  
 
 - Trois règles essentielles pour favoriser une bonne structure des fichiers tabulaires de données :
 
@@ -62,9 +62,7 @@ Elles devraient toujours être notées en utilisant les degrés décimaux (ne pa
 
 Dans la mesure du possible, dans le cas de données de biodiversité, chaque observation devrait avoir ses propres coordonnées géographiques. Autrement dit, l’identification d’un spécimen devrait aussi s’accompagner de la prise de la position GPS.
 
-## Organisation des dossiers
-
-### Exemples de structure de fichier
+## Exemples de structure de fichier
 
 **Inventaires de poissons**
 
