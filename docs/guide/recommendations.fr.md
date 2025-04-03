@@ -12,9 +12,9 @@ Pour séparer les mots dans un nom de fichier ou dossier, utilisez l’underscor
 
 Exemple de bonnes et mauvaises pratiques:  
 
-<span style="background-color:green">✔</span> (background couleur) 2024_BLABLA_Rimouski.xlsx  
-<span style="background-color:red">X</span> (background couleur) Figure 1.temperature.csv  
-<span style="background-color:red">X</span> (background couleur) Projet de caractérisation, baie des chaleurs-données de température année 1990-1995.xlsx  
+✔️ 2024_BLABLA_Rimouski.xlsx  
+❌ Figure 1.temperature.csv  
+❌ Projet de caractérisation, baie des chaleurs-données de température année 1990-1995.xlsx  
 
 - Trois règles essentielles pour favoriser une bonne structure des fichiers tabulaires de données :
 
