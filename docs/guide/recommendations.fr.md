@@ -68,7 +68,7 @@ Dans la mesure du possible, dans le cas de données de biodiversité, chaque obs
 
 **Inventaires de poissons**
 
-| eventDate  | decimalLatitude | decimalLongitude | stationID | samplingProtocol | event   | vernacularName       | scientificName       | occurrenceStatus | basisOfRecord  | longueur\_cm | individualCount |
+| <span style="background-color:yellow">eventDate</span>  | <span style="background-color:yellow">decimalLatitude</span> | <span style="background-color:yellow">decimalLongitude</span> | <span style="background-color:lightblue">stationID</span> | <span style="background-color:yellow">samplingProtocol</span> | <span style="background-color:lightblue">event</span>   | vernacularName       | <span style="background-color:yellow">scientificName</span>       | occurrenceStatus | <span style="background-color:yellow">basisOfRecord</span>  | longueur\_cm | individualCount |
 | ---------- | --------------- | ---------------- | --------- | ---------------- | ------- | -------------------- | ---------------- | ---------------- | -------------- | ------------ | --------------- |
 | 2024-10-16 | 48.1331         | \-69.1706        | P01       | senne            | trait 1 | Bar rayé            | Morone saxatilis | present          | livingSpecimen | 4.5          | 10              |
 | 2024-07-16 | 48.1331         | \-69.1706        | P01       | senne            | trait 1 | Bar rayé            | Morone saxatilis | present          | livingSpecimen | NA           | 95              |
@@ -95,6 +95,10 @@ Dans la mesure du possible, dans le cas de données de biodiversité, chaque obs
 | 2024-07-16T18:30-04:00 | 48.1331  | \-69.1706 | P01       | Rivière Brochu | sonde            | 7.93                    | 1.16           | 7.8 | 1.52                                 |
 
 !!! Note "Légende"
+🟡 Obligatoire
+🟠 Obligatoire (si cela demande trop de travail, l’OGSL peut l’ajouter)
+🔵 Suggéré
+⚪ Exemple dont certaines variables peuvent être nommées
 
   Ces exemples sont des suggestions de template, à partir de données fictives. À l’exception des variables obligatoires, toutes autres variables peuvent être ajoutées, supprimées ou modifiées. L’important étant de rester constant dans le remplissage de chaque variable et de conserver les bonnes pratiques pour garantir la cohérence des données.
 
