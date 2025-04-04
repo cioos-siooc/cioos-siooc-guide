@@ -66,7 +66,7 @@ Dans la mesure du possible, dans le cas de données de biodiversité, chaque obs
 
 **Inventaires de poissons**
 
-| <span style="background-color:lightyellow">eventDate</span>  | <span style="background-color:lightyellow">decimalLatitude</span> | <span style="background-color:lightyellow">decimalLongitude</span> | <span style="background-color:lightblue">stationID</span> | <span style="background-color:lightyellow">samplingProtocol</span> | <span style="background-color:lightblue">event</span>   | vernacularName       | <span style="background-color:lightyellow">scientificName</span>       | <span style="background-color:#ffecb3">occurrenceStatus</span> | <span style="background-color:lightyellow">basisOfRecord</span>  | longueur\_cm | individualCount |
+| <span style="background-color:#FCFC8C">eventDate</span>  | <span style="background-color:#FCFC8C">decimalLatitude</span> | <span style="background-color:#FCFC8C">decimalLongitude</span> | <span style="background-color:lightblue">stationID</span> | <span style="background-color:#FCFC8C">samplingProtocol</span> | <span style="background-color:lightblue">event</span>   | vernacularName       | <span style="background-color:#FCFC8C">scientificName</span>       | <span style="background-color:#FFBF00">occurrenceStatus</span> | <span style="background-color:#FCFC8C">basisOfRecord</span>  | longueur\_cm | individualCount |
 | ---------- | --------------- | ---------------- | --------- | ---------------- | ------- | -------------------- | ---------------- | ---------------- | -------------- | ------------ | --------------- |
 | 2024-10-16 | 48.1331         | \-69.1706        | P01       | senne            | trait 1 | Bar rayé            | Morone saxatilis | present          | livingSpecimen | 4.5          | 10              |
 | 2024-07-16 | 48.1331         | \-69.1706        | P01       | senne            | trait 1 | Bar rayé            | Morone saxatilis | present          | livingSpecimen | NA           | 95              |
@@ -77,7 +77,7 @@ Dans la mesure du possible, dans le cas de données de biodiversité, chaque obs
 
 **Caractérisation par transect et/ou quadrats**
 
-| <span style="background-color:lightyellow">eventDate</span>  | <span style="background-color:lightyellow">decimalLatitude</span> | <span style="background-color:lightyellow">decimalLongitude</span> | transect | quadrat | <span style="background-color:#ffecb3">kingdom</span>   | <span style="background-color:#ffecb3">taxonRank</span> | <span style="background-color:lightyellow">scientificName</span>   | indivudualCount | <span style="background-color:#ffecb3">occurrenceStatus</span> | <span style="background-color:lightyellow">basisOfRecord</span>    |
+| <span style="background-color:#FCFC8C">eventDate</span>  | <span style="background-color:#FCFC8C">decimalLatitude</span> | <span style="background-color:#FCFC8C">decimalLongitude</span> | transect | quadrat | <span style="background-color:<span style="background-color:#FFBF00">occurrenceStatus</span>">kingdom</span>   | <span style="background-color:<span style="background-color:#FFBF00">occurrenceStatus</span>">taxonRank</span> | <span style="background-color:#FCFC8C">scientificName</span>   | indivudualCount | <span style="background-color:<span style="background-color:#FFBF00">occurrenceStatus</span>">occurrenceStatus</span> | <span style="background-color:#FCFC8C">basisOfRecord</span>    |
 | ---------- | --------------- | ---------------- | -------- | ------- | --------- | --------- | ---------------- | :-------------- | :--------------- | ---------------- |
 | 2022-07-16 | 49.300694       | \-123.11667      | 1        | 1       | Chromista | species   | Fucus distichus  | 12              | present          | humanObservation |
 | 2022-07-16 | 49.300694       | \-123.11667      | 1        | 2       | Plantae   | genus     | Mastocarpus      | 0               | absent           | humanObservation |
@@ -85,18 +85,20 @@ Dans la mesure du possible, dans le cas de données de biodiversité, chaque obs
 
 **Qualité de l’eau** (mesures indépendantes et non simultanées à l'identification des espèces)
 
-| <span style="background-color:lightyellow">eventDate</span>                      | latitude | longitude | stationID | location             | <span style="background-color:lightyellow">samplingProtocol</span> | temperature\_degree\_C | salinite\_psu | pH | conductivite\_millisiemens\_per\_cm |
+| <span style="background-color:#FCFC8C">eventDate</span>                      | latitude | longitude | <span style="background-color:lightblue">stationID</span> | <span style="background-color:lightblue">location</span>             | <span style="background-color:#FCFC8C">samplingProtocol</span> | temperature\_degree\_C | salinite\_psu | pH | conductivite\_millisiemens\_per\_cm |
 | ---------------------- | -------- | --------- | --------- | :-------------- | :--------------- | ----------------------- | -------------- | --- | ------------------------------------ |
 | 2024-10-16T15:30-04:00 | 48.1331  | \-69.1706 | P01       | Rivière Brochu | sonde            | 6.76                    | 3.13           | 7.8 | 3.76                                 |
 | 2024-07-16T16:30-04:00 | 48.1331  | \-69.1706 | P01       | Rivière Brochu | sonde            | 7.35                    | 2.74           | 7.9 | 3.38                                 |
 | 2024-07-16T17:30-04:00 | 48.1331  | \-69.1706 | P01       | Rivière Brochu | sonde            | 7.73                    | 1.54           | 7.6 | 1.98                                 |
 | 2024-07-16T18:30-04:00 | 48.1331  | \-69.1706 | P01       | Rivière Brochu | sonde            | 7.93                    | 1.16           | 7.8 | 1.52                                 |
 
+<div style="margin-left: 20px;">
 !!! Note "Légende"
-🟡 Obligatoire<br>
-🟠 Obligatoire (si cela demande trop de travail, l’OGSL peut l’ajouter)<br>
-🔵 Suggéré<br>
-⚪ Exemple dont certaines variables peuvent être nommées<br>
+<small>🟡 Obligatoire</small><br>
+<small>🟠 Obligatoire (si cela demande trop de travail, l’OGSL peut l’ajouter)</small><br>
+<small>🔵 Suggéré<br>
+<small>⚪ Exemple dont certaines variables peuvent être nommées</small><br>
+</div>
 
   Ces exemples sont des suggestions de template, à partir de données fictives. À l’exception des variables obligatoires, toutes autres variables peuvent être ajoutées, supprimées ou modifiées. L’important étant de rester constant dans le remplissage de chaque variable et de conserver les bonnes pratiques pour garantir la cohérence des données.
 
