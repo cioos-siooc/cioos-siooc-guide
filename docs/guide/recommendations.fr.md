@@ -85,7 +85,7 @@ Dans la mesure du possible, dans le cas de données de biodiversité, chaque obs
 
 **Qualité de l’eau** (mesures indépendantes et non simultanées à l'identification des espèces)
 
-| <span style="background-color:#FCFC8C">eventDate</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | latitude | longitude | <span style="background-color:lightblue">stationID</span> | <span style="background-color:lightblue">location</span>&nbsp;&nbsp;&nbsp;&nbsp; | <span style="background-color:#FCFC8C">samplingProtocol</span> | temperature\_degree\_C | salinite\_psu | pH | conductivite\_millisiemens\_per\_cm |
+| <span style="background-color:#FCFC8C">eventDate</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | latitude | longitude | <span style="background-color:lightblue">stationID</span> | <span style="background-color:lightblue">location</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | <span style="background-color:#FCFC8C">samplingProtocol</span> | temperature\_degree\_C | salinite\_psu | pH | conductivite\_millisiemens\_per\_cm |
 | ---------------------- | -------- | --------- | --------- | :-------------- | :--------------- | ----------------------- | -------------- | --- | ------------------------------------ |
 | 2024-10-16T15:30-04:00 | 48.1331  | \-69.1706 | P01       | Rivière Brochu | sonde            | 6.76                    | 3.13           | 7.8 | 3.76                                 |
 | 2024-07-16T16:30-04:00 | 48.1331  | \-69.1706 | P01       | Rivière Brochu | sonde            | 7.35                    | 2.74           | 7.9 | 3.38                                 |
