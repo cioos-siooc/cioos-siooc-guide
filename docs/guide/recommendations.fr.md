@@ -77,7 +77,7 @@ Dans la mesure du possible, dans le cas de données de biodiversité, chaque obs
 
 **Caractérisation par transect et/ou quadrats**
 
-| <span style="background-color:#FCFC8C">eventDate</span>  | <span style="background-color:#FCFC8C">decimalLatitude</span> | <span style="background-color:#FCFC8C">decimalLongitude</span> | transect | quadrat | <span style="background-color:<span style="background-color:#FFBF00">occurrenceStatus</span>">kingdom</span>   | <span style="background-color:<span style="background-color:#FFBF00">occurrenceStatus</span>">taxonRank</span> | <span style="background-color:#FCFC8C">scientificName</span>   | indivudualCount | <span style="background-color:<span style="background-color:#FFBF00">occurrenceStatus</span>">occurrenceStatus</span> | <span style="background-color:#FCFC8C">basisOfRecord</span>    |
+| <span style="background-color:#FCFC8C">eventDate</span>  | <span style="background-color:#FCFC8C">decimalLatitude</span> | <span style="background-color:#FCFC8C">decimalLongitude</span> | transect | quadrat | <span style="background-color:#FFBF00">kingdom</span>   | <span style="background-color:#FFBF00">taxonRank</span> | <span style="background-color:#FCFC8C">scientificName</span>   | indivudualCount | <span style="background-color:#FFBF00">occurrenceStatus</span>">occurrenceStatus</span> | <span style="background-color:#FCFC8C">basisOfRecord</span>    |
 | ---------- | --------------- | ---------------- | -------- | ------- | --------- | --------- | ---------------- | :-------------- | :--------------- | ---------------- |
 | 2022-07-16 | 49.300694       | \-123.11667      | 1        | 1       | Chromista | species   | Fucus distichus  | 12              | present          | humanObservation |
 | 2022-07-16 | 49.300694       | \-123.11667      | 1        | 2       | Plantae   | genus     | Mastocarpus      | 0               | absent           | humanObservation |
@@ -92,11 +92,11 @@ Dans la mesure du possible, dans le cas de données de biodiversité, chaque obs
 | 2024-07-16T17:30-04:00 | 48.1331  | \-69.1706 | P01       | Rivière Brochu | sonde            | 7.73                    | 1.54           | 7.6 | 1.98                                 |
 | 2024-07-16T18:30-04:00 | 48.1331  | \-69.1706 | P01       | Rivière Brochu | sonde            | 7.93                    | 1.16           | 7.8 | 1.52                                 |
 
-<div style="margin-left: 20px;">
 !!! Note "Légende"
+<div style="margin-left: 20px;">
 <small>🟡 Obligatoire</small><br>
 <small>🟠 Obligatoire (si cela demande trop de travail, l’OGSL peut l’ajouter)</small><br>
-<small>🔵 Suggéré<br>
+<small>🔵 Suggéré</small><br>
 <small>⚪ Exemple dont certaines variables peuvent être nommées</small><br>
 </div>
 
