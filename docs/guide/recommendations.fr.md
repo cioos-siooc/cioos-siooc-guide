@@ -109,6 +109,7 @@ Cette section vise à présenter les erreurs les plus courantes à éviter lors 
 ![Tableau contenant des erreurs](../assets/images/ContreExemple_BdD2.png)
 
 Parmis ces erreurs on notera notemment :  
+
 - **Caractères spéciaux :** Évitez d'inclure des caractères spéciaux dans le nom des variables  
 - **Identifiants :** Ajouter un identifiant unique par évènement  
 - **Date :** Utiliser le format ISO 8601 pour renseigner la date et rester consistant sur le format utilisé dans l'ensemble de la base de données  
