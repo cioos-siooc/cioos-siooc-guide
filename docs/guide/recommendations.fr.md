@@ -108,7 +108,7 @@ Cette section vise à présenter les erreurs les plus courantes à éviter lors 
 
 ![Tableau contenant des erreurs](../assets/images/ContreExemple_BdD2.png)
 
-Parmis ces erreurs on notera notemment :  
+Parmi ces erreurs on notera notamment :  
 
 - **Caractères spéciaux :** Évitez d'inclure des caractères spéciaux dans le nom des variables  
 - **Identifiants :** Ajouter un identifiant unique par évènement  
@@ -116,15 +116,15 @@ Parmis ces erreurs on notera notemment :
 - **Information unique par case :**  
 
     - Les coordonnées longitude et latitude doivent être renseignées dans des cases séparées  
-    - L'unité de mesure doit être fournies dans une case séparée et jamais directement avec la valeur 
+    - L'unité de mesure doit être fournie dans une case séparée et jamais directement avec la valeur 
 
-- **Coordonnées :** Les coordonnées doivent être fournies en degrés-décimaux et non en degrés-minutes-secondes  
+- **Coordonnées :** Les coordonnées doivent être fournies en degrés décimaux et non en degrés-minutes-secondes  
 - **Lisibilité :** Résumer le contenu du texte de manière à le rendre le plus concis possible  
-- **Structure du tableau :** Ne jamais fusioner des cellules  
-- **séparateur décimal :** Utiliser des points et non des virgules  
-- **Absence de valeurs :** Ecrire *NA* pour indiquer une cellule sans donnée et ne pas laisser un cellules vides.  
+- **Structure du tableau :** Ne jamais fusionner des cellules  
+- **Séparateur décimal :** Utiliser des points et non des virgules  
+- **Absence de valeurs :** Écrire *NA* pour indiquer une cellule sans donnée et ne pas laisser de cellules vides.  
 
-Le tableau N+1 présente la même information mais dans un format comprehensible et interopérable. 
+Le tableau N+1 présente la même information, mais dans un format compréhensible et interopérable. 
 
 **Tableau N+1 : Base de données corrigée contenant les informations du tableau N**
 
@@ -148,7 +148,7 @@ Le tableau N+1 présente la même information mais dans un format comprehensible
 > - Utilisez le format ISO 8601 pour les dates  
 > - Ajoutez un identifiant unique par évènement  
 > - Séparez la latitude et la longitude  
-> - Indiquez les coordonnées en décimales degrés  
+> - Indiquez les coordonnées en degrés décimaux     
 > - Résumez le contenu du texte (méthodologie) pour le rendre le plus concis possible  
 > - Utilisez le point comme séparateur décimal dans les fichiers tabulaires   
 > - Insérez 'NA' pour les cellules vides  
@@ -158,9 +158,9 @@ Le tableau N+1 présente la même information mais dans un format comprehensible
 > - Créez un dictionnaire de données (si possible et pertinent)   
 
 
-### Ressources utiles
+## Ressources utiles
 
-#### Identification des espèces
+### Identification des espèces
 
 Dans un tableau de données, **il est important de noter l’observation avec le nom scientifique**.
 
