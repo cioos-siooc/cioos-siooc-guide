@@ -77,7 +77,7 @@ Dans la mesure du possible, dans le cas de données de biodiversité, chaque obs
 
 **Caractérisation par transect et/ou quadrats**
 
-| <span style="background-color:#FCFC8C">eventDate</span>  | <span style="background-color:#FCFC8C">decimalLatitude</span> | <span style="background-color:#FCFC8C">decimalLongitude</span> | transect | quadrat | <span style="background-color:#FFBF00">kingdom</span>   | <span style="background-color:#FFBF00">taxonRank</span> | <span style="background-color:#FCFC8C">scientificName</span>   | indivudualCount | <span style="background-color:#FFBF00">occurrenceStatus</span>">occurrenceStatus</span> | <span style="background-color:#FCFC8C">basisOfRecord</span>    |
+| <span style="background-color:#FCFC8C">eventDate</span>  | <span style="background-color:#FCFC8C">decimalLatitude</span> | <span style="background-color:#FCFC8C">decimalLongitude</span> | transect | quadrat | <span style="background-color:#FFBF00">kingdom</span>   | <span style="background-color:#FFBF00">taxonRank</span> | <span style="background-color:#FCFC8C">scientificName</span>   | indivudualCount | <span style="background-color:#FFBF00">occurrenceStatus</span> | <span style="background-color:#FCFC8C">basisOfRecord</span>    |
 | ---------- | --------------- | ---------------- | -------- | ------- | --------- | --------- | ---------------- | :-------------- | :--------------- | ---------------- |
 | 2022-07-16 | 49.300694       | \-123.11667      | 1        | 1       | Chromista | species   | Fucus distichus  | 12              | present          | humanObservation |
 | 2022-07-16 | 49.300694       | \-123.11667      | 1        | 2       | Plantae   | genus     | Mastocarpus      | 0               | absent           | humanObservation |
