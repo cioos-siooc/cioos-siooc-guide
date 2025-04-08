@@ -1,4 +1,4 @@
-# Guide détaillée
+# Guide détaillé
 
 La page suivante présente un résumé des bonnes pratiques et conventions à appliquer en lien avec la gestion de données.
 
