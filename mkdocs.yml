@@ -32,7 +32,7 @@ extra_css:
 nav:
   - Home: index.md
   - Guide:
-    - ./guide/acceuil.md
+    - ./guide/accueil.md
     - ./guide/faircare.md
     - ./guide/recommendations.md
     - ./guide/dictionnaire.md
