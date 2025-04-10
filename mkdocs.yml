@@ -32,9 +32,12 @@ extra_css:
 nav:
   - Home: index.md
   - Guide:
-    - ./guide/fair.md
-    - ./guide/care.md
+    - ./guide/acceuil.md
+    - ./guide/faircare.md
     - ./guide/recommendations.md
+    - ./guide/dictionnaire.md
+    - ./guide/template.md
+    - ./guide/annexes.md
   - Regional Associations: ra.md
 
 extra:
