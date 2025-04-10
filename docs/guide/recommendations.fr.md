@@ -2,7 +2,7 @@
 
 La page suivante présente un résumé des bonnes pratiques et conventions à appliquer en lien avec la gestion de données.
 
-## Notions de base
+## 1. Notions de base
 
 
 - Il est recommandé d’enregistrer et d’envoyer les fichiers de données tabulaires sous un format .xlsx ou .csv.   
@@ -29,8 +29,8 @@ Exemple de bonnes et mauvaises pratiques:
 Figure 1. Données verticales et données horizontales.
 ///
 
-## Normes générales
-### Dates et heures
+## 2. Normes générales
+### 2.1 Dates et heures
 
 En gestion de données, l’entrée des dates et des heures doit répondre à la norme ISO 8601\. On peut la décomposer de cette manière :
 
@@ -54,7 +54,7 @@ Dans une perspective d’archivage, il n’est donc pas obligatoire d’entrer l
 
 **Néanmoins le format d’entrée de date doit rester constant.**
 
-### Coordonnées Géographiques
+### 2.2 Coordonnées Géographiques
 
 Les coordonnées géographiques sont notées sous deux variables distinctes : **latitude** et **longitude**.
 
@@ -62,7 +62,9 @@ Elles devraient toujours être notées en utilisant les degrés décimaux (ne pa
 
 Dans la mesure du possible, dans le cas de données de biodiversité, chaque observation devrait avoir ses propres coordonnées géographiques. Autrement dit, l’identification d’un spécimen devrait aussi s’accompagner de la prise de la position GPS.
 
-## Exemples de structure de fichier
+## 3. Exemples de structure de fichier
+
+### 3.1 Données de biodiversité 
 
 **Inventaires de poissons**
 
@@ -101,11 +103,13 @@ Dans la mesure du possible, dans le cas de données de biodiversité, chaque obs
 
   Ces exemples sont des suggestions de template, à partir de données fictives. À l’exception des variables obligatoires, toutes autres variables peuvent être ajoutées, supprimées ou modifiées. L’important étant de rester constant dans le remplissage de chaque variable et de conserver les bonnes pratiques pour garantir la cohérence des données.
 
-## Erreurs à éviter
+## 4. Erreurs à éviter
 
 Cette section vise à présenter les erreurs les plus courantes à éviter lors de la construction des bases de données. Le tableau ci-dessous contient des erreurs à la fois dans la structure et le contenu des cellules qui compliquent ou rendent impossible son analyse.  
 
-### Contre-exemple de base de données général contenant des erreurs
+### 4.1 Erreurs fréquentes
+
+Contre-exemple de base de données général contenant des erreurs
 
 ![Tableau contenant des erreurs](../assets/images/ContreExemple_BdD2.png)
 
@@ -135,7 +139,7 @@ Le tableau N+1 présente la même information, mais dans un format compréhensib
 | HMSC-2023-<span style="background-color:#98faa9">P2</span> | <span style="background-color:#98faa9">2023-09-09</span> | 50.11072        | \-66.79432       | P2        | Fyke Net              | Port-Cartier    | temperature\_surface | 12.4             | degree\_C       |
 | HMSC-2023-<span style="background-color:#98faa9">P3</span> | <span style="background-color:#98faa9">2023-11-02</span> | 50.11099        | \-66.89432       | P3        | Carotte de sédiments | Port-Cartier    | temperature\_surface | <span style="background-color:#98faa9">NA</span>               | <span style="background-color:#98faa9">NA</span>              |
 
-> ### Pour résumer 
+> ### 4.2 Pour résumer 
 >   
 > ***A éviter :***  
 > - Les noms de variables ne doivent pas être des valeurs   
