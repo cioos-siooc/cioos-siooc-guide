@@ -1,6 +1,6 @@
-# 1. Templates adaptés à plusieurs types de données
+# Templates
 
-## 1.1 Données structurées selon le standard Darwin Core
+## 1. Données structurées selon le standard Darwin Core
 
 
 **Fichier des événements (event)** 
