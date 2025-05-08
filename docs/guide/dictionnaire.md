@@ -18,11 +18,39 @@ Bien que l'utilisation dès le départ d'un vocabulaire contrôlé soit fortemen
 
 > 💡 **Pas de panique :**  Les standards et les vocabulaires contrôlés évoluent au fur et à mesure que la recherche avance et que l'effort de diffusion des données s'intensifie. Ce domaine constitue en soi une discipline scientifique à part entière. Les scientifiques de données sont là pour effectuer et/ou raffiner le processus de standardisation de vos données. L'important est que toute l'information soit disponible pour comprendre ce que représente la donnée.  
 
+## Que contient un dictionnaire de variables ?
 
-## liste des variables et descriptions
+### liste des variables et descriptions
+Le dictionnaire de variable doit contenir l'ensemble des variables partagées, y compris celles qui pourraient vous sembler évidentes. On décrira ainsi 
+- leurs noms abbrégés (tels que présentés dans les données) ; 
+- leurs noms complets (tels qu'on le lirait dans la littérature) ;
+- leurs noms standard (dans l'idéal mais **pas obligatoire à l'état d'ébauche** ou de document de travail)
+- leurs unités de mesure
+- leurs définitions et/ou descriptions précises.
 
-## epsg (système de coordonnées de référence)
+### Système de coordonnées de référence
+Dans le cas de données spatialisées (c'est-à dire qui inclus une information sur leur localisation précise dans l'espace), il est impératif de préciser dans la descrpition de la variable le système de coordonnées géographique de référence (abbrégé *src* en français et *crs* en anglais) associé aux coordonnées fournies.  
+Le système le plus courant dans le cadre d'une diffusion des données est le système WGS84 (EPSG:4326). Pour les données enregistrées dans des src incluant un zonage, il faut indiquer à la fois le système et la zone considérée. Par exemple en Amerique du Nord, le système NAD83 est couremment utilisé mais considères différentes zones. Une manière de simplifier la notation pour s'assurer d'être le plus compréhensible possible est de référencer le système de coordonnée en lui ajoutant le code epsg qui lui correspond. Les descriptifs des différents systèmes de coordonnées sont disponibles sur le site : https://epsg.io/ 
 
-## instruments de récolte de données
+### Instruments impliqués
+Afin d'assurer une transparence maximale et de s'assurer que des données décrivant une même variable soit comparable entre elles, il peut être pertinent d'indiquer les instruments qui ont permis de les obtenir. On pourra indiquer ainsi les instruments aillant servi à l'**échantillonnage** et les instruments aillant servi aux **analyses**. Dans la mesure du possible, les informations pertinentes minimales sont :  
+- le type d'instrument *(ex : rosette CTD ; sonde multiparamétriques ; salinomètre)*
+- la marque de l'instrument 
+- le modèle de l'instrument
 
-## définition de la méthode
+### Définition de la méthode
+De la même manière que pour les instruments, la méthode aillant servi à obtenir les données peut servir à déterminer si des données sont comparables entre elles. Une courte description des grandes étapes de l'analyses tels que des filtrations, des ajouts de solutions pour la conservation d'un échantillon ou pour l'extraction d'un composé sont des éléments important à ajouter à la définitions des variables.  
+
+## Où placer le dictionnaire ?
+Un dictionnaire de variable peut être vu comme une sorte de clé de lecture permettant de déchiffrer, et donc de comprendre, une base de données. **Il est donc essentiel que le dictionnaire soit en tout temps attaché avec sa base de données**. Pour ce faire, différentes stratégies sont possibles.  
+La plus sécuritaire est de choisir un format de fichier qui contient à la fois les données et les métadonnées (dont les informations du dictionnaire) au sein d'un unique fichier. De cette manière, il n'y a pas de risques que les informations soient séparées lors du transfer de la base de données. C'est le cas par exemple pour des fichiers du type netCDF. Cette solution n'est cependant pas pratique pour des bases de données en construction où il faudrait revenir souvent ajouter ou modifier le contenu.  
+Pour faciliter ce travail d'édition, une solution commune est de construire ce dictionnaire dans une table en parallèle de vos bases de données, soit dans un fichier csv à part, soit en tant qu'onglet inclu dans un fichier du type excel (*rappelons cependant ici que les bonnes pratiques veulent que le partage de données se fasse au travers de fichier non propriétaire*). Cette manière de faire implique cependant de bien s'assurer le fichier de dictionnaire accompagne toujours le fichier de base de données.  
+Dans le cas où plusieurs bases de données seraient construites en parallèle avec un fichier de dictionnaire unique, il sera important d'ajouter le nom de la base de données où sont localisées les variables. 
+
+## Exemple de structure d'un dictionnaire
+
+| file_name | variable  | long_name | standard_name | unit | description | instruments | methode |
+| :-------- | :-------- | :-------- | :------------ | :--- | :---------- | :---------- | :------ |
+| CTD_profils_2024-05-05.csv | OXY | Oxygen concentration | mass_concentration_of_oxygen_in_sea_water | mg m-3 | Oxygen concentration in the water colomn | Oxygen probe on CTD - SeaBird - SBE43 | Direct measurments with post-calibration against laboratory analysis |
+| CTD_profils_2024-05-05.csv | lat | latitude | latitude | degrees_north | WGS84 - epsg:4326; 5m precision | GPS - BRAND - MODEL | On the boat at the start of each profil |
+| CTD_profils_2024-05-05.csv | ... | ... | ... | ... | ... | ... | ... |  
