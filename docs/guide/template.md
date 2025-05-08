@@ -26,27 +26,85 @@
       <thead>
         <tr>
           <th>datasetID</th>
-          <th>datasetName</th>
-          <th>ownerInstitutionCode</th>
-          <th>basisOfRecord</th>
+          <th>eventID</th>
+          <th>station</th>
+          <th>eventDate</th>
+          <th>countryCode</th>
+          <th>locality</th>
+          <th>decimalLatitude</th>
+          <th>decimalLongitude</th>
+          <th>geodeticDatum</th>
           <th>samplingProtocol</th>
-          <th>samplingEffort</th>
-          <th>datasetContact</th>
-          <th>datasetContactEmail</th>
-          <th>bibliographicCitation</th>
+          <th>habitat</th>
+          <th>eventRemarks</th>
+          <th>temperature_degree_C</th>
+          <th>vitesse du vent_beaufort</th>
+          <th>couverture nuageuse_pourcent</th>
+          <th>granulometrie</th>
+          <th>precipitations_mm</th>
+          <th>measurementRemarks</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>ZIPABC2024</td>
-          <td>Suivi de la biodiversité dans le cadre du programme ZIP ABC</td>
-          <td>Organisme de bassin versant ABC</td>
-          <td>LivingSpecimen</td>
-          <td>Échantillonnage à l’épuisette + tri sur le terrain</td>
-          <td>3 stations sur une plage sableuse (1 jour)</td>
-          <td>Jean Dupont</td>
-          <td>jean.dupont@obvabc.org</td>
-          <td>OBV ABC (2024). Suivi de la biodiversité sur la plage ABC. Données brutes de terrain - été 2024. https://www.obvabc.org/zipabc2024</td>
+          <td>ZIPABC_PLAGE01_2024</td>
+          <td>ZIPABC_PLAGE01_2024_ST20</td>
+          <td>ST20</td>
+          <td>2024-07-10</td>
+          <td>CA</td>
+          <td>Baie Saint-Nicholas</td>
+          <td>49.31574587</td>
+          <td>-67.7915172</td>
+          <td>WGS84 EPSG:4326</td>
+          <td>Bourolle</td>
+          <td>marais</td>
+          <td>près de la route</td>
+          <td>28</td>
+          <td>3</td>
+          <td>20</td>
+          <td>sable</td>
+          <td>0</td>
+          <td>NA</td>
+        </tr>
+        <tr>
+          <td>ZIPABC_PLAGE01_2024</td>
+          <td>ZIPABC_PLAGE01_2024_ST21</td>
+          <td>ST21</td>
+          <td>2024-07-10</td>
+          <td>CA</td>
+          <td>Baie Saint-Nicholas</td>
+          <td>49.31581678</td>
+          <td>-67.7918299</td>
+          <td>WGS84 EPSG:4326</td>
+          <td>Bourolle</td>
+          <td>marais</td>
+          <td>NA</td>
+          <td>29</td>
+          <td>2</td>
+          <td>30</td>
+          <td>limon</td>
+          <td>0</td>
+          <td>quelques bourrasques</td>
+        </tr>
+        <tr>
+          <td>ZIPABC_PLAGE01_2024</td>
+          <td>ZIPABC_PLAGE01_2024_ST22</td>
+          <td>ST22</td>
+          <td>2024-07-10</td>
+          <td>CA</td>
+          <td>Baie Saint-Nicholas</td>
+          <td>49.3145898</td>
+          <td>-67.7915917</td>
+          <td>WGS84 EPSG:4326</td>
+          <td>Bourolle</td>
+          <td>marais</td>
+          <td>NA</td>
+          <td>35</td>
+          <td>2</td>
+          <td>80</td>
+          <td>argile</td>
+          <td>5</td>
+          <td>NA</td>
         </tr>
       </tbody>
     </table>
