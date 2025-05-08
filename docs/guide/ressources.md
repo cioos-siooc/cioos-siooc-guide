@@ -32,28 +32,24 @@ Si le groupe d’individus contient plusieurs espèces ou si l’observation ne 
 
 Ex: Phoca spp.
 
-![Une image contenant eau, extérieur, roche, phoqueDescription générée automatiquement][image9]
-![exempletable](../assets/images/exempletable.PNG)  
-/// caption
-Figure 1. Données verticales et données horizontales.
-///
+![groupephoque](../assets/images/groupephoque.JPG)  
 
 Si l’individu ou le groupe d’individu n’est composé que d’une seule espèce, il faut utiliser « sp. ».
 
 Ex.: Phoca sp.
 
-![Une image contenant eau, mammifère, mammifère aquatique, extérieurDescription générée automatiquement][image10]
+![phoquedifferencie](../assets/images/phoquedifferencie.JPG) 
 
 Les informations sur les espèces peuvent être trouvé en consultant le site du Registre mondial des espèces marines – World Register of Marine Species (WoRMS) :  [http://www.marinespecies.org/](http://www.marinespecies.org/).
 
-![][image11]
+![Worms](../assets/images/Worms.JPG) 
 
 | kingdom  | taxonRank | scientificName   | scientificNameID                          | taxonomicStatus |
 | :------- | :-------- | :--------------- | :---------------------------------------- | :-------------- |
 | Animalia | species   | Adalaria proxima | urn:lsid:marinespecies.org:taxname:140629 | accepted        |
 
 Si le nom scientifique n'est pas accepté:
-![][image12]
+![Wormsdetails](../assets/images/Wormsdetails.JPG) 
 
 **L'essentiel est d’indiquer le “scientificName” exact, conforme à WoRMS.**
 Vous pouvez aussi ajouter le “kingdom”, “taxonRank”, “scientificNameID” et le “occurrenceStatus”, mais si cela demande trop de travail, l’OGSL peut le faire aisément avec nos outils à partir du “scientificName” que vous avez saisi.
@@ -62,13 +58,12 @@ Vous pouvez aussi ajouter le “kingdom”, “taxonRank”, “scientificNameID
 
 Pour convertir les coordonnées au format désiré : [http://epsg.io/](http://epsg.io/) et sélectionner l’option “*Transform coordinates*” :
 
-![][image13]
+![epsgio](../assets/images/epsgio.JPG) 
 
 Entrer les coordonnées que vous désirez changer le format et cliquez sur le bouton "Format". Cliquez plusieurs fois jusqu'à trouver le format décimal (Format : dec). Assurez-vous de sélectionner le bon système de projection de coordonnées (Input coordinates system) dans le coin supérieur gauche de l'écran.
 
-![Une image contenant Site webDescription générée automatiquement][image14]
+![transformcoordinates](../assets/images/transformcoordinates.JPG) 
 
-![Une image contenant texteDescription générée automatiquement][image15]
 
 **Identification des transects et quadrats**
 
