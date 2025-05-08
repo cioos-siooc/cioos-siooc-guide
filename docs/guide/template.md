@@ -12,10 +12,12 @@
   <style>
     table {
       border-collapse: collapse;
+      font-family: Arial, sans-serif;
     }
     th, td {
-      border: 1px solid black;
-      padding: 4px 8px;
+      border: 1px solid #999;
+      padding: 6px 10px;
+      text-align: center;
       white-space: nowrap;
     }
   </style>
@@ -124,8 +126,9 @@
       border-collapse: collapse;
     }
     th, td {
-      border: 1px solid black;
-      padding: 4px 8px;
+      border: 1px solid #999;
+      padding: 6px 10px;
+      text-align: center;
       white-space: nowrap;
     }
   </style>
@@ -226,8 +229,9 @@
       border-collapse: collapse;
     }
     th, td {
-      border: 1px solid black;
-      padding: 4px 8px;
+      border: 1px solid #999;
+      padding: 6px 10px;
+      text-align: center;
       white-space: nowrap;
     }
   </style>
