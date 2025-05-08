@@ -33,6 +33,10 @@ Si le groupe d’individus contient plusieurs espèces ou si l’observation ne 
 Ex: Phoca spp.
 
 ![Une image contenant eau, extérieur, roche, phoqueDescription générée automatiquement][image9]
+![exempletable](../assets/images/exempletable.PNG)  
+/// caption
+Figure 1. Données verticales et données horizontales.
+///
 
 Si l’individu ou le groupe d’individu n’est composé que d’une seule espèce, il faut utiliser « sp. ».
 
