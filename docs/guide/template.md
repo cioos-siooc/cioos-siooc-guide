@@ -11,12 +11,12 @@
   <meta charset="UTF-8">
   <style>
     table {
-      white-space: nowrap;
       border-collapse: collapse;
     }
     th, td {
       border: 1px solid black;
       padding: 4px 8px;
+      white-space: nowrap;
     }
   </style>
 </head>
@@ -121,12 +121,12 @@
   <meta charset="UTF-8">
   <style>
     table {
-      white-space: nowrap;
       border-collapse: collapse;
     }
     th, td {
       border: 1px solid black;
       padding: 4px 8px;
+      white-space: nowrap;
     }
   </style>
 </head>
@@ -223,12 +223,12 @@
   <meta charset="UTF-8">
   <style>
     table {
-      white-space: nowrap;
       border-collapse: collapse;
     }
     th, td {
       border: 1px solid black;
       padding: 4px 8px;
+      white-space: nowrap;
     }
   </style>
 </head>
