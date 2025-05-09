@@ -1,9 +1,7 @@
 # Templates
 
-## 1. Données structurées selon le standard Darwin Core
+## 1. Un premier pas vers la structure Darwin Core
 
-
-**Fichier des événements (event)** 
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -33,7 +31,7 @@
 </head>
 <body>
 
-<h2>Tableau Occurrences</h2>
+<h2>Table des événements (event)</h2>
   <div style="overflow-x: auto;">
     <table>
       <thead>
@@ -51,8 +49,8 @@
           <th>habitat</th>
           <th>eventRemarks</th>
           <th>temperature_degree_C</th>
-          <th>vitesse du vent_beaufort</th>
-          <th>couverture nuageuse_pourcent</th>
+          <th>vitesse_du_vent_beaufort</th>
+          <th>couverture_nuageuse_pourcent</th>
           <th>granulometrie</th>
           <th>precipitations_mm</th>
           <th>measurementRemarks</th>
@@ -126,25 +124,36 @@
 </html>
 
 
-**Fichier des occurences (occurence)**
 
 <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
   <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      font-family: Arial, sans-serif;
+    }
     table {
       border-collapse: collapse;
-    }
+      width: max-content;
+    }    
     th, td {
       border: 1px solid #999;
       padding: 6px 10px;
       text-align: center;
       white-space: nowrap;
     }
+    thead {
+      background-color: #f0f0f0;
+    }    
   </style>
 </head>
 <body>
+
+<h2>Table des occurrences (occurrence)</h2>
   <div style="overflow-x: auto;">
     <table>
       <thead>
@@ -229,25 +238,36 @@
 </html>
 
 
-**Fichier des mesures sur les occurences (emof_occurence)**
 
 <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
   <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      font-family: Arial, sans-serif;
+    }
     table {
       border-collapse: collapse;
-    }
+      width: max-content;
+    }    
     th, td {
       border: 1px solid #999;
       padding: 6px 10px;
       text-align: center;
       white-space: nowrap;
     }
+    thead {
+      background-color: #f0f0f0;
+    }    
   </style>
 </head>
 <body>
+
+<h2>Table mesures sur les occurences (emof_occurence)</h2>
   <div style="overflow-x: auto;">
     <table>
       <thead>
@@ -263,7 +283,7 @@
           <th>longueur_cm</th>
           <th>masse_g</th>
           <th>sexe</th>
-          <th>âge</th>
+          <th>age</th>
           <th>measurementRemarks</th>
         </tr>
       </thead>
@@ -279,8 +299,8 @@
           <td>Gadus macrocephalus</td>
           <td>20</td>
           <td>75</td>
-          <td>F</td>
-          <td>J</td>
+          <td>Femelle</td>
+          <td>Juvénile</td>
           <td>NA</td>
         </tr>
         <tr>
@@ -294,8 +314,8 @@
           <td>Gadus macrocephalus</td>
           <td>19</td>
           <td>182</td>
-          <td>M</td>
-          <td>J</td>
+          <td>Mâle</td>
+          <td>Juvénile</td>
           <td>mort</td>
         </tr>
         <tr>
@@ -324,8 +344,8 @@
           <td>Cancer irroratus</td>
           <td>12</td>
           <td>64</td>
-          <td>M</td>
-          <td>A</td>
+          <td>Mâle</td>
+          <td>Adulte</td>
           <td>a perdu une patte</td>
         </tr>
         <tr>
@@ -339,8 +359,8 @@
           <td>Cancer irroratus</td>
           <td>13</td>
           <td>140</td>
-          <td>M</td>
-          <td>J</td>
+          <td>Mâle</td>
+          <td>Juvénil</td>
           <td>NA</td>
         </tr>
         <tr>
@@ -354,8 +374,8 @@
           <td>Cancer irroratus</td>
           <td>15</td>
           <td>115</td>
-          <td>F</td>
-          <td>A</td>
+          <td>Femelle</td>
+          <td>Adulte</td>
           <td>NA</td>
         </tr>
         <tr>
@@ -369,8 +389,8 @@
           <td>Cancer irroratus</td>
           <td>11</td>
           <td>90</td>
-          <td>F</td>
-          <td>A</td>
+          <td>Femelle</td>
+          <td>Adulte</td>
           <td>NA</td>
         </tr>
         <tr>
@@ -384,7 +404,7 @@
           <td>Crangon</td>
           <td>5</td>
           <td>3</td>
-          <td>M</td>
+          <td>Mâle</td>
           <td>N/D</td>
           <td>NA</td>
         </tr>
