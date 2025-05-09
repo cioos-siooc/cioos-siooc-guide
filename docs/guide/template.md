@@ -10,19 +10,30 @@
 <head>
   <meta charset="UTF-8">
   <style>
-    table {
-      border-collapse: collapse;
+    body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
       font-family: Arial, sans-serif;
     }
+    table {
+      border-collapse: collapse;
+      width: max-content;
+    }    
     th, td {
       border: 1px solid #999;
       padding: 6px 10px;
       text-align: center;
       white-space: nowrap;
     }
+    thead {
+      background-color: #f0f0f0;
+    }    
   </style>
 </head>
 <body>
+
+<h2>Tableau Occurrences</h2>
   <div style="overflow-x: auto;">
     <table>
       <thead>
