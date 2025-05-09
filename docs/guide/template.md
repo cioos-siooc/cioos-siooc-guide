@@ -20,7 +20,6 @@
     table {
       border-collapse: collapse;
       width: max-content;
-      min-width: 100%;
     }    
     th, td {
       border: 1px solid #999;
@@ -209,7 +208,7 @@
 </div>
 
 
-<h2>Table mesures sur les occurences (emof_occurence)</h2>
+<h2>Table mesures sur les occurrences (emof_occurrence)</h2>
 <div class="table-container">
   <table>
     <thead>
