@@ -11,12 +11,16 @@
     body {
       margin: 0;
       padding: 0;
-      overflow-x: hidden;
       font-family: Arial, sans-serif;
+    }
+    .table-container {
+      overflow-x: auto;
+      margin-bottom: 40px;    
     }
     table {
       border-collapse: collapse;
       width: max-content;
+      min-width: 100%;
     }    
     th, td {
       border: 1px solid #999;
@@ -32,7 +36,7 @@
 <body>
 
 <h2>Table des événements (event)</h2>
-  <div style="overflow-x: auto;">
+  <div class="table-container">
     <table>
       <thead>
         <tr>
@@ -121,40 +125,10 @@
     </table>
   </div>
 </body>
-</html>
 
-
-
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      overflow-x: hidden;
-      font-family: Arial, sans-serif;
-    }
-    table {
-      border-collapse: collapse;
-      width: max-content;
-    }    
-    th, td {
-      border: 1px solid #999;
-      padding: 6px 10px;
-      text-align: center;
-      white-space: nowrap;
-    }
-    thead {
-      background-color: #f0f0f0;
-    }    
-  </style>
-</head>
-<body>
 
 <h2>Table des occurrences (occurrence)</h2>
-  <div style="overflow-x: auto;">
+  <div class="table-container">
     <table>
       <thead>
         <tr>
@@ -238,37 +212,8 @@
 </html>
 
 
-
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      overflow-x: hidden;
-      font-family: Arial, sans-serif;
-    }
-    table {
-      border-collapse: collapse;
-      width: max-content;
-    }    
-    th, td {
-      border: 1px solid #999;
-      padding: 6px 10px;
-      text-align: center;
-      white-space: nowrap;
-    }
-    thead {
-      background-color: #f0f0f0;
-    }    
-  </style>
-</head>
-<body>
-
 <h2>Table mesures sur les occurences (emof_occurence)</h2>
-  <div style="overflow-x: auto;">
+  <div class="table-container">
     <table>
       <thead>
         <tr>
@@ -413,3 +358,4 @@
   </div>
 </body>
 </html>
+
