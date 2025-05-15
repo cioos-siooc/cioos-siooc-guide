@@ -103,6 +103,24 @@ Dans la mesure du possible, dans le cas de données de biodiversité, chaque obs
 
   Ces exemples sont des suggestions de template, à partir de données fictives. À l’exception des variables obligatoires, toutes autres variables peuvent être ajoutées, supprimées ou modifiées. L’important étant de rester constant dans le remplissage de chaque variable et de conserver les bonnes pratiques pour garantir la cohérence des données.
 
+### 3.3 Données physico-chimiques
+
+Pour les données physicochimiques, les données peuvent être regroupées dans un seul tableau en respectant les notions de bases décrites dans les parties 1 et 2 ci dessus. Chaque évènement d'échantillonnage ou de mesure *in situ* est défini par un identifiant unique. Pour chacun de ces évènements, on indiquera ses éléments d'identification et de localisation (station, latitude, longitude, temps, etc...) ainsi que l'ensemble des données issues de l'analyse de cet échantillon et/ou des mesures réalisés *in situ*.  
+Imaginons par exemple une campagne d'échantillonnage en mer à deux moment de la journée, le long d'un transect avec trois stations d'échantillonnage où sont réalisées des mesures *in situ* avec une sonde directement placée dans l'eau pendant l'échantillonnage d'eau pour des analyses en laboratoire. La base de données pourrait être structurée de la manière ci-dessous :  
+
+| id               | stationID  | latitude | longitude | time                 | temperature | practical_salinity | nitrates  | DIC      | dissolved_oxygen |
+| :--------------- | :--------- | :------- | :-------- | :------------------- | :---------- | :----------------- | :-------- | :------- | :--------------- |
+| RIM_2023_**001** | P01        | 50.10088 | -66.70125 | 2023-06-13T06:03:04Z | 4.32        | 23.5               | 2.34      | 183.5    | 86.64            |
+| RIM_2023_**002** | P02        | 50.25301 | -67.36485 | 2023-06-13T06:24:01Z | 4.51        | 23.4               | 5.87      | 125.2    | 83.71            |
+| RIM_2023_**003** | P03        | 50.49986 | -67.75423 | 2023-06-13T07:01:57Z | 3.94        | 19.1               | 6.25      | 174.2    | 91.31            |
+| RIM_2023_**004** | P01        | 50.10088 | -66.70125 | 2023-06-13T18:18:00Z | 6.24        | 23.7               | 2.89      | 184.8    | 86.61            |
+| RIM_2023_**005** | P02        | 50.25301 | -67.36485 | 2023-06-13T18:34:10Z | 7.78        | 25.9               | 9.45      | 147.2    | 84.02            |
+| RIM_2023_**006** | P03        | 50.49986 | -67.75423 | 2023-06-13T18:53:49Z | 4.20        | 19.3               | 11.62     | 201.4    | 94.84            |  
+
+On notera ici que, bien que les stations aient été répétées au cours de la campagne, l'identifiant au début de chaque ligne est unique et permet de réunir l'ensemble des mesures et analyses réalisés à une station à un moment donnée.  
+
+> ⚠️ **Important :**  En l'état une simple base de données unique tels que celle-ci est pratiquement inutilisable. De manière à garantir sa bonne compréhension et donc ses possibilités de réutilisation, il est essentiel que ce tableau soit accompagné d'un dictionnaire de variables expliquant ce que représente chaque variable et comment chacune d'elle à été mesurée (voir section *[Dictionnaire de variables](dictionnaire.md)* du présent guide).  
+
 ## 4. Erreurs à éviter
 
 Cette section vise à présenter les erreurs les plus courantes à éviter lors de la construction des bases de données. Le tableau ci-dessous contient des erreurs à la fois dans la structure et le contenu des cellules qui compliquent ou rendent impossible son analyse.  
@@ -129,9 +147,9 @@ Parmi ces erreurs on notera notamment :
 - **Séparateur décimal :** Utiliser des points et non des virgules  
 - **Absence de valeurs :** Écrire *NA* pour indiquer une cellule sans donnée et ne pas laisser de cellules vides.  
 
-Le tableau N+1 présente la même information, mais dans un format compréhensible et interopérable. 
+Le tableau ci-dessous présente la même information, mais dans un format compréhensible et interopérable. 
 
-**Tableau N+1 : Base de données corrigée contenant les informations du tableau N**
+**Base de données corrigée contenant les informations du tableau N**
 
 | eventID      | eventDate  | <span style="background-color:#98faa9">decimalLatitude</span> | <span style="background-color:#98faa9">decimalLongitude</span> | stationID | samplingProtocol      | location        | measurementType      | measurementValue | <span style="background-color:#98faa9">measurementUnit</span> |
 | :----------- | :--------- | :-------------- | :--------------- | :-------- | :-------------------- | :-------------- | :------------------- | :--------------- | :-------------- |
