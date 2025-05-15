@@ -1,23 +1,28 @@
-# 1. Modèles de fichiers
+# Modèles de fichiers
 
-## 1.2 Darwin Core
+## 1. Darwin Core
 
 La norme Darwin Core est la plus largement utilisée pour la gestion et le partage des données de biodiversité. Elle a été conçue pour intégrer les observations d'espèces provenant de sources diverses, afin de les rendre découvrables et facilement accessibles. La structure de format Darwin Core se base sur les principes des EventCore (ou événements), auxquels s’associent des tables d’occurrence (Occurrence extension) et éventuellement des mesures étendues tirées des occurrences et des événements (occurrence et event-emof).
 
-** Table des événements (event core) **
+**Table des événements (event core)**
 
 Cette table permet de documenter les détails contextuels entourant la collecte ou l'observation d'espèces et contient des informations telles que la date et lieu de l'échantillonnage, la position géographique, le pays, le protocole d'échantillonnage, ainsi que toute remarque concernant chaque événement individuel.
 
-** Table des occurrences (occurrences core) **
+**Table des occurrences (occurrences core)**
 
 La table des occurrences sert à documenter les spécimens observés lors des différents événements. Cette table contient des informations sur chaque taxon, telles que le nom scientifique, le nombre d’individus, la présence ou l'absence d'un taxon et toute autre remarque pertinente relative à l’observation.
 
-** Table de mesures sur les occurrences (emof) **
+**Table de mesures sur les occurrences (emof)**
 
 La table de mesures sur les occurrences « Extended measurement or Facts » (emof) contient les informations des mesures associées aux occurrences et aux événements. Elle permet d'enregistrer des mesures spécifiques, telles que la longueur, le poids, le sexe, temperature, vitesse du vent, etc., qui sont associées à des occurrences et événements.
 
+- Ces définitions visent à vous familiariser avec le format DarwinCore. Pour approfondir, veuillez consulter la section annexes. L’application du format DarwinCore pour le partage de données avec l’OGSL n’est pas requise.
 
-#### 1.2.1 Un premier pas vers la structure Darwin Core
+- Par la suite, des exemples de modèles partiellement et pleinement conformes au standard Darwin Core sont présentés pour vous guider dans la construction de vos propres tables.
+
+
+
+### 1.1 Un premier pas vers la structure Darwin Core
 
 
 <!DOCTYPE html>
@@ -38,7 +43,6 @@ La table de mesures sur les occurrences « Extended measurement or Facts » (emo
       width: max-content;
     }    
     th, td {
-      border: 1px solid;
       padding: 6px 10px;
       text-align: center;
       white-space: nowrap;
@@ -373,7 +377,7 @@ La table de mesures sur les occurrences « Extended measurement or Facts » (emo
 </html>
 
 
-## 2. Structure Darwin Core
+### 1.2 Structure Darwin Core
 
 
 <h2>Table des événements (event)</h2>
