@@ -12,6 +12,7 @@ La structure de format DarwinCore se base sur les principes des noyaux d'événe
 * Cette table permet de **documenter les détails contextuels entourant la collecte ou l'observation d'espèces**, ce qui est crucial pour la compréhension, l'interprétation et la comparaison des données de biodiversité.
 
 Une table d’événements nous informe donc sur les lieux et le moment où ont été réalisées des observations de spécimens et où des mesures abiotiques ont été saisies pour caractériser les environnements où les observations ont eu lieu. Parmi les variables essentielles devant si trouver, il y a :
+
 - La date et l'heure (minimalement, l'année);
 - Les coordonnées géographiques;
 - Le système de références des coordonnées géographiques;
@@ -24,15 +25,21 @@ Une table d’événements nous informe donc sur les lieux et le moment où ont 
 * Elle constitue en quelque sorte un **inventaire de la biodiversité** observée (ou non observée) en fonction des événements.
 
 Les variables à inclure sont :
+
 - Le nom scientifique des espèces observées;
 - Le status d'occurrence;
 - Le "BasisOfRecord".
+
+
 
 **Structure de table d’occurrence**
 
 Lorsque des données de biodiversité sont prélevées, comme un inventaire, il est requis de créer un tableur spécifiquement dédié à marquer les observations, c’est-à-dire les occurrences.
 
-![Structure minimale d’une structure d’archivage répondant aux normes du Darwin Core.](../assets/images/Structure_minimale_du_Darwin_Core.png)
+![Structure minimale d’une structure d’archivage répondant aux normes du Darwin Core.](../assets/images/Structure_minimale_du_Darwin_Core.png)  
+/// caption
+Structure minimale d’une structure d’archivage répondant aux normes du Darwin Core.
+///
 
 
 ## Table des mesures prises sur les occurrences (Occurrence EMoF)
@@ -44,7 +51,10 @@ Lorsque des données de biodiversité sont prélevées, comme un inventaire, il 
 
 Dans la figure ci-dessous, il y a un quatrième tableau qui correspond aux mesures étendues prises sur les événements. Néanmoins, le présent guide ne s’intéressera pas à ce tableau. Les mesures physico-chimiques prises lors des événements (Event EMoF), comme la température de l’eau, la qualification du substrat marin, le niveau de l’eau, etc. peuvent être intégrées directement dans le tableau des événements (Event Core).
 
-![Tableaux relationnels du Darwin Core.](../assets/images/Tableaux_relationels_du_Darwin_Core.png)
+![Tableaux relationnels du Darwin Core.](../assets/images/Tableaux_relationels_du_Darwin_Core.png)  
+/// caption
+Tableaux relationnels du Darwin Core.
+///
 
 
 ## Identifiants uniques
@@ -54,6 +64,7 @@ Dans un premier temps, il est important de noter que **chaque ligne d’un fichi
 - EventID
 - OccurrenceID
 - MeasurementID
+
 
 **eventID**
 
