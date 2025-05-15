@@ -12,10 +12,11 @@ La structure de format DarwinCore se base sur les principes des noyaux d'événe
 * Cette table permet de **documenter les détails contextuels entourant la collecte ou l'observation d'espèces**, ce qui est crucial pour la compréhension, l'interprétation et la comparaison des données de biodiversité.
 
 Une table d’événements nous informe donc sur les lieux et le moment où ont été réalisées des observations de spécimens et où des mesures abiotiques ont été saisies pour caractériser les environnements où les observations ont eu lieu. Parmi les variables essentielles devant si trouver, il y a :
-* La date et l'heure (minimalement, l'année);
-* Les coordonnées géographiques;
-* Le système de références des coordonnées géographiques;
-* Une brève description du protocole d'échantillonnage (quelques mots suffisent).
+- La date et l'heure (minimalement, l'année);
+- Les coordonnées géographiques;
+- Le système de références des coordonnées géographiques;
+- Une brève description du protocole d'échantillonnage (quelques mots suffisent).
+
 
 ## Table des occurrences (Occurrence Extension)
 
@@ -23,18 +24,15 @@ Une table d’événements nous informe donc sur les lieux et le moment où ont 
 * Elle constitue en quelque sorte un **inventaire de la biodiversité** observée (ou non observée) en fonction des événements.
 
 Les variables à inclure sont :
-* Le nom scientifique des espèces observées;
-* Le status d'occurrence;
-* Le "BasisOfRecord".
+- Le nom scientifique des espèces observées;
+- Le status d'occurrence;
+- Le "BasisOfRecord".
 
 **Structure de table d’occurrence**
 
 Lorsque des données de biodiversité sont prélevées, comme un inventaire, il est requis de créer un tableur spécifiquement dédié à marquer les observations, c’est-à-dire les occurrences.
 
-![][image17]
-/// caption
-Structure minimale d’une structure d’archivage répondant aux normes du Darwin Core.
-///
+![Structure minimale d’une structure d’archivage répondant aux normes du Darwin Core.](../assets/images/Structure_minimale_du_Darwin_Core.png)
 
 
 ## Table des mesures prises sur les occurrences (Occurrence EMoF)
@@ -44,12 +42,10 @@ Structure minimale d’une structure d’archivage répondant aux normes du Darw
 * Chaque enregistrement dans la table des mesures prises sur les occurrences est lié à une occurrence spécifique et contient des informations sur la mesure effectuée, ainsi que d'autres métadonnées pertinentes telles que la méthode de mesure, l'unité de mesure, etc.;
 * Cette table complète les données sur les occurrences en fournissant des détails quantitatifs ou qualitatifs supplémentaires sur chaque spécimen, ce qui permet une analyse plus approfondie de la biodiversité à partir des données collectées sur le terrain ou dans d'autres contextes de collecte.
 
-Dans la figure 2 ci-dessous, il y a un quatrième tableau qui correspond aux mesures étendues prises sur les événements. Néanmoins, le présent guide ne s’intéressera pas à ce tableau. Les mesures physico-chimiques prises lors des événements (Event EMoF), comme la température de l’eau, la qualification du substrat marin, le niveau de l’eau, etc. peuvent être intégrées directement dans le tableau des événements (Event Core).
+Dans la figure ci-dessous, il y a un quatrième tableau qui correspond aux mesures étendues prises sur les événements. Néanmoins, le présent guide ne s’intéressera pas à ce tableau. Les mesures physico-chimiques prises lors des événements (Event EMoF), comme la température de l’eau, la qualification du substrat marin, le niveau de l’eau, etc. peuvent être intégrées directement dans le tableau des événements (Event Core).
 
-![][image16]
-/// caption
-Tableaux relationnels du Darwin Core.
-///
+![Tableaux relationnels du Darwin Core.](../assets/images/Tableaux_relationels_du_Darwin_Core.png)
+
 
 ## Identifiants uniques
 
@@ -119,7 +115,7 @@ Exemple : un inventaire de poissons est réalisé pour un lieu donné. Les poiss
 
 La variable **samplingProtocol** doit apparaître dans la table d’événement (Event Core). La table d’événement est utilisée pour enregistrer des informations sur les événements d'échantillonnage ou d'observation, c'est-à-dire les occasions où des échantillons biologiques ont été collectés ou des observations ont été réalisées.
 
-![][image18]
+![](../assets/images/SamplingProtocol.png)
 
 Dans cette table, chaque ligne représente un événement d'échantillonnage ou d'observation distinct. La variable samplingProtocol est utilisée pour enregistrer le protocole ou la méthode spécifique utilisée lors de cet événement pour collecter des échantillons biologiques ou observer des organismes.
 
