@@ -2,21 +2,40 @@
 
 ## Données de biodiversité et définition des termes
 
-Depuis janvier 2021, l’OGSL a choisi d’adhérer à la structure d’archivage du Darwin Core tel que proposé par OBIS. Il s’agit d’une structure de données soumise pour validation à la communauté scientifique océanographique et est donc révisée par les pairs. Cette annexe a pour objectif de fournir de l’information sur le format DarwinCore, l’application du format DarwinCore pour le partage de données avec l’OGSL n’est pas requis. L’OGSL ayant développé une expertise et des outils facilitant la transformation des données. Cette section a pour objectif de vous familiariser avec le format normalisé et standardisé utilisé
+Depuis janvier 2021, l’OGSL a choisi d’adhérer à la structure d’archivage du Darwin Core tel que proposé par OBIS. Il s’agit d’une structure de données soumise pour validation à la communauté scientifique océanographique et est donc révisée par les pairs. Cette annexe a pour objectif de fournir de l’information sur le format DarwinCore, l’application du format DarwinCore pour le partage de données avec l’OGSL n’est pas requise. L’OGSL ayant développé une expertise et des outils facilitant la transformation des données. Cette section a pour objectif de vous familiariser avec le format normalisé et standardisé utilisé.
 
-La structure de format DarwinCore se base sur les principes des EventCore (ou événements), auxquels s’associent des tables d’occurrence (Occurrence Extension) et éventuellement des mesures étendues tirées des occurrences et des événements (Occurrence et Event EMoF).
+La structure de format DarwinCore se base sur les principes des noyaux d'événements (Event Core), auxquels s’associent des tables d’occurrences (Occurrence Extension) et éventuellement des mesures étendues (Extended Measurements or Facts) tirées des occurrences et des événements (Occurrence et Event EMoF). Des identifiants uniques (eventID, occurrenceID, measurementID) permettent de relier ces tables.
 
 ## Table des événements (Event Core)
 
 * La table des événements est une partie de la structure de données Darwin Core, comprise dans un tableur (fichier .xlsx, par exemple) distinct, **qui contient des informations sur les événements** de collecte ou d'observation associés à des spécimens ou des occurrences;
-* Cette table permet de **documenter les détails contextuels entourant la collecte ou l'observation d'espèces**, ce qui est crucial pour la compréhension et l'interprétation des données de biodiversité.
+* Cette table permet de **documenter les détails contextuels entourant la collecte ou l'observation d'espèces**, ce qui est crucial pour la compréhension, l'interprétation et la comparaison des données de biodiversité.
 
-Une table d’événements nous informe donc sur les lieux où ont été réalisées des observations de spécimens et où des mesures abiotiques ont été saisies pour caractériser les environnements où les observations ont pris place.
+Une table d’événements nous informe donc sur les lieux et le moment où ont été réalisées des observations de spécimens et où des mesures abiotiques ont été saisies pour caractériser les environnements où les observations ont eu lieu. Parmi les variables essentielles devant si trouver, il y a :
+* La date et l'heure (minimalement, l'année);
+* Les coordonnées géographiques;
+* Le système de références des coordonnées géographiques;
+* Une brève description du protocole d'échantillonnage (quelques mots suffisent).
 
 ## Table des occurrences (Occurrence Extension)
 
-* La table des occurrences est une autre partie de la structure de données Darwin Core, aussi comprise dans un tableur distinct, qui permet d’indiquer quels spécimens ont été observés lors des différents événements;
-* Elle constitue en quelque sorte un inventaire de la biodiversité observée (ou non observée) en fonction des événements.
+* La table des occurrences est une autre partie de la structure de données Darwin Core, aussi comprise dans un tableur distinct, qui permet d’indiquer **quels spécimens** ont été observés et leur abondance lors des différents événements;
+* Elle constitue en quelque sorte un **inventaire de la biodiversité** observée (ou non observée) en fonction des événements.
+
+Les variables à inclure sont :
+* Le nom scientifique des espèces observées;
+* Le status d'occurrence;
+* Le "BasisOfRecord".
+
+**Structure de table d’occurrence**
+
+Lorsque des données de biodiversité sont prélevées, comme un inventaire, il est requis de créer un tableur spécifiquement dédié à marquer les observations, c’est-à-dire les occurrences.
+
+![][image17]
+/// caption
+Structure minimale d’une structure d’archivage répondant aux normes du Darwin Core.
+///
+
 
 ## Table des mesures prises sur les occurrences (Occurrence EMoF)
 
@@ -32,60 +51,44 @@ Dans la figure 2 ci-dessous, il y a un quatrième tableau qui correspond aux mes
 Tableaux relationnels du Darwin Core.
 ///
 
-Quelques définitions
+## Identifiants uniques
 
-- eventID
-
-  * L'eventID fait référence à un événement particulier, comme une observation ou une collecte sur le terrain;
-  * Cet identifiant est attribué à un ensemble d'occurrences qui ont été collectées simultanément lors d'une même opération de terrain;
-  * Par exemple, si un chercheur collecte plusieurs spécimens d'une espèce dans une zone particulière le même jour, tous ces spécimens pourraient avoir le même eventID.
-- occurrenceID
-
-  * L'occurrenceID est un identifiant unique attribué à chaque occurrence;
-  * Il permet de suivre et de référencer chaque observation distincte faite lors d'un événement (event);
-  * Par exemple, si dix spécimens de la même espèce sont observés lors d'une même expédition (event), une ligne contenant les variables obligatoires et le nombre de spécimens observés (10) sera noté dans le tableur et un occurrenceID unique sera attribué à cette observation.
-- measurementID
-
-  * Le measurementID est utilisé pour identifier de manière unique chaque mesure ou observation associée à une occurrence.
-  * Il est généralement utilisé dans le contexte des données associées à des mesures spécifiques, telles que la longueur d'un spécimen, son poids, etc.
-  * Par exemple, si plusieurs mesures sont prises sur un spécimen (comme la longueur, la largeur, etc.), chaque mesure pourrait être identifiée individuellement par un measurementID unique.
-
-**Comment définir un identifiant unique:**
-
-C’est ici que la notion d’identifiant unique prend plus de sens. Essentiellement, lorsqu’on construit une table d’occurrences à partir d’une table d’événements, on cherche à indiquer, de par cette structure, quelles observations de spécimen ont été faites lors d’un événement en particulier.
-
-Pour l’instant, nous pouvons nous attarder aux notions plus basiques. Il faut d’abord savoir que chaque identifiant doit être globalement unique, c’est-à-dire n’exister dans aucune autre base de données ailleurs dans le monde. Plus on ajoute d’informations à l’identifiant unique, plus on s’approche de cet objectif théorique de le rendre globalement unique. Pour créer un identifiant unique, il est donc possible de reprendre des informations déjà contenues dans le tableur : le numéro du quadrat, une abréviation du nom du site, l’année où l’observation a été réalisée, etc. On peut aussi y ajouter des informations comme le nom de l’organisation qui a fait la récolte de la donnée ainsi que d’autres informations spécifiques qui pourraient donner à l’identifiant son aspect véritablement unique.
-
-**Structure de table d’occurrence**
-
-Lorsque des données de biodiversité sont prélevées, comme un inventaire, il est requis de créer un tableur spécifiquement dédié à marquer les observations, c’est-à-dire les occurrences.
-
-![][image17]
-/// caption
-Structure minimale d’une structure d’archivage répondant aux normes du Darwin Core.
-///
-
-**Identifiant unique**
-
-Dans un premier temps, nous ne parlerons que brièvement de l’identifiant unique. La démonstration de son utilité dans une perspective d’archivage et de diffusion fera l’objet de plus amples explications dans la sous-section intitulée « \[…\] ». Pour l’instant, **nous pouvons retenir que chaque ligne d’un fichier de données doit avoir son propre identifiant unique**. L’image 1 présente une base de données d’occurrence, c’est-à-dire qui affiche la présence ou l’absence d’une observation d’un spécimen en un lieu et une date donnés. Chaque ligne doit être comprise comme étant une observation (se référer aux règles essentielles en gestion de données – p. X). À la première ligne, par exemple, on constate l’absence du *saxidomus gigantea* : il s’agit en soit d’une observation. Dans ce tableur, on remarque que chaque observation possède son propre identifiant, ici appelé « occurrenceID ». Il s’agit d’une pratique adéquate en gestion de données.
-
-Il existe différentes appellations pour la variable qui se réfère à l’identifiant unique. OBIS et le Darwin Core en définissent plusieurs types, mais ceux auxquels le guide s’intéresse sont les suivants :
+Dans un premier temps, il est important de noter que **chaque ligne d’un fichier de données doit avoir son propre identifiant unique**. Il existe différentes appellations pour la variable qui se réfère à l’identifiant unique. OBIS et le Darwin Core en définissent plusieurs types, mais ceux auxquels le guide s’intéresse sont les suivants :
 
 - EventID
 - OccurrenceID
 - MeasurementID
 
-Ces types d’identifiants uniques seront définis dans la section “EventCore, OccurrenceCore et EmOF”.
+**eventID**
 
-***Comment créer un identifiant unique?***
+* L'eventID fait référence à un **événement particulier**, comme une observation ou une collecte sur le terrain;
+* Cet identifiant est attribué à un ensemble d'occurrences qui ont été collectées simultanément lors d'une même opération de terrain;
+* Par exemple, lors d'un inventiare de plantes herbacées par quadrat, chaque quadrat pourrait avoir son propre eventID. Chaque occurrence, chaque espèce observée dans un même quadrat partagerait donc cet eventID. 
 
-Les termes obligatoires qui s’appliquent aux données de biodiversité (excluant les précédents) :
+**occurrenceID**
+
+* L'occurrenceID est un identifiant unique attribué à chaque occurrence;
+* Il permet de suivre et de référencer **chaque observation distincte** faite lors d'un événement (event);
+* Par exemple, si dix spécimens de la même espèce sont observés lors d'une même expédition (event), une ligne contenant les variables obligatoires et le nombre de spécimens observés (10) sera noté dans le tableur et un occurrenceID unique sera attribué à cette observation.
+
+**measurementID**
+
+* Le measurementID est utilisé pour identifier de manière unique **chaque mesure ou observation associée à une occurrence**.
+* Il est généralement utilisé dans le contexte des données associées à des mesures spécifiques, telles que la longueur d'un spécimen, son poids, etc.
+* Par exemple, si plusieurs mesures sont prises sur un spécimen (comme la longueur, la largeur, etc.), chaque mesure pourrait être identifiée individuellement par un measurementID unique.
+
+Essentiellement, lorsqu’on construit une table d’occurrences à partir d’une table d’événements, on cherche à indiquer, par cette structure, quelles observations de spécimen ont été faites lors d’un événement en particulier. Le même principe s'applique à la table de mesures sur les occurrences ou les événements. Ainsi, on regroupe chaque mesure à une occurrence et chaque occurrence à un événement grâce aux identifiants.
+
+**Comment construire un identifiant unique:**
+
+Il faut d’abord savoir que chaque identifiant doit être globalement unique, c’est-à-dire n’exister dans aucune autre base de données ailleurs dans le monde. Plus on ajoute d’informations à l’identifiant unique, plus on s’approche de cet objectif théorique de le rendre globalement unique. Pour créer un identifiant unique à l'événement, il est donc possible de reprendre des informations déjà contenues dans le tableur : le numéro du quadrat, une abréviation du nom du site, l’année où l’observation a été réalisée, etc. On peut aussi y ajouter des informations comme le nom de l’organisation qui a fait la récolte de la donnée ainsi que d’autres informations spécifiques qui pourraient donner à l’identifiant son aspect véritablement unique. Par la suite, pour créer un identifiant d'occurrence, on peut simplement y ajouter un code ou une abréviation référant à l'espèce observée. Par la même logique, on peut ensuite y joindre une abréviation de la mesure afin de créer un identifiant de mesure.
+
 
 ## Le statut d’occurrence
 
 La variable **occurrenceStatus** fait référence à l'état de présence ou d'absence d'un organisme dans un lieu et à un moment donné. Cette variable est utilisée pour décrire si un spécimen ou une observation d'une espèce particulière a été observé ou collecté dans un endroit spécifique à un moment donné.
 
-Il n’existe que deux valeurs possibles qui peuvent être mises sous la variable occurrenceStatus : ***present*** et ***absent*** (sans accent, en anglais). L’OGSL propose des définitions pour chacune des variables :
+Il n’existe que deux valeurs possibles qui peuvent être mises sous la variable occurrenceStatus : ***present*** et ***absent*** (sans accent, en anglais). L’OGSL propose des définitions pour chacune des valeurs :
 
 * Present : Lorsque le occurrenceStatus est défini comme "présent", cela signifie que l'organisme en question a été observé ou collecté dans la zone d'étude ou à l'emplacement spécifié. La présence peut être confirmée par la détection directe de l'organisme lui-même ou par des méthodes indirectes telles que des enregistrements acoustiques ou des traces d’ADN.
 * Absent : Lorsque occurrenceStatus est défini comme "absent", cela indique que l'organisme en question n'a pas été observé ou collecté dans la zone d'étude ou à l'emplacement spécifié. Cela peut signifier qu'une recherche exhaustive a été effectuée et qu'aucune trace de l'organisme n'a été trouvée, ou que l'organisme est connu pour être absent de cette zone géographique ou de cet habitat spécifique.
