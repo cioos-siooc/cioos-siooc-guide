@@ -1,4 +1,4 @@
-# Templates
+# Modèles de fichiers
 
 ## 1. Un premier pas vers la structure Darwin Core
 
@@ -11,7 +11,6 @@
     body {
       margin: 0;
       padding: 0;
-      font-family: Arial, sans-serif;
     }
     .table-container {
       overflow-x: auto;
@@ -355,3 +354,186 @@
 
 </body>
 </html>
+
+
+## 2. Structure Darwin Core
+
+
+<h2>Table des événements (event)</h2>
+<div class="table-container">
+  <table>
+    <thead>
+      <tr>
+        <th>datasetID</th>
+        <th>eventID</th>
+        <th>eventDate</th>
+        <th>countryCode</th>
+        <th>locality</th>
+        <th>decimalLatitude</th>
+        <th>decimalLongitude</th>
+        <th>geodeticDatum</th>
+        <th>samplingProtocol</th>
+        <th>habitat</th>
+        <th>eventRemarks</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>ZIPABC_PLAGE01_2024</td>
+        <td>ZIPABC_PLAGE01_2024_ST20</td>
+        <td>2024-07-10</td>
+        <td>CA</td>
+        <td>Baie Saint-Nicholas</td>
+        <td>49.315746</td>
+        <td>-67.791517</td>
+        <td>WGS84 EPSG:4326</td>
+        <td>Bourolle</td>
+        <td>marais</td>
+        <td>près de la route</td>
+      </tr>
+      <tr>
+        <td>ZIPABC_PLAGE01_2024</td>
+        <td>ZIPABC_PLAGE01_2024_ST21</td>
+        <td>2024-07-10</td>
+        <td>CA</td>
+        <td>Baie Saint-Nicholas</td>
+        <td>49.315817</td>
+        <td>-67.791830</td>
+        <td>WGS84 EPSG:4326</td>
+        <td>Bourolle</td>
+        <td>marais</td>
+        <td>NA</td>
+      </tr>
+      <tr>
+        <td>ZIPABC_PLAGE01_2024</td>
+        <td>ZIPABC_PLAGE01_2024_ST22</td>
+        <td>2024-07-10</td>
+        <td>CA</td>
+        <td>Baie Saint-Nicholas</td>
+        <td>49.314590</td>
+        <td>-67.791592</td>
+        <td>WGS84 EPSG:4326</td>
+        <td>Bourolle</td>
+        <td>marais</td>
+        <td>NA</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<h2>Table des occurrences (occurrence)</h2>
+<div class="table-container">
+  <table>
+    <thead>
+      <tr>
+        <th>eventID</th>
+        <th>occurrenceID</th>
+        <th>kingdom</th>
+        <th>taxonRank</th>
+        <th>vernacularName</th>
+        <th>scientificName</th>
+        <th>scientificNameID</th>
+        <th>organismQuantity</th>
+        <th>organismQuantityType</th>
+        <th>occurrenceStatus</th>
+        <th>basisOfRecord</th>
+        <th>occurrenceRemarks</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>ZIPABC_PLAGE01_2024_ST20</td>
+        <td>ZIPABC_PLAGE01_2024_ST20_Gmacro</td>
+        <td>Animalia</td>
+        <td>species</td>
+        <td>Morue du Groenland</td>
+        <td>Gadus macrocephalus</td>
+        <td>urn:lsid:marinespecies.org:taxname:254538</td>
+        <td>2</td>
+        <td>nombre d'individus</td>
+        <td>present</td>
+        <td>LivingSpecimen</td>
+        <td>1 individu mort</td>
+      </tr>
+      <tr>
+        <td>ZIPABC_PLAGE01_2024_ST21</td>
+        <td>ZIPABC_PLAGE01_2024_ST21_Cirroratus</td>
+        <td>Animalia</td>
+        <td>species</td>
+        <td>Crabe commun</td>
+        <td>Cancer irroratus</td>
+        <td>urn:lsid:marinespecies.org:taxname:158057</td>
+        <td>5</td>
+        <td>nombre d'individus</td>
+        <td>present</td>
+        <td>LivingSpecimen</td>
+        <td>NA</td>
+      </tr>
+      <tr>
+        <td>ZIPABC_PLAGE01_2024_ST22</td>
+        <td>ZIPABC_PLAGE01_2024_ST22_Crangon</td>
+        <td>Animalia</td>
+        <td>genus</td>
+        <td>Crangon sp.</td>
+        <td>Crangon</td>
+        <td>urn:lsid:marinespecies.org:taxname:107007</td>
+        <td>1</td>
+        <td>nombre d'individus</td>
+        <td>present</td>
+        <td>LivingSpecimen</td>
+        <td>identification incertaine</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<h2>Table de mesures sur les occurrences (emof_occurrence)</h2>
+<div class="table-container">
+  <table>
+    <thead>
+      <tr>
+        <th>eventID</th>
+        <th>occurrenceID</th>
+        <th>measurementID</th>
+        <th>measurementType</th>
+        <th>measurementValue</th>
+        <th>measurementUnit</th>
+        <th>measurementRemarks</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>ZIPABC_PLAGE01_2024_ST20</td><td>ZIPABC_PLAGE01_2024_ST20_Gmacro</td><td>ZIPABC_PLAGE01_2024_ST20_Gmacro_01_longueur</td><td>longueur_cm</td><td>20</td><td>cm</td><td>NA</td></tr>
+      <tr><td>ZIPABC_PLAGE01_2024_ST20</td><td>ZIPABC_PLAGE01_2024_ST20_Gmacro</td><td>ZIPABC_PLAGE01_2024_ST20_Gmacro_02_longueur</td><td>longueur_cm</td><td>19</td><td>cm</td><td>mort</td></tr>
+      <tr><td>ZIPABC_PLAGE01_2024_ST21</td><td>ZIPABC_PLAGE01_2024_ST21_Cirroratus</td><td>ZIPABC_PLAGE01_2024_ST21_Cirroratus_01_longueur</td><td>longueur_cm</td><td>13</td><td>cm</td><td>NA</td></tr>
+      <tr><td>ZIPABC_PLAGE01_2024_ST21</td><td>ZIPABC_PLAGE01_2024_ST21_Cirroratus</td><td>ZIPABC_PLAGE01_2024_ST21_Cirroratus_02_longueur</td><td>longueur_cm</td><td>12</td><td>cm</td><td>a perdu une patte</td></tr>
+      <tr><td>ZIPABC_PLAGE01_2024_ST21</td><td>ZIPABC_PLAGE01_2024_ST21_Cirroratus</td><td>ZIPABC_PLAGE01_2024_ST21_Cirroratus_03_longueur</td><td>longueur_cm</td><td>13</td><td>cm</td><td>NA</td></tr>
+      <tr><td>ZIPABC_PLAGE01_2024_ST21</td><td>ZIPABC_PLAGE01_2024_ST21_Cirroratus</td><td>ZIPABC_PLAGE01_2024_ST21_Cirroratus_04_longueur</td><td>longueur_cm</td><td>15</td><td>cm</td><td>NA</td></tr>
+      <tr><td>ZIPABC_PLAGE01_2024_ST21</td><td>ZIPABC_PLAGE01_2024_ST21_Cirroratus</td><td>ZIPABC_PLAGE01_2024_ST21_Cirroratus_05_longueur</td><td>longueur_cm</td><td>11</td><td>cm</td><td>NA</td></tr>
+      <tr><td>ZIPABC_PLAGE01_2024_ST22</td><td>ZIPABC_PLAGE01_2024_ST22_Crangon</td><td>ZIPABC_PLAGE01_2024_ST22_Crangon_01_longueur</td><td>longueur_cm</td><td>5</td><td>cm</td><td>NA</td></tr>
+      <tr><td>ZIPABC_PLAGE01_2024_ST20</td><td>ZIPABC_PLAGE01_2024_ST20_Gmacro</td><td>ZIPABC_PLAGE01_2024_ST20_Gmacro_01_masse</td><td>masse_g</td><td>75</td><td>g</td><td>NA</td></tr>
+      <tr><td>ZIPABC_PLAGE01_2024_ST20</td><td>ZIPABC_PLAGE01_2024_ST20_Gmacro</td><td>ZIPABC_PLAGE01_2024_ST20_Gmacro_02_masse</td><td>masse_g</td><td>182</td><td>g</td><td>NA</td></tr>
+      <tr><td>ZIPABC_PLAGE01_2024_ST21</td><td>ZIPABC_PLAGE01_2024_ST21_Cirroratus</td><td>ZIPABC_PLAGE01_2024_ST21_Cirroratus_01_masse</td><td>masse_g</td><td>70</td><td>g</td><td>NA</td></tr>
+      <tr><td>ZIPABC_PLAGE01_2024_ST21</td><td>ZIPABC_PLAGE01_2024_ST21_Cirroratus</td><td>ZIPABC_PLAGE01_2024_ST21_Cirroratus_02_masse</td><td>masse_g</td><td>64</td><td>g</td><td>NA</td></tr>
+      <tr><td>ZIPABC_PLAGE01_2024_ST21</td><td>ZIPABC_PLAGE01_2024_ST21_Cirroratus</td><td>ZIPABC_PLAGE01_2024_ST21_Cirroratus_03_masse</td><td>masse_g</td><td>140</td><td>g</td><td>NA</td></tr>
+      <tr><td>ZIPABC_PLAGE01_2024_ST21</td><td>ZIPABC_PLAGE01_2024_ST21_Cirroratus</td><td>ZIPABC_PLAGE01_2024_ST21_Cirroratus_04_masse</td><td>masse_g</td><td>115</td><td>g</td><td>NA</td></tr>
+      <tr><td>ZIPABC_PLAGE01_2024_ST21</td><td>ZIPABC_PLAGE01_2024_ST21_Cirroratus</td><td>ZIPABC_PLAGE01_2024_ST21_Cirroratus_05_masse</td><td>masse_g</td><td>90</td><td>g</td><td>NA</td></tr>
+      <tr><td>ZIPABC_PLAGE01_2024_ST22</td><td>ZIPABC_PLAGE01_2024_ST22_Crangon</td><td>ZIPABC_PLAGE01_2024_ST22_Crangon_01_masse</td><td>masse_g</td><td>3</td><td>g</td><td>NA</td></tr>
+      <tr><td>ZIPABC_PLAGE01_2024_ST20</td><td>ZIPABC_PLAGE01_2024_ST20_Gmacro</td><td>ZIPABC_PLAGE01_2024_ST20_Gmacro_01_sexe</td><td>sex</td><td>Femelle</td><td>NA</td><td>NA</td></tr>
+      <tr><td>ZIPABC_PLAGE01_2024_ST20</td><td>ZIPABC_PLAGE01_2024_ST20_Gmacro</td><td>ZIPABC_PLAGE01_2024_ST20_Gmacro_02_sexe</td><td>sex</td><td>Male</td><td>NA</td><td>NA</td></tr>
+      <tr><td>ZIPABC_PLAGE01_2024_ST21</td><td>ZIPABC_PLAGE01_2024_ST21_Cirroratus</td><td>ZIPABC_PLAGE01_2024_ST21_Cirroratus_01_sexe</td><td>sex</td><td>N/D</td><td>NA</td><td>NA</td></tr>
+      <tr><td>ZIPABC_PLAGE01_2024_ST21</td><td>ZIPABC_PLAGE01_2024_ST21_Cirroratus</td><td>ZIPABC_PLAGE01_2024_ST21_Cirroratus_02_sexe</td><td>sex</td><td>Male</td><td>NA</td><td>NA</td></tr>
+      <tr><td>ZIPABC_PLAGE01_2024_ST21</td><td>ZIPABC_PLAGE01_2024_ST21_Cirroratus</td><td>ZIPABC_PLAGE01_2024_ST21_Cirroratus_03_sexe</td><td>sex</td><td>Male</td><td>NA</td><td>NA</td></tr>
+      <tr><td>ZIPABC_PLAGE01_2024_ST21</td><td>ZIPABC_PLAGE01_2024_ST21_Cirroratus</td><td>ZIPABC_PLAGE01_2024_ST21_Cirroratus_04_sexe</td><td>sex</td><td>Femelle</td><td>NA</td><td>NA</td></tr>
+      <tr><td>ZIPABC_PLAGE01_2024_ST21</td><td>ZIPABC_PLAGE01_2024_ST21_Cirroratus</td><td>ZIPABC_PLAGE01_2024_ST21_Cirroratus_05_sexe</td><td>sex</td><td>Femelle</td><td>NA</td><td>NA</td></tr>
+      <tr><td>ZIPABC_PLAGE01_2024_ST22</td><td>ZIPABC_PLAGE01_2024_ST22_Crangon</td><td>ZIPABC_PLAGE01_2024_ST22_Crangon_01_sexe</td><td>sex</td><td>Male</td><td>NA</td><td>NA</td></tr>
+      <tr><td>ZIPABC_PLAGE01_2024_ST20</td><td>ZIPABC_PLAGE01_2024_ST20_Gmacro</td><td>ZIPABC_PLAGE01_2024_ST20_Gmacro_01_age</td><td>âge</td><td>Juvenile</td><td>NA</td><td>NA</td></tr>
+      <tr><td>ZIPABC_PLAGE01_2024_ST20</td><td>ZIPABC_PLAGE01_2024_ST20_Gmacro</td><td>ZIPABC_PLAGE01_2024_ST20_Gmacro_02_age</td><td>âge</td><td>Juvenile</td><td>NA</td><td>NA</td></tr>
+      <tr><td>ZIPABC_PLAGE01_2024_ST21</td><td>ZIPABC_PLAGE01_2024_ST21_Cirroratus</td><td>ZIPABC_PLAGE01_2024_ST21_Cirroratus_01_age</td><td>âge</td><td>N/D</td><td>NA</td><td>NA</td></tr>
+      <tr><td>ZIPABC_PLAGE01_2024_ST21</td><td>ZIPABC_PLAGE01_2024_ST21_Cirroratus</td><td>ZIPABC_PLAGE01_2024_ST21_Cirroratus_02_age</td><td>âge</td><td>Adulte</td><td>NA</td><td>NA</td></tr>
+      <tr><td>ZIPABC_PLAGE01_2024_ST21</td><td>ZIPABC_PLAGE01_2024_ST21_Cirroratus</td><td>ZIPABC_PLAGE01_2024_ST21_Cirroratus_03_age</td><td>âge</td><td>Juvenile</td><td>NA</td><td>NA</td></tr>
+      <tr><td>ZIPABC_PLAGE01_2024_ST21</td><td>ZIPABC_PLAGE01_2024_ST21_Cirroratus</td><td>ZIPABC_PLAGE01_2024_ST21_Cirroratus_04_age</td><td>âge</td><td>Adulte</td><td>NA</td><td>NA</td></tr>
+      <tr><td>ZIPABC_PLAGE01_2024_ST21</td><td>ZIPABC_PLAGE01_2024_ST21_Cirroratus</td><td>ZIPABC_PLAGE01_2024_ST21_Cirroratus_05_age</td><td>âge</td><td>Adulte</td><td>NA</td><td>NA</td></tr>
+      <tr><td>ZIPABC_PLAGE01_2024_ST22</td><td>ZIPABC_PLAGE01_2024_ST22_Crangon</td><td>ZIPABC_PLAGE01_2024_ST22_Crangon_01_age</td><td>âge</td><td>N/D</td><td>NA</td><td>NA</td></tr>
+    </tbody>
+  </table>
+</div>
