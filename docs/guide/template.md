@@ -12,7 +12,7 @@ Le Darwin Core est le standard le plus utilisé pour la gestion et le partage de
 
 Ces définitions visent à vous familiariser avec le format Darwin Core. Pour plus de détails, veuillez consulter la section Annexes. L’application du format Darwin Core n’est pas obligatoire pour le partage de données avec l’OGSL.
 
-Note : L’utilisation de ce standard n’est pas requise pour le partage de données avec nous. La structuration selon ce format est prise en charge par notre équipe. Les exemples visent simplement à illustrer les options possibles si vous souhaitez nous transmettre vos données déjà partiellement ou entièrement structurées en Darwin Core.
+> ⚠️ **À noter :** L’utilisation de ce standard n’est pas requise pour le partage de données avec nous. La structuration selon ce format est prise en charge par notre équipe. Les exemples visent simplement à illustrer les options possibles si vous souhaitez nous transmettre vos données déjà partiellement ou entièrement structurées en Darwin Core.
 
 Des exemples de modèles, partiellement et entièrement conformes à cette structure, sont proposés à titre d’exemples. La section 1.1 présente une première approche du format, tandis que la section 1.2 montre un exemple complet.
 
