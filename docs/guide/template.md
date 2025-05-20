@@ -1,25 +1,20 @@
 # Modèles de fichiers
 
-## 1. Darwin Core
+## 1. Standard Darwin Core
 
-La norme Darwin Core est la plus largement utilisée pour la gestion et le partage des données de biodiversité. Elle a été conçue pour intégrer les observations d'espèces provenant de sources diverses, afin de les rendre découvrables et facilement accessibles. La structure de format Darwin Core se base sur les principes des EventCore (ou événements), auxquels s’associent des tables d’occurrence (Occurrence extension) et éventuellement des mesures étendues tirées des occurrences et des événements (occurrence et event-emof).
+Le Darwin Core est le standard le plus utilisé pour la gestion et le partage des données de biodiversité. Il permet d'intégrer des observations d'espèces provenant de sources diverses, afin de les rendre découvrables et facilement accessibles. Sa structure repose sur une table principale des événements (event core), à laquelle peuvent s’ajouter des tables d’occurrences et de mesures. 
 
-**Table des événements (event core)**
+**Table des événements** *(event core)* : Contient les informations contextuelles liées à la collecte ou l’observation d'espèces : date, lieu de l'échantillonnage, position géographique, protocole utilisé, etc.
 
-Cette table permet de documenter les détails contextuels entourant la collecte ou l'observation d'espèces et contient des informations telles que la date et lieu de l'échantillonnage, la position géographique, le pays, le protocole d'échantillonnage, ainsi que toute remarque concernant chaque événement individuel.
+**Table des occurrences** *(occurrences core)* : Décrit les spécimens observés lors des événements : nom scientifique, nombre d’individus, la présence ou l'absence d'un taxon et toute autre remarque pertinente relative à l’observation.
 
-**Table des occurrences (occurrences core)**
+**Table de mesures sur les occurrences** *(emof)* : Permet d’associer des mesures précises aux occurrences ou aux événements : longueur, poids, sexe, température, vitesse du vent, etc.
 
-La table des occurrences sert à documenter les spécimens observés lors des différents événements. Cette table contient des informations sur chaque taxon, telles que le nom scientifique, le nombre d’individus, la présence ou l'absence d'un taxon et toute autre remarque pertinente relative à l’observation.
+Ces définitions visent à vous familiariser avec le format Darwin Core. Pour plus de détails, veuillez consulter la section Annexes. L’application du format Darwin Core n’est pas obligatoire pour le partage de données avec l’OGSL.
 
-**Table de mesures sur les occurrences (emof)**
+Note : L’utilisation de ce standard n’est pas requise pour le partage de données avec nous. La structuration selon ce format est prise en charge par notre équipe. Les exemples visent simplement à illustrer les options possibles si vous souhaitez nous transmettre vos données déjà partiellement ou entièrement structurées en Darwin Core.
 
-La table de mesures sur les occurrences « Extended measurement or Facts » (emof) contient les informations des mesures associées aux occurrences et aux événements. Elle permet d'enregistrer des mesures spécifiques, telles que la longueur, le poids, le sexe, temperature, vitesse du vent, etc., qui sont associées à des occurrences et événements.
-
-- Ces définitions visent à vous familiariser avec le format DarwinCore. Pour approfondir, veuillez consulter la section annexes. L’application du format DarwinCore pour le partage de données avec l’OGSL n’est pas requise.
-
-- Par la suite, des exemples de modèles partiellement et pleinement conformes au standard Darwin Core sont présentés pour vous guider dans la construction de vos propres tables.
-
+Des exemples de modèles, partiellement et entièrement conformes à cette structure, sont proposés à titre d’exemples. La section 1.1 présente une première approche du format, tandis que la section 1.2 montre un exemple complet.
 
 
 ### 1.1 Un premier pas vers la structure Darwin Core
@@ -35,7 +30,6 @@ La table de mesures sur les occurrences « Extended measurement or Facts » (emo
       padding: 0;
     }
     .table-container {
-      overflow-x: auto;
       margin-bottom: 40px;    
     }
     table {
@@ -54,7 +48,7 @@ La table de mesures sur les occurrences « Extended measurement or Facts » (emo
 </head>
 <body>
 
-<h2>Table des événements (event)</h2>
+<h1>Table des événements (event)</h1>
 <div class="table-container">
   <table>
     <thead>
@@ -145,7 +139,7 @@ La table de mesures sur les occurrences « Extended measurement or Facts » (emo
 </div>
 
 
-<h2>Table des occurrences (occurrence)</h2>
+<h1>Table des occurrences (occurrence)</h1>
 <div class="table-container">
   <table>
     <thead>
@@ -228,7 +222,7 @@ La table de mesures sur les occurrences « Extended measurement or Facts » (emo
 </div>
 
 
-<h2>Table mesures sur les occurrences (emof_occurrence)</h2>
+<h1>Table mesures sur les occurrences (emof_occurrence)</h1>
 <div class="table-container">
   <table>
     <thead>
@@ -380,7 +374,7 @@ La table de mesures sur les occurrences « Extended measurement or Facts » (emo
 ### 1.2 Structure Darwin Core
 
 
-<h2>Table des événements (event)</h2>
+<h1>Table des événements (event)</h1>
 <div class="table-container">
   <table>
     <thead>
@@ -442,7 +436,7 @@ La table de mesures sur les occurrences « Extended measurement or Facts » (emo
   </table>
 </div>
 
-<h2>Table des occurrences (occurrence)</h2>
+<h1>Table des occurrences (occurrence)</h1>
 <div class="table-container">
   <table>
     <thead>
@@ -508,7 +502,7 @@ La table de mesures sur les occurrences « Extended measurement or Facts » (emo
   </table>
 </div>
 
-<h2>Table de mesures sur les occurrences (emof_occurrence)</h2>
+<h1>Table de mesures sur les occurrences (emof_occurrence)</h1>
 <div class="table-container">
   <table>
     <thead>
