@@ -48,7 +48,7 @@ Des exemples de modèles, partiellement et entièrement conformes à cette struc
 </head>
 <body>
 
-<h1>Table des événements (event)</h1>
+<h4>Table des événements (event)</h4>
 <div class="table-container">
   <table>
     <thead>
@@ -139,7 +139,7 @@ Des exemples de modèles, partiellement et entièrement conformes à cette struc
 </div>
 
 
-<h1>Table des occurrences (occurrence)</h1>
+<h4>Table des occurrences (occurrence)</h4>
 <div class="table-container">
   <table>
     <thead>
@@ -222,7 +222,7 @@ Des exemples de modèles, partiellement et entièrement conformes à cette struc
 </div>
 
 
-<h1>Table mesures sur les occurrences (emof_occurrence)</h1>
+<h4>Table mesures sur les occurrences (emof occurrence)</h4>
 <div class="table-container">
   <table>
     <thead>
@@ -374,7 +374,7 @@ Des exemples de modèles, partiellement et entièrement conformes à cette struc
 ### 1.2 Structure Darwin Core
 
 
-<h1>Table des événements (event)</h1>
+<h4>Table des événements (event)</h4>
 <div class="table-container">
   <table>
     <thead>
@@ -436,7 +436,7 @@ Des exemples de modèles, partiellement et entièrement conformes à cette struc
   </table>
 </div>
 
-<h1>Table des occurrences (occurrence)</h1>
+<h4>Table des occurrences (occurrence)</h4>
 <div class="table-container">
   <table>
     <thead>
@@ -502,7 +502,7 @@ Des exemples de modèles, partiellement et entièrement conformes à cette struc
   </table>
 </div>
 
-<h1>Table de mesures sur les occurrences (emof_occurrence)</h1>
+<h4>Table de mesures sur les occurrences (emof occurrence)</h4>
 <div class="table-container">
   <table>
     <thead>
