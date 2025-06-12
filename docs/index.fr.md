@@ -12,7 +12,7 @@ Bienvenue dans la documentation du Système Intégré d'observation des océans 
 
 
 
-# Associations régionales du SIOOC
+##Associations régionales du SIOOC
 
 [![CIOOS Pacific](./assets/logos/pacific_fr.png){ width="300"}](https://cioospacific.ca/fr/accueil/)
 [![SLGO Logo](./assets/logos/OGSL_Logo_test.png){ width="200"}](https://ogsl.ca/fr/accueil/)
