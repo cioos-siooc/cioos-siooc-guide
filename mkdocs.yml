@@ -39,7 +39,7 @@ nav:
     - ./guide/template.md
     - ./guide/ressources.md
     - ./guide/annexes.md
-  - Regional Associations: ra.md
+  - Data Management Plan: ra.md
 
 extra:
   alternate:  
@@ -76,7 +76,7 @@ plugins:
           nav_translations:
             Home: Accueil
             Guide: Guide
-            Regional Associations: Associations régionales
+            Data Management Plan: Plan de gestion de données
   # - git-revision-date-localized:
   #     enable_creation_date: true
 
