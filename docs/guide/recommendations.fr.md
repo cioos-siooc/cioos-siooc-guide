@@ -16,7 +16,7 @@ Exemple de bonnes et mauvaises pratiques:
 ❌ Figure 1.temperature.csv  
 ❌ Projet de caractérisation, baie des chaleurs-données de température année 1990-1995.xlsx  
 
-- Trois règles essentielles pour favoriser une bonne structure des fichiers tabulaires de données :
+Trois règles essentielles pour favoriser une bonne structure des fichiers tabulaires de données :
 
 1. Chaque variable doit avoir sa propre colonne.
 2. Chaque observation doit avoir sa propre ligne.
@@ -105,7 +105,7 @@ Dans la mesure du possible, dans le cas de données de biodiversité, chaque obs
 
 ### 3.3 Données physico-chimiques
 
-Pour les données physicochimiques, les données peuvent être regroupées dans un seul tableau en respectant les notions de bases décrites dans les parties 1 et 2 ci dessus. Chaque évènement d'échantillonnage ou de mesure *in situ* est défini par un identifiant unique. Pour chacun de ces évènements, on indiquera ses éléments d'identification et de localisation (station, latitude, longitude, temps, etc...) ainsi que l'ensemble des données issues de l'analyse de cet échantillon et/ou des mesures réalisés *in situ*.  
+Pour les données physicochimiques, les données peuvent être regroupées dans un seul tableau en respectant les notions de bases décrites dans les parties 1 et 2 ci-dessus. Chaque évènement d'échantillonnage ou de mesure *in situ* est défini par un identifiant unique. Pour chacun de ces évènements, on indiquera ses éléments d'identification et de localisation (station, latitude, longitude, temps, etc...) ainsi que l'ensemble des données issues de l'analyse de cet échantillon et/ou des mesures réalisés *in situ*.  
 Imaginons par exemple une campagne d'échantillonnage en mer à deux moment de la journée, le long d'un transect avec trois stations d'échantillonnage où sont réalisées des mesures *in situ* avec une sonde directement placée dans l'eau pendant l'échantillonnage d'eau pour des analyses en laboratoire. La base de données pourrait être structurée de la manière ci-dessous :  
 
 | id               | stationID  | latitude | longitude | time                 | temperature | practical_salinity | nitrates  | DIC      | dissolved_oxygen |
@@ -119,7 +119,7 @@ Imaginons par exemple une campagne d'échantillonnage en mer à deux moment de l
 
 On notera ici que, bien que les stations aient été répétées au cours de la campagne, l'identifiant au début de chaque ligne est unique et permet de réunir l'ensemble des mesures et analyses réalisés à une station à un moment donnée.  
 
-> ⚠️ **Important :**  En l'état une simple base de données unique tels que celle-ci est pratiquement inutilisable. De manière à garantir sa bonne compréhension et donc ses possibilités de réutilisation, il est essentiel que ce tableau soit accompagné d'un dictionnaire de variables expliquant ce que représente chaque variable et comment chacune d'elle à été mesurée (voir section *[Dictionnaire de variables](dictionnaire.md)* du présent guide).  
+> ⚠️ **Important :**  En l'état une simple base de données unique tel que celle-ci est pratiquement inutilisable. De manière à garantir sa bonne compréhension et donc ses possibilités de réutilisation, il est essentiel que ce tableau soit accompagné d'un dictionnaire de variables expliquant ce que représente chaque variable et comment chacune d'elle a été mesurée (voir section *[Dictionnaire de variables](dictionnaire.md)* du présent guide).  
 
 ## 4. Erreurs à éviter
 
