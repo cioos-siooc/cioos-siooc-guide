@@ -27,3 +27,28 @@ Les formats de fichiers propriétaires nécessitant des logiciels ou matériels 
 
 
 ## II. Documentation et métadonnées  
+
+**Q1.** Quelles documentations et métadonnées seront nécessaires pour que les résultats de la recherche puissent être lus et interprétés correctement à l'avenir ? Décrivez comment la documentation est saisie ou mise à jour de manière cohérente tout au long de la phase active du projet.  
+
+**Q1. Directives**  
+Une bonne documentation comprend du matériel supplémentaire référencé et des informations sur l'étude ainsi que d'autres informations contextuelles nécessaires pour rendre les résultats de recherche (ré)utilisables par d'autres. Le développement d'un fichier README/Codebook tout au long du cycle de vie du projet peut inclure des éléments tels que : description des méthodes de capture et de collecte des données (par exemple, procédures de laboratoire, instruments), étapes de traitement, description de la granularité des données (par exemple, les taxons ont été identifiés au rang taxonomique le plus bas possible, résolution spatiale), définitions des variables (par exemple, via un dictionnaire de données), unités de mesure, hypothèses et limitations de l'étude, et types d'analyses effectuées (pour chaque type d'échantillon).  
+Pour la documentation des données de modèle, veuillez fournir une description du modèle prévu et (références à) des sources de données d'entrée prévues. Si applicable et disponible, envisagez de fournir le code, les outils et/ou des liens vers des publications existantes décrivant le modèle prévu.  
+
+**Q2.** Si vous utilisez des normes pour la standardisation des données ou des métadonnées et/ou des outils pour documenter et décrire vos données, veuillez les énumérer ici.  
+
+**Q2. Directives**  
+Pour le SIOOC, les schémas les plus pertinents sont la [norme ISO-19115](https://www.iso.org/standard/53798.html) (métadonnées), les [Conventions sur le Climat et les Prévisions](https://cfconventions.org/) (CF) (pour les données océanographiques physiques ou biogéochimiques) et la [norme Darwin Core](https://dwc.tdwg.org/) (pour les données sur les occurrences biologiques marines). La documentation et les données fournie dans l'un de ces formats standard, lisibles par machine et librement accessibles, permet un échange efficace d'informations entre les utilisateurs et les systèmes.
+
+La documentation peut également inclure un vocabulaire contrôlé, qui est une liste normalisée de terminologie pour décrire l'information. Des exemples de vocabulaires contrôlés incluent les [vocabulaires du NERC](https://www.bodc.ac.uk/resources/products/web_services/vocab/) ou les mots-clés du [Global Change Master Directory](https://www.earthdata.nasa.gov/earth-observation-data/find-data/idn/gcmd-keywords) (GCMD) de la NASA.  
+
+**Q3.** Quelles sont les processus qui seront mis en place pour améliorer continuellement la qualité des données (révision, indicateurs de qualité, tests, vérifications, etc.) pendant et après la phase active du projet ? Qui a la responsabilité exécutive de la qualité des données ?  
+
+**Q3. Directives** 
+Parmi les erreurs les plus courantes, on trouve par exemple les doublons, les valeurs manquantes, les valeurs aberrantes dans les données, et le format incorrect (caractère, numérique). Veuillez décrire les processus, mécanismes de rétroaction, outils ou logiciels en place pour identifier ces problèmes et améliorer continuellement la qualité des données pendant et après la phase active de votre projet (par exemple, QARTOD, etc.). Le cas échéant, veuillez fournir des liens vers les scripts utilisés pour nettoyer les données.  
+
+## III. Stockage et sauvegarde  
+
+
+
+
+
