@@ -41,6 +41,7 @@ nav:
     - ./guide/annexes.md
   - Data Management Plan: 
     - ./PGD/Définitions.md
+    - ./PGD/PGD du CIOOS.md
 
 extra:
   alternate:  
