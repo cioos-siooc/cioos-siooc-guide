@@ -39,7 +39,8 @@ nav:
     - ./guide/template.md
     - ./guide/ressources.md
     - ./guide/annexes.md
-  - Data Management Plan: ra.md
+  - Data Management Plan: 
+    - ./PGD/Définitions.md
 
 extra:
   alternate:  
