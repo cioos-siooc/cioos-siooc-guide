@@ -38,9 +38,9 @@ For documenting model data, please provide a description of the model planned an
 **Q2.** If you are using a data or metadata standard and/or tools to document and describe your data, please list here. 
 
 **Q2. Guidance**  
-For CIOOS, the most relevant schemas are [ISO-19115](https://www.iso.org/standard/53798.html) (metadata), [Climate and Forecast (CF) Conventions](https://cfconventions.org/) (CF) (often used for physical or biogeochemical oceanography data) and the [Darwin Core](https://dwc.tdwg.org/) standard (often used for marine biological occurrence data). Dataset documentation provided in one of these standard, machine-readable, openly-accessible formats enables effective exchange of information between users and systems. 
+For CIOOS, the most relevant schemas are [ISO-19115](https://www.iso.org/standard/53798.html) (metadata), [Climate and Forecast (CF) Conventions](https://cfconventions.org/) (often used for physical or biogeochemical oceanography data) and the [Darwin Core](https://dwc.tdwg.org/) standard (often used for marine biological occurrence data). Dataset documentation provided in one of these standard, machine-readable, openly-accessible formats enables effective exchange of information between users and systems. 
 
-Dataset documentation may also include a controlled vocabulary, which is a standardized list of terminology for describing information. Examples of controlled vocabularies include the [NERC vocabulary](https://www.bodc.ac.uk/resources/products/web_services/vocab/) or [NASA’s Global Change Master Directory (GCMD) Keywordsy](https://www.earthdata.nasa.gov/earth-observation-data/find-data/idn/gcmd-keywords) (GCMD) de la NASA.  
+Dataset documentation may also include a controlled vocabulary, which is a standardized list of terminology for describing information. Examples of controlled vocabularies include the [NERC vocabulary](https://www.bodc.ac.uk/resources/products/web_services/vocab/) or [NASA’s Global Change Master Directory (GCMD) Keywords](https://www.earthdata.nasa.gov/earth-observation-data/find-data/idn/gcmd-keywords).  
 
 **Q3.** What processes currently exist to continuously improve data quality (reviews, quality flags, testing, verification, etc) throughout and beyond the active phase of the project? Who has the executive responsibility for the quality of the data?  
 
@@ -100,7 +100,7 @@ Licenses determine what uses can be made of your data. Funding agencies and/or d
 **Q3. Guidance** 
 Describe how CIOOS helps meet funder requirements for openly accessible data, and is a community resource. Possibilities include: data registries, metadata catalogues, repositories, indexes, word of mouth, publications, social media. CIOOS recommends each data record to have a unique digital object identifier (DOI). CIOOS RAs can assist with minting of new DOIs, or link to existing DOIs. It is recommended that collaborators and affiliated organizations have persistent identifiers (e.g. ORCID and ROR).   
 
-**An example answer for funding agencies_**
+**_An example answer for funding agencies_**
 CIOOS leverages persistent identifiers (PIDs) such as DOIs, Open Researcher and Contributor ID (ORCIDs), and Research Organization Registry ID (RORs) to allow for easy programmatic linkages between research outputs. CIOOS creates recommended data citations for each data record following the ISO 19115 and DataCite standards/best practices, ensuring adherence to the FAIR Principles. The metadata schema used in CIOOS facilitates machine-readability and allows for the harvesting of metadata records by other data/metadata catalogues and data access points, such as FRDR and Google Dataset Search. Finally, CIOOS provides additional value through the use of controlled vocabularies and media and social media coverage.  
 
 ## VI. Responsibilities and Resources  
