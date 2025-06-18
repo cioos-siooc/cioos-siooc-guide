@@ -1,3 +1,5 @@
+# Definition 
+
 Data Management Plans (DMPs) play a central role in the adoption of best practices for research data management. They are recognized as an international standard of quality and are now widely recommended by many research institutions and funding agencies. Canada’s three federal research funding agencies (CIHR, NSERC, and SSHRC), collectively referred to as the Tri-Agencies, have incorporated this requirement into their Research Data Management Policy.
 
 A DMP helps structure, from the earliest stages of a project, how data will be collected, documented, stored, shared, and preserved over the long term. It promotes transparency, data reuse, and the long-term sustainability of scientific results. A DMP is also a dynamic document, intended to evolve and be adapted throughout the course of the research project.
