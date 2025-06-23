@@ -2,7 +2,7 @@
 
 ## Principes FAIR
 
-De vastes quantités d’information sont aujourd’hui disponibles en ligne et continuent d’être générées quotidiennement par une science de plus en plus technologique. Afin d’assurer que les données soient toujours facilement découvrables et accessibles, certaines pratiques peuvent être mises en place pour guider cette démarche. Les principes FAIR (*Findable, Accessible, Interoperable, Reusable*) visent à rendre les données découvrables, accessibles, interopérables et réutilisables.
+De vastes quantités d’information sont aujourd’hui disponibles en ligne et continuent d’être générées quotidiennement par une science de plus en plus technologique. Afin d’assurer que les données soient toujours facilement découvrables et accessibles, certaines pratiques peuvent être mises en place pour guider cette démarche. Les [principes FAIR](https://www.go-fair.org/fair-principles/) (*Findable, Accessible, Interoperable, Reusable*) visent à rendre les données découvrables, accessibles, interopérables et réutilisables.
 
 Il s’agit de principes directeurs, c’est-à-dire de concepts permettant de guider les gestionnaires de données dans la normalisation et la structuration de leurs données en vue de l’archivage et de la diffusion. Ces principes ont été définis en 2015 lors d’un atelier tenu à Leiden, aux Pays-Bas.
 
@@ -26,11 +26,11 @@ En ayant des données et des métadonnées suivant les meilleures pratiques, il 
 
 ## Principes CARE  
 
-Les principes CARE ont été développés en 2018 lors du Indigenous Data Sovereignty Principles for the Governance of Indigenous Data Workshop, à Gaborone, au Botswana.
+Les [principes CARE](https://www.gida-global.org/care) ont été développés en 2018 lors du Indigenous Data Sovereignty Principles for the Governance of Indigenous Data Workshop, à Gaborone, au Botswana.
 
 Ces principes cherchent à mettre de l’avant les personnes et les communautés touchées par la collecte des données et s’intéressent à ses objectifs et ses finalités. Ils s’inscrivent ainsi en compléments aux principes FAIR qui, eux, posent les données au centre de la réflexion.
 
-Historiquement confrontées à des enjeux d’inégalité et d’exploitation liés à la saisie de données sur leurs communautés et leurs territoires, les populations autochtones insistent sur la nécessité d’intégrer leurs connaissances et leurs approches dans les pratiques et politiques en matière de données. Cela revêt une importance accrue dans un contexte où le volume et la volonté de réutiliser des données augmentent. Confrontés à une volonté grandissante de rendre les données ouvertes, les peuples autochtones articulent leurs droits et leurs intérêts sur les données afin d’en réclamer le contrôle (Russo Carroll et al., 2020). Ces éléments s’expriment dans les principes CARE.
+Historiquement confrontées à des enjeux d’inégalité et d’exploitation liés à la saisie de données sur leurs communautés et leurs territoires, les populations autochtones insistent sur la nécessité d’intégrer leurs connaissances et leurs approches dans les pratiques et politiques en matière de données. Cela revêt une importance accrue dans un contexte où le volume et la volonté de réutiliser des données augmentent. Confrontés à une volonté grandissante de rendre les données ouvertes, les peuples autochtones articulent leurs droits et leurs intérêts sur les données afin d’en réclamer le contrôle ([Russo Carroll et al., 2020](https://www.nature.com/articles/s41597-021-00892-0)). Ces éléments s’expriment dans les principes CARE.
 
 ![Principes CARE](../assets/images/guide/care.png)  
 
