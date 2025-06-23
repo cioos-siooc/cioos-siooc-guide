@@ -24,9 +24,9 @@ Three essential rules for promoting a good structure for tabular data files:
 3. Each value should have its own cell.  
 
 ![tbxvariables](../assets/images/tbxvariable.PNG)  
-![exempletable](../assets/images/exempletable.PNG) 
+![exempletable](../assets/images/exempletable.PNG)
 /// caption
-Figure 1. Vertical data and horizontal data.
+Figure 1. Données verticales et données horizontales.
 ///
 
 ## 2. General Standards
@@ -95,10 +95,10 @@ Whenever possible, in the case of biodiversity data, each observation should hav
 | 2024-07-16T18:30-04:00 | 48.1331  | \-69.1706 | P01       | Rivière Brochu | sonde            | 7.93                    | 1.16           | 7.8 | 1.52  
 
 <div style="margin-left: 20px;">
-<small>🟡 Obligatoire</small><br>
-<small>🟠 Obligatoire (sera ajouté par l'OGSL au besoin)</small><br>
-<small>🔵 Suggéré</small><br>
-<small>⚪ Exemple dont certaines variables peuvent être nommées</small><br>
+<small>🟡 Mandatory</small><br>
+<small>🟠 Mandatory (will be added by the OGSL if needed)</small><br>
+<small>🔵 Suggested</small><br>
+<small>⚪ Example of which some variables can be named</small><br>
 </div>  
 
 These examples are template suggestions based on fictitious data. Except for mandatory variables, all other variables may be added, removed, or modified. The important thing is to remain consistent when filling in each variable and to maintain best practices to ensure data consistency.  
@@ -137,10 +137,10 @@ These errors include:
 - **Special characters:** Avoid including special characters in variable names
 - **Identifiers:** Add a unique identifier per event
 - **Date:** Use ISO 8601 format to enter the date and maintain consistency with the format used throughout the database
-- **Unique information per cell:**
+- **Unique information per cell:**  
 
-- Longitude and latitude coordinates must be entered in separate cells
-- The unit of measurement must be provided in a separate cell and never directly with the value
+    - Longitude and latitude coordinates must be entered in separate cells
+    - The unit of measurement must be provided in a separate cell and never directly with the value
 
 - **Coordinates:** Coordinates must be provided in decimal degrees, not degrees-minutes-seconds
 - **Readability:** Summarize the text content to make it as concise as possible
