@@ -24,9 +24,9 @@ Three essential rules for promoting a good structure for tabular data files:
 3. Each value should have its own cell.  
 
 ![tbxvariables](../assets/images/tbxvariable.PNG)  
-![exempletable](../assets/images/exempletable.PNG)
-/// caption
-Figure 1. Données verticales et données horizontales.
+![exempletable](../assets/images/exempletable.PNG)  
+/// caption  
+Figure 1. Données verticales et données horizontales.  
 ///
 
 ## 2. General Standards
