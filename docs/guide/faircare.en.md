@@ -31,6 +31,9 @@ These principles are people- and purpose-oriented. They complement the data-cent
  
 Historically plagued with issues of inequality and exploitation related to the capture of data about their communities and territories, Indigenous Peoples insist on the need to integrate their knowledge and approaches into data practices and policies. This becomes even more important as the volume and willingness to reuse data increases. Faced with a growing desire to make data open, Indigenous Peoples are articulating their rights and interests in data to reclaim its control ([Russo Carroll et al. (2020)](https://www.nature.com/articles/s41597-021-00892-0)). These elements are expressed in the CARE principles.  
 
+![Principes CARE](../assets/images/guide/care.png)   
+
+
 ### Collective Benefit  
 Data systems must enable inclusive development, better governance and citizen involvement, and equitable outcomes for Indigenous communities.  
 
