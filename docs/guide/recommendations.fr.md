@@ -1,6 +1,8 @@
 # Guide détaillé
 
-La page suivante présente un résumé des bonnes pratiques et conventions à appliquer en lien avec la gestion de données.
+La page suivante présente un résumé des bonnes pratiques et conventions à appliquer en lien avec la gestion de données.  
+
+_Ce guide est en construction et sera mis à jour régulièrement afin de l’enrichir et de l’améliorer._
 
 ## 1. Notions de base
 
@@ -119,7 +121,7 @@ Imaginons par exemple une campagne d'échantillonnage en mer à deux moment de l
 
 On notera ici que, bien que les stations aient été répétées au cours de la campagne, l'identifiant au début de chaque ligne est unique et permet de réunir l'ensemble des mesures et analyses réalisés à une station à un moment donnée.  
 
-> ⚠️ **Important :**  En l'état une simple base de données unique tel que celle-ci est pratiquement inutilisable. De manière à garantir sa bonne compréhension et donc ses possibilités de réutilisation, il est essentiel que ce tableau soit accompagné d'un dictionnaire de variables expliquant ce que représente chaque variable et comment chacune d'elle a été mesurée (voir section *[Dictionnaire de variables](dictionnaire.md)* du présent guide).  
+> ⚠️ **Important :**  En l'état une simple base de données unique tel que celle-ci est pratiquement inutilisable. De manière à garantir sa bonne compréhension et donc ses possibilités de réutilisation, il est essentiel que ce tableau soit accompagné d'un dictionnaire de variables expliquant ce que représente chaque variable et comment chacune d'elle a été mesurée (voir section *[Dictionnaire de variables](dictionnaire.fr.md)* du présent guide).  
 
 ## 4. Erreurs à éviter
 
