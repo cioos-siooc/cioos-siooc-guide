@@ -136,7 +136,7 @@ Examples of templates, both partially and fully compliant with this structure, a
   </table>
 </div>
 
-<h4>Occurrences table (occurrence)</h4>
+<h4>Occurrence table (occurrence)</h4>
 <div class="table-container">
   <table>
     <thead>
@@ -218,7 +218,7 @@ Examples of templates, both partially and fully compliant with this structure, a
   </table>
 </div>
 
-<h4>Measurment table on occurrences (emof occurrence)</h4>
+<h4>Measurement table on occurrences (emof occurrence)</h4>
 <div class="table-container">
   <table>
     <thead>
