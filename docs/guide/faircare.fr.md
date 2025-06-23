@@ -10,19 +10,19 @@ Il s’agit de principes directeurs, c’est-à-dire de concepts permettant de g
 
 ### Découvrable
 
-Les données devraient être faciles à trouver pour les personnes intéressées par leur utilisation. Cela signifie qu'elles doivent être associées à des métadonnées riches en informations et être indexées de manière à être repérables par des moteurs de recherche ou des catalogues de données, comme celui de l’OGSL.
+Être découvrable signifie avoir un identifiant persistant unique (ex. DOI ou URL), être décrit par de riches métadonnées respectant des normes reconnues et enfin, assurer une présence dans les portails de découverte de données autant locaux que nationaux.
 
 ### Accessible
 
-Les données devraient être accessibles, c'est-à-dire qu'elles devraient être disponibles pour être récupérées par les personnes qui en ont besoin. Cela implique souvent l'utilisation de protocoles et de technologies normalisées pour faciliter le téléchargement ou l'accès via des interfaces programmables (API). Des licences régissant la façon dont devrait être utilisées les données peuvent être appliquées aux données ouvertes.
+Être accessible signifie que les données peuvent être facilement obtenues autant par des humains que par les machines, selon des protocoles définis et idéalement standardisés. Les conditions d’accès doivent être clairement établies (licence, droits de réutilisation, etc.). Même quand les données sont inaccessibles, les métadonnées demeurent accessibles afin que le jeu de données reste découvrable. L’auteur du jeu de données pourra alors être contacté pour obtenir davantage d’information, ou une demande d’accès aux données pourra être effectuée (par exemple, sous certaines conditions).  
 
 ### Interopérable
 
-Les données devraient être interopérables, ce qui signifie qu'elles devraient pouvoir être combinées et utilisées de manière efficace avec d'autres données, qu'elles proviennent de sources différentes ou qu'elles utilisent des formats différents. Cela nécessite souvent l'utilisation de variables et structures normalisées de manière à en permettre un usage rapide et efficace.
+L’interopérabilité rend possible l’intégration de différents jeux de données sur un portail unique, par exemple au sein de la même application web. Cela peut être assuré de différentes manières, incluant : l’utilisation d’un langage de programmation commun, l’utilisation d’un vocabulaire contrôlé, ainsi que de formats non-propriétaires. Les mêmes efforts peuvent être appliqués aux métadonnées ainsi que les références vers d’autres (méta)données.  
 
 ### Réutilisable
 
-Les données devraient être réutilisables, ce qui signifie qu'elles devraient être bien documentées et accompagnées de licences appropriées régissant la façon dont elles devraient être utilisées. Cela implique également de fournir des informations sur la provenance des données, leur qualité et leur contexte d'utilisation.  
+En ayant des données et des métadonnées suivant les meilleures pratiques, il est possible les optimiser afin qu’elles soient réutilisées. Les données comme les métadonnées doivent alors être richement détaillées, ainsi que les licences d’utilisation, et toute information spécifique au domaine d’intérêt des données en question.   
 
 ## Principes CARE  
 
@@ -32,10 +32,7 @@ Ces principes cherchent à mettre de l’avant les personnes et les communautés
 
 Historiquement confrontées à des enjeux d’inégalité et d’exploitation liés à la saisie de données sur leurs communautés et leurs territoires, les populations autochtones insistent sur la nécessité d’intégrer leurs connaissances et leurs approches dans les pratiques et politiques en matière de données. Cela revêt une importance accrue dans un contexte où le volume et la volonté de réutiliser des données augmentent. Confrontés à une volonté grandissante de rendre les données ouvertes, les peuples autochtones articulent leurs droits et leurs intérêts sur les données afin d’en réclamer le contrôle (Russo Carroll et al., 2020). Ces éléments s’expriment dans les principes CARE.
 
-![CARE Principles](Be+FAIR+and+CARE.png)
-/// caption
-Les principes directeurs FAIR pour la gestion et la préservation des données scientifiques sont accessibles [ici](https://www.go-fair.org/fair-principles/) **Image source:** [https://www.gida-global.org/care](https://www.gida-global.org/care)
-///
+![Principes CARE](../assets/images/guide/care.png)  
 
 ### Collectivement bénéfique
 
