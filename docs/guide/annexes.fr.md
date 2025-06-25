@@ -2,7 +2,7 @@
 
 ## Données de biodiversité et définition des termes
 
-Depuis janvier 2021, l’OGSL a choisi d’adhérer à la structure d’archivage du Darwin Core tel que proposé par OBIS. Il s’agit d’une structure de données soumise pour validation à la communauté scientifique océanographique et est donc révisée par les pairs. Cette annexe a pour objectif de fournir de l’information sur le format DarwinCore, l’application du format DarwinCore pour le partage de données avec l’OGSL n’est pas requise. L’OGSL ayant développé une expertise et des outils facilitant la transformation des données. Cette section a pour objectif de vous familiariser avec le format normalisé et standardisé utilisé.
+_Depuis janvier 2021, l’OGSL a choisi d’adhérer à la structure d’archivage du Darwin Core tel que proposé par OBIS. Il s’agit d’une structure de données soumise pour validation à la communauté scientifique océanographique et est donc révisée par les pairs. Cette annexe a pour objectif de fournir de l’information sur le format DarwinCore, l’application du format DarwinCore pour le partage de données avec l’OGSL n’est pas requise. L’OGSL ayant développé une expertise et des outils facilitant la transformation des données. Cette section a pour objectif de vous familiariser avec le format normalisé et standardisé utilisé._
 
 La structure de format DarwinCore se base sur les principes des noyaux d'événements (Event Core), auxquels s’associent des tables d’occurrences (Occurrence Extension) et éventuellement des mesures étendues (Extended Measurements or Facts) tirées des occurrences et des événements (Occurrence et Event EMoF). Des identifiants uniques (eventID, occurrenceID, measurementID) permettent de relier ces tables.
 
