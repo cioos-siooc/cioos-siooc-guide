@@ -20,9 +20,7 @@ Lorsque, dans le règne végétal, il est possible d’identifier un spécimen a
 
     *Genre espèce var. variété*
 
-*ex : 	Fucus distichus subsp. evanescens*
-
-    *Axinella tenuidigitata var. oxeata*
+_ex : 	Fucus distichus subsp. evanescens* ; Axinella tenuidigitata var. oxeata_
 
 ***La différence entre « spp. » et « sp. »***
 
@@ -52,7 +50,7 @@ Si le nom scientifique n'est pas accepté:
 ![Wormsdetails](../assets/images/Wormsdetails.JPG) 
 
 **L'essentiel est d’indiquer le “scientificName” exact, conforme à WoRMS.**
-Vous pouvez aussi ajouter le “kingdom”, “taxonRank”, “scientificNameID” et le “occurrenceStatus”, mais si cela demande trop de travail, l’OGSL peut le faire aisément avec nos outils à partir du “scientificName” que vous avez saisi.
+Vous pouvez aussi ajouter le “kingdom”, “taxonRank”, “scientificNameID” et le “occurrenceStatus”, mais si cela demande trop de travail, l’OGSL peut le faire aisément avec nos outils à partir du “scientificName” que vous avez saisi.  
 
 ## Transformation de coordonnées
 
