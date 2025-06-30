@@ -1,6 +1,6 @@
 # Guide détaillé
 
-La page suivante présente un résumé des bonnes pratiques et conventions à appliquer en lien avec la gestion de données.  
+Cette section présente un résumé des bonnes pratiques et conventions à appliquer en lien avec la gestion de données.  
 
 _Ce guide est en construction et sera mis à jour régulièrement afin de l’enrichir et de l’améliorer._
 
@@ -9,7 +9,7 @@ _Ce guide est en construction et sera mis à jour régulièrement afin de l’en
 
 - Il est recommandé d’enregistrer et d’envoyer les fichiers de données tabulaires sous un format .xlsx ou .csv.   
 
-Essayez de nommer vos fichiers de **manière concise et descriptive**. Les noms des fichiers doivent rester courts, sans caractère spéciaux et sans espace.  
+Essayez de nommer vos fichiers de **manière concise et descriptive**. Les noms des fichiers doivent rester courts, sans caractères spéciaux et sans espace.  
 Pour séparer les mots dans un nom de fichier ou dossier, utilisez l’underscore ( \_ ) ou le tiret ( \- ). Évitez les points dans les noms des fichiers, leur utilisation peut créer des problèmes de compatibilité dans certains systèmes. Limitez l’utilisation des accents.
 
 Exemple de bonnes et mauvaises pratiques:  
@@ -28,13 +28,14 @@ Trois règles essentielles pour favoriser une bonne structure des fichiers tabul
 ![tbxvariables](../assets/images/tbxvariable.PNG)  
 ![exempletable](../assets/images/exempletable.PNG)  
 /// caption
-Figure 1. Données verticales et données horizontales.
+Figure 1a et b. a)Données verticales et données horizontales, source: [R for Data Science (2e)](https://r4ds.hadley.nz/). b)Exemple de modification de structure de fichiers. 
 ///
 
 ## 2. Normes générales
 ### 2.1 Dates et heures
 
-En gestion de données, l’entrée des dates et des heures doit répondre à la norme ISO 8601\. On peut la décomposer de cette manière :
+En gestion de données, l’entrée des dates et des heures doit répondre à la norme ISO 8601\. Dans la mesure du possible, elle est indiquée en temps universel (UTC : _Coordinated Universal Time_), ou en indiquant le décalage par rapport à l’UTC.   
+On peut la décomposer de cette manière :
 
 aaaa-mm-jjThh:mm:ss-00:00	équivaut à **Année, mois, jour, T, heure, minute, seconde, UTC**
 
@@ -46,13 +47,13 @@ aaaa-mm-jjThh:mm:ss-00:00	équivaut à **Année, mois, jour, T, heure, minute, s
 
 **Il n’est pas obligatoire d’entrer l’expression ISO 8601 complète pour noter ses dates et ses heures.**
 
-Voici des exemples d’entrées acceptées :
+Voici des exemples d’entrées également acceptées :
 
 * aaaa-mm-jj
 * aaaa-mm
 * aaaa
 
-Dans une perspective d’archivage, il n’est donc pas obligatoire d’entrer les dates et les heures au complet. L’année seule suffit à rendre l’entrée de la date acceptable.
+Dans une perspective d’archivage, il n’est donc pas obligatoire d’entrer les dates et les heures au complet. L’année seule suffit à rendre l’entrée de la date acceptable (il est toutefois préférable d’indiquer les informations complètes quand elles sont disponibles).
 
 **Néanmoins le format d’entrée de date doit rester constant.**
 
@@ -98,17 +99,17 @@ Dans la mesure du possible, dans le cas de données de biodiversité, chaque obs
 
 <div style="margin-left: 20px;">
 <small>🟡 Obligatoire</small><br>
-<small>🟠 Obligatoire (sera ajouté par l'OGSL au besoin)</small><br>
+<small>🟠 Obligatoire (mais pourra être ajouté par le gestionnaire de données au besoin)</small><br>
 <small>🔵 Suggéré</small><br>
-<small>⚪ Exemple dont certaines variables peuvent être nommées</small><br>
+<small>⚪ Exemple de noms données à certaines variables</small><br>
 </div>
 
   Ces exemples sont des suggestions de template, à partir de données fictives. À l’exception des variables obligatoires, toutes autres variables peuvent être ajoutées, supprimées ou modifiées. L’important étant de rester constant dans le remplissage de chaque variable et de conserver les bonnes pratiques pour garantir la cohérence des données.
 
 ### 3.3 Données physico-chimiques
 
-Pour les données physicochimiques, les données peuvent être regroupées dans un seul tableau en respectant les notions de bases décrites dans les parties 1 et 2 ci-dessus. Chaque évènement d'échantillonnage ou de mesure *in situ* est défini par un identifiant unique. Pour chacun de ces évènements, on indiquera ses éléments d'identification et de localisation (station, latitude, longitude, temps, etc...) ainsi que l'ensemble des données issues de l'analyse de cet échantillon et/ou des mesures réalisés *in situ*.  
-Imaginons par exemple une campagne d'échantillonnage en mer à deux moment de la journée, le long d'un transect avec trois stations d'échantillonnage où sont réalisées des mesures *in situ* avec une sonde directement placée dans l'eau pendant l'échantillonnage d'eau pour des analyses en laboratoire. La base de données pourrait être structurée de la manière ci-dessous :  
+Pour les données physico-chimiques, les données peuvent être regroupées dans un seul tableau en respectant les notions de bases et normes générales décrites dans les parties 1 et 2 ci-dessus. Chaque évènement d'échantillonnage ou de mesure *in situ* est défini par un identifiant unique. Pour chacun de ces évènements, on indiquera ses éléments d'identification et de localisation (station, latitude, longitude, temps, etc...) ainsi que l'ensemble des données issues de l'analyse de cet échantillon et/ou des mesures réalisées *in situ*.  
+Imaginons par exemple une campagne d'échantillonnage en mer à deux moments de la journée, le long d'un transect avec trois stations d'échantillonnage où sont réalisées des mesures *in situ* avec une sonde directement placée dans l'eau pendant l'échantillonnage d'eau pour des analyses en laboratoire. La base de données pourrait être structurée de la manière ci-dessous :  
 
 | id               | stationID  | latitude | longitude | time                 | temperature | practical_salinity | nitrates  | DIC      | dissolved_oxygen |
 | :--------------- | :--------- | :------- | :-------- | :------------------- | :---------- | :----------------- | :-------- | :------- | :--------------- |
@@ -119,9 +120,9 @@ Imaginons par exemple une campagne d'échantillonnage en mer à deux moment de l
 | RIM_2023_**005** | P02        | 50.25301 | -67.36485 | 2023-06-13T18:34:10Z | 7.78        | 25.9               | 9.45      | 147.2    | 84.02            |
 | RIM_2023_**006** | P03        | 50.49986 | -67.75423 | 2023-06-13T18:53:49Z | 4.20        | 19.3               | 11.62     | 201.4    | 94.84            |  
 
-On notera ici que, bien que les stations aient été répétées au cours de la campagne, l'identifiant au début de chaque ligne est unique et permet de réunir l'ensemble des mesures et analyses réalisés à une station à un moment donnée.  
+On notera ici que, bien que les stations aient été répétées au cours de la campagne, l'identifiant au début de chaque ligne est unique et permet de réunir l'ensemble des mesures et analyses réalisées à une station à un moment donné.  
 
-> ⚠️ **Important :**  En l'état une simple base de données unique tel que celle-ci est pratiquement inutilisable. De manière à garantir sa bonne compréhension et donc ses possibilités de réutilisation, il est essentiel que ce tableau soit accompagné d'un dictionnaire de variables expliquant ce que représente chaque variable et comment chacune d'elle a été mesurée (voir section *[Dictionnaire de variables](dictionnaire.fr.md)* du présent guide).  
+> ⚠️ **Important :**  En l'état une simple base de données unique telle que celle-ci est pratiquement inutilisable. De manière à garantir sa bonne compréhension et donc ses possibilités de réutilisation, il est essentiel que ce tableau soit accompagné d'un dictionnaire de variables expliquant ce que représente chaque variable et comment chacune d'elle a été mesurée (voir section *[Dictionnaire de variables](dictionnaire.fr.md)* du présent guide).  
 
 ## 4. Erreurs à éviter
 
@@ -129,7 +130,7 @@ Cette section vise à présenter les erreurs les plus courantes à éviter lors 
 
 ### 4.1 Erreurs fréquentes
 
-Contre-exemple de base de données général contenant des erreurs
+La figure ci dessous présente un contre-exemple de base de données général contenant des erreurs :
 
 ![Tableau contenant des erreurs](../assets/images/ContreExemple_BdD2.png)
 
@@ -151,7 +152,7 @@ Parmi ces erreurs on notera notamment :
 
 Le tableau ci-dessous présente la même information, mais dans un format compréhensible et interopérable. 
 
-**Base de données corrigée contenant les informations du tableau N**
+**Base de données corrigée contenant les informations du tableau précédent**
 
 | eventID      | eventDate  | <span style="background-color:#98faa9">decimalLatitude</span> | <span style="background-color:#98faa9">decimalLongitude</span> | stationID | samplingProtocol      | location        | measurementType      | measurementValue | <span style="background-color:#98faa9">measurementUnit</span> |
 | :----------- | :--------- | :-------------- | :--------------- | :-------- | :-------------------- | :-------------- | :------------------- | :--------------- | :-------------- |
@@ -173,7 +174,8 @@ Le tableau ci-dessous présente la même information, mais dans un format compr�
 > - Utilisez le format ISO 8601 pour les dates  
 > - Ajoutez un identifiant unique par évènement  
 > - Séparez la latitude et la longitude  
-> - Indiquez les coordonnées en degrés décimaux     
+> - Indiquez les coordonnées en degrés décimaux  
+> - Préciser le système de coordonnées géographique de référence     
 > - Résumez le contenu du texte (méthodologie) pour le rendre le plus concis possible  
 > - Utilisez le point comme séparateur décimal dans les fichiers tabulaires   
 > - Insérez 'NA' pour les cellules vides  
