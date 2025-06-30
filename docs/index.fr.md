@@ -7,7 +7,7 @@ hide:
 [![Logo du SIOOC](assets/logos/cioos-national-color.fr.svg){ align=center width="500" }](https://cioos.ca/fr/accueil/)  
 
 
-Bienvenue dans la documentation du Système Intégré d'observation des océans du Canada (SIOOC).  
+Bienvenue dans la documentation du système intégré d'observation des océans du Canada (SIOOC).  
 
 
 
