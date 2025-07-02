@@ -13,7 +13,7 @@ Although the use of a controlled vocabulary from the outset is strongly recommen
 - Method: *Visual observation*  
 **depth_b**  
 - Unit: *meters*  
-- Description: *Depth of the seafloor from the *sea* surface  
+- Description: _Depth of the seafloor from the **sea** surface _ 
 - Method: *Pressure probe at the seafloor, the measurements of which are converted into distance*  /
 
 > 💡 **Don't panic:** Standards and controlled vocabularies evolve as research progresses and data dissemination efforts intensify. This field constitutes a scientific discipline in its own right. Data scientists are there to carry out and/or refine the standardization process for your data. The important thing is that all the information is available to understand what the data represents.  
