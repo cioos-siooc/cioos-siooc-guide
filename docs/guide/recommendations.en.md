@@ -96,14 +96,14 @@ Whenever possible, in the case of biodiversity data, each observation should hav
 
 <div style="margin-left: 20px;">
 <small>🟡 Mandatory</small><br>
-<small>🟠 Mandatory (will be added by the OGSL if needed)</small><br>
+<small>🟠 Mandatory (will be added by the data steward if needed)</small><br>
 <small>🔵 Suggested</small><br>
 <small>⚪ Example of which some variables can be named</small><br>
 </div>  
 
 These examples are template suggestions based on fictitious data. Except for mandatory variables, all other variables may be added, removed, or modified. The important thing is to remain consistent when filling in each variable and to maintain best practices to ensure data consistency.  
 
-### 3.3 Physicochemical Data
+### 3.2 Physicochemical Data
 
 For physicochemical data, the data can be grouped into a single table, respecting the basic concepts described in sections 1 and 2 above. Each in situ sampling or measurement event is defined by a unique identifier. For each of these events, its identification and location (station, latitude, longitude, time, etc.) will be indicated, as well as all the data resulting from the analysis of this sample and/or the in situ measurements.  
 For example, imagine a sampling campaign at sea at two times of the day, along a transect with three sampling stations where in situ measurements are taken with a probe placed directly in the water during water sampling for laboratory analysis. The database could be structured as follows:  
