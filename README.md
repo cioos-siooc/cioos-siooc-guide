@@ -46,7 +46,6 @@ For further documentation, refer to the [`mkdocs-material` theme documentation](
 We are also using some extensions:
 - Multilanguage: https://ultrabug.github.io/mkdocs-static-i18n/getting-started/quick-start/
 
-
 ## Continuous Integration
 
 Live web site is made available at:  https://cioos-siooc.github.io/cioos-siooc-guide/
