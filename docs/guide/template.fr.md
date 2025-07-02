@@ -1,6 +1,6 @@
 # Modèles de fichiers
 
-## 1. Standard Darwin Core
+## Standard Darwin Core
 
 Le Darwin Core est le standard le plus utilisé pour la gestion et le partage des données de biodiversité. Il permet d'intégrer des observations d'espèces provenant de sources diverses, afin de les rendre découvrables et facilement accessibles. Sa structure repose sur une table principale des événements (event core), à laquelle peuvent s’ajouter des tables d’occurrences et de mesures. 
 
@@ -17,7 +17,7 @@ Ces définitions visent à vous familiariser avec le format Darwin Core. Pour pl
 Des exemples de modèles, partiellement et entièrement conformes à cette structure, sont proposés à titre d’exemples. La section 1.1 présente une première approche du format, tandis que la section 1.2 montre un exemple complet.
 
 
-### 1.1 Un premier pas vers la structure Darwin Core
+### 1. Un premier pas vers la structure Darwin Core
 
 
 <!DOCTYPE html>
@@ -371,7 +371,7 @@ Des exemples de modèles, partiellement et entièrement conformes à cette struc
 </html>
 
 
-### 1.2 Structure Darwin Core
+### 2. Structure Darwin Core
 
 
 <h4>Table des événements (event)</h4>
