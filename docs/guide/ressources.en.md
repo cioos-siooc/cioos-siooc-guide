@@ -66,9 +66,9 @@ Enter the coordinates you want to change the format for and click the "Format" b
 
 **Case Example**  
 
-A 100-meter transect, with a start and end decimal Latitude/Decimal Longitude. A quadrat every 5 meters with documented observations.  
+A 100-meter transect, with a start and end decimalLatitude/decimalLongitude. A quadrat every 5 meters with documented observations.  
 
 All observations will therefore be located at a single central point, or along a single line. This is very imprecise when mapping habitats, for example.  
 
-***Best practice*** would have been to use decimal Latitude/Decimal Longitude for each quadrat. This way, the data can be reused for mapping.  
+***Best practice*** would have been to use decimalLatitude/decimalLongitude for each quadrat. This way, the data can be reused for mapping.  
 
