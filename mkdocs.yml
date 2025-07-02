@@ -1,6 +1,6 @@
 site_name: Guide de gestion de données
-site_url: https://mydomain.org/mysite
-repo_url: http://10.0.4.9:1410/sandbox-ogsl/ogsl-guide-de-gestion
+site_url: https://cioos-siooc.github.io/cioos-siooc-guide/
+repo_url: https://github.com/cioos-siooc/cioos-siooc-guide/
 edit_uri: edit/main/docs/
 theme:
   name: material
