@@ -38,7 +38,7 @@ Ex.: Phoca sp.
 
 ![phoquedifferencie](../assets/images/phoquedifferencie.JPG) 
 
-Les informations sur les espèces peuvent être trouvé en consultant le site du Registre mondial des espèces marines – World Register of Marine Species (WoRMS) :  [http://www.marinespecies.org/](http://www.marinespecies.org/).
+Les informations sur les espèces peuvent être trouvées en consultant le site du Registre mondial des espèces marines – World Register of Marine Species (WoRMS) :  [http://www.marinespecies.org/](http://www.marinespecies.org/).
 
 ![Worms](../assets/images/Worms.JPG) 
 
@@ -58,7 +58,7 @@ Pour convertir les coordonnées au format désiré : [http://epsg.io/](http://ep
 
 ![epsgio](../assets/images/epsgio.JPG) 
 
-Entrer les coordonnées que vous désirez changer le format et cliquez sur le bouton "Format". Cliquez plusieurs fois jusqu'à trouver le format décimal (Format : dec). Assurez-vous de sélectionner le bon système de projection de coordonnées (Input coordinates system) dans le coin supérieur gauche de l'écran.
+Entrer les coordonnées que vous désirez changer, et sélectionner le format en cliquant sur le bouton "Format". Cliquez plusieurs fois jusqu'à trouver le format décimal (Format : dec). Assurez-vous de sélectionner le bon système de projection de coordonnées (Input coordinates system) dans le coin supérieur gauche de l'écran.
 
 ![transformcoordinates](../assets/images/transformcoordinates.JPG) 
 
