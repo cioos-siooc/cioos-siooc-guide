@@ -1,6 +1,6 @@
 # CIOOS Data Management Guide
 
-The [CIOOS Data Management Guide](http://10.0.2.5:8880/) is an [MkDocs](https://www.mkdocs.org/) project that presents the recommended best practices for managing data within the Canadian Integrated Ocean Observing System (CIOOS). This guide is designed to help data managers adopt FAIR (Findable, Accessible, Interoperable, and Reusable) and CARE (Collective Benefit, Authority to Control, Responsibility, and Ethics) principles in their workflows.
+The [CIOOS Data Management Guide](https://cioos-siooc.github.io/cioos-siooc-guide/) is an [MkDocs](https://www.mkdocs.org/) project that presents the recommended best practices for managing data within the Canadian Integrated Ocean Observing System (CIOOS). This guide is designed to help data managers adopt FAIR (Findable, Accessible, Interoperable, and Reusable) and CARE (Collective Benefit, Authority to Control, Responsibility, and Ethics) principles in their workflows.
 
 ## Features
 
@@ -45,8 +45,8 @@ For further documentation, refer to the [`mkdocs-material` theme documentation](
 
 We are also using some extensions:
 - Multilanguage: https://ultrabug.github.io/mkdocs-static-i18n/getting-started/quick-start/
-- 
+
 
 ## Continuous Integration
 
-Live web site is made available at: http://10.0.2.5:8880/
+Live web site is made available at:  https://cioos-siooc.github.io/cioos-siooc-guide/
