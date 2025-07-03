@@ -9,9 +9,7 @@ theme:
   favicon: assets/logos/favicon.png
   icon:
     repo: fontawesome/brands/github
-  palette:  
-    primary: teal
-    accent: blue
+  palette:
   font:
     text: Montserrat
 
@@ -35,20 +33,20 @@ extra_css:
 nav:
   - Home: index.md
   - Guide:
-    - ./guide/accueil.md
-    - ./guide/faircare.md
-    - ./guide/recommendations.md
-    - ./guide/dictionnaire.md
-    - ./guide/template.md
-    - ./guide/ressources.md
-    - ./guide/annexes.md
-  - Data Management Plan: 
-    - ./PGD/Définitions.md
-    - ./PGD/PGDCIOOS.md
+      - ./guide/accueil.md
+      - ./guide/faircare.md
+      - ./guide/recommendations.md
+      - ./guide/dictionnaire.md
+      - ./guide/template.md
+      - ./guide/ressources.md
+      - ./guide/annexes.md
+  - Data Management Plan:
+      - ./PGD/Définitions.md
+      - ./PGD/PGDCIOOS.md
 
 extra:
-  alternate:  
-      # Switch to English
+  alternate:
+    # Switch to English
     - name: English
       link: /en/
       lang: en
@@ -62,8 +60,8 @@ extra:
       link: https://github.com/cioos-siooc
 
 plugins:
-  - search:                                         
-      lang: fr  
+  - search:
+      lang: fr
   - i18n:
       docs_structure: suffix
       reconfigure_material: true
