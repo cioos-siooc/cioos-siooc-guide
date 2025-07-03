@@ -10,6 +10,7 @@ theme:
   icon:
     repo: fontawesome/brands/github
   palette:
+    primary: custom
   font:
     text: Montserrat
 
@@ -28,7 +29,7 @@ theme:
     - content.action.edit
 
 extra_css:
-  - assets/styles/header.css
+  - assets/styles/extra.css
 
 nav:
   - Home: index.md
