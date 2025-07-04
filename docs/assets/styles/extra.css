@@ -23,7 +23,13 @@
 }
 
 .md-header__topic:first-child {
-  font-weight: 300;
+  font-weight: 500;
   line-height: 1.2;
   margin: 4px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }

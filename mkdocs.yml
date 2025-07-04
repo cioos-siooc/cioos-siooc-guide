@@ -14,7 +14,6 @@ theme:
   font:
     text: Montserrat
 
-
   features:
     - navigation.tracking
     - navigation.tabs
@@ -81,8 +80,12 @@ plugins:
             Home: Accueil
             Guide: Guide
             Data Management Plan: Plan de gestion de données
-  # - git-revision-date-localized:
-  #     enable_creation_date: true
+  - git-revision-date-localized:
+      enable_creation_date: true
+      exclude:
+        - index.md
+        - index.en.md
+        - index.fr.md
 
 markdown_extensions:
   - attr_list

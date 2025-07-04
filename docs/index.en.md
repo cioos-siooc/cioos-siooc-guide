@@ -6,12 +6,24 @@ hide:
 
 #
 
-[![CIOOS logo](assets/logos/cioos-national-color.en.svg){ align=center width="500" }](https://cioos.ca/){: .center}
+<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;  min-height: 40vh;">
+  <a href="https://cioos.ca/">
+    <img src="./../assets/logos/cioos-national-color_en.svg" alt="CIOOS logo" width="500">
+  </a>
 
-Welcome to the Canadian Integrated Ocean Observing System (CIOOS) documentation website.
+  <p>Welcome to the Canadian Integrated Ocean Observing System (CIOOS) documentation website.</p>
 
-## CIOOS Regional Associations
+  <h2>CIOOS Regional Associations</h2>
 
-[![CIOOS Pacific](./assets/logos/CioosPac_EN.PNG){ width="300"}](https://cioospacific.ca/)
-[![SLGO Logo](./assets/logos/SLGO_Logo.png){ width="200"}](https://ogsl.ca/en/home-slgo/)
-[![CIOOS Atlantique](./assets/logos/CioosAtl_EN.PNG){ width="300"}](https://cioosatlantic.ca/)
+  <div style="display: flex; flex-direction: row; align-items: center; justify-content: center; gap: 10px;">
+    <a href="https://cioospacific.ca/">
+      <img src="./../assets/logos/CioosPac_EN.PNG" alt="CIOOS Pacific" width="300">
+    </a>
+    <a href="https://ogsl.ca/en/home-slgo/">
+      <img src="./../assets/logos/SLGO_Logo.png" alt="SLGO Logo" width="300">
+    </a>
+    <a href="https://cioosatlantic.ca/">
+      <img src="./../assets/logos/CioosAtl_EN.PNG" alt="CIOOS Atlantique" width="300">
+    </a>
+  </div>
+</div>
