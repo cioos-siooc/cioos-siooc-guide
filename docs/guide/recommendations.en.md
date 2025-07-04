@@ -120,7 +120,7 @@ For example, imagine a sampling campaign at sea at two times of the day, along a
 
 It should be noted here that, although the stations were repeated during the campaign, the identifier at the start of each line is unique and makes it possible to bring together all the measurements and analyses carried out at a station at a given time.  
 
-> ⚠️ **Important:** As it stands, a single database like this is practically unusable. To ensure that it is easy to understand and therefore can be reused, it is essential that this table be accompanied by a dictionary of variables explaining what each variable represents and how each one was measured (see section *[Dictionary of variables](dictionary.en.md)* of this guide).  
+> ⚠️ **Important:** As it stands, a single database like this is practically unusable. To ensure that it is easy to understand and therefore can be reused, it is essential that this table be accompanied by a dictionary of variables explaining what each variable represents and how each one was measured (see section *[Dictionary of variables](dictionaire.en.md)* of this guide).  
 
 ## 4. Mistakes to Avoid
 
