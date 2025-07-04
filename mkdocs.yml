@@ -48,11 +48,11 @@ extra:
   alternate:
     # Switch to English
     - name: English
-      link: /en/
+      link: /cioos-siooc-guide/en/
       lang: en
     # Switch to French
     - name: Français
-      link: /fr/
+      link: /cioos-siooc-guide/
       lang: fr
 
   social:
