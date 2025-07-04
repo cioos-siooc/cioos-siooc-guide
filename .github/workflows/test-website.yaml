@@ -31,4 +31,4 @@ jobs:
           title: Test results
 
       - name: Build website
-        run: uv run mkdocs build
+        run: uv run mkdocs build --strict
