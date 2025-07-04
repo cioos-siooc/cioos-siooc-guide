@@ -1,9 +1,14 @@
-build 
-	uv run mkdocs build -f config/en/mkdocs.yml
-	uv run mkdocs build -f config/fr/mkdocs.yml
+build:
+	uv run mkdocs build
 
-serve-en:
-	uv run mkdocs serve -f config/en/mkdocs.yml
+serve:
+	uv run mkdocs serve
 
-serve-fr:
-	uv run mkdocs serve -f config/fr/mkdocs.yml
+# Linting and formatting
+lint:
+	uv run ruff check .
+
+fix:
+	uv run ruff format .
+	uv run ruff check --fix .
+	uv run ruff check --select I --fix .
