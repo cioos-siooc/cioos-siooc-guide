@@ -41,8 +41,8 @@ nav:
       - ./guide/ressources.md
       - ./guide/annexes.md
   - Data Management Plan:
-      - ./PGD/Définitions.md
-      - ./PGD/PGDCIOOS.md
+      - ./pgd/definitions.md
+      - ./pgd/pgdcioos.md
 
 extra:
   alternate:
