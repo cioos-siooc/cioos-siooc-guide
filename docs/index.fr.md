@@ -11,7 +11,7 @@ hide:
     <img src="./assets/logos/cioos-national-color_fr.svg" alt="Logo du SIOOC" style="height:130px;">
   </a>
 
-  <p>Bienvenue dans la documentation du système intégré d'observation des océans du Canada (SIOOC).</p>
+  <p>Bienvenue dans la documentation du Système intégré d'observation des océans du Canada (SIOOC).</p>
 
   <h2>Associations régionales du SIOOC</h2>
 
