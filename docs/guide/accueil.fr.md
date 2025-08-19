@@ -7,4 +7,8 @@ En plus des principes généraux, la documentation aborde également des concept
 
 _Cette documentation est en cours d'élaboration et sera enrichie d'informations supplémentaires au fil du temps._   
 
+**Citation:** 
+Observatoire global du Saint-Laurent, SIOOC Atlantique, & SIOOC Pacifique. (2025). Guide de bonnes pratiques en gestion de données. https://doi.org/10.26071/ZNJP-MN84.
+
+
 
