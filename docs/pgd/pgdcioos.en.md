@@ -159,9 +159,10 @@ Restrictions can be imposed by limiting physical access to storage devices, by p
 
 Obtaining the appropriate consent from research participants is an important step in assuring that the data may be shared with researchers outside your project. The consent statement (e.g. an MoU or Research Agreement) may identify certain conditions clarifying the uses of the data (both beyond and throughout the active phase of the project) by other researchers, or whether the data is only available upon request, and who will provide that access.   
 
-## VII. Version History and Contributors  
+## VIII. Version History and Contributors  
 
 Version: 1, Updated 2023-11-23  
 Last reviewed:  
 Developed by: Tim van der Stap (Hakai Institute, CIOOS Pacific), Chantel Ridsdale (Ocean Networks Canada, CIOOS Pacific), Comfort Eboigbe (Marine Institute, CIOOS Atlantic), Mathilde Couturier (SLGO), Jeff Cullis (CIOOS Atlantic)  
 Reviewed by: Jared McLellan, Brett Johnson, Ray Brunsting  
+
