@@ -153,8 +153,15 @@ Outline problems anticipated in sharing data, and possible measures to mitigate 
 
 Restrictions can be imposed by limiting physical access to storage devices, by placing data on computers that do not have external network access (i.e. access to the Internet), through password protection, and by encrypting files. Sensitive data should never be shared via email or cloud storage services such as Dropbox.   
 
-**Q3.** If applicable, what strategies will you undertake to address secondary uses of sensitive data?   
+**Q4.** If applicable, what strategies will you undertake to address secondary uses of sensitive data?   
 
-**Q3. Guidance**  
+**Q4. Guidance**  
 
 Obtaining the appropriate consent from research participants is an important step in assuring that the data may be shared with researchers outside your project. The consent statement (e.g. an MoU or Research Agreement) may identify certain conditions clarifying the uses of the data (both beyond and throughout the active phase of the project) by other researchers, or whether the data is only available upon request, and who will provide that access.   
+
+## VII. Version History and Contributors  
+
+Version: 1, Updated 2023-11-23  
+Last reviewed:  
+Developed by: Tim van der Stap (Hakai Institute, CIOOS Pacific), Chantel Ridsdale (Ocean Networks Canada, CIOOS Pacific), Comfort Eboigbe (Marine Institute, CIOOS Atlantic), Mathilde Couturier (SLGO), Jeff Cullis (CIOOS Atlantic)  
+Reviewed by: Jared McLellan, Brett Johnson, Ray Brunsting  
