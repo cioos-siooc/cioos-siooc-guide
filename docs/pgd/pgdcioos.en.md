@@ -14,7 +14,7 @@ Reach out to info@cioos.ca to learn more about CIOOS and get help working throug
 Following the definition from DataCite, research outputs cover a wide range of resources produced throughout the research project, including for example: datasets, software, code, samples, theses, images, video, graphs, models, publications, etc.    
 
 **Q2.** Do your research outputs contain Essential Ocean Variables (EOVs) or Essential Climate Variable (ECVs)?   
-Oui/Non, si oui précisez
+Yes/No, if possible, please specify
 
 **Q2. Guidance**   
 For ingestion into CIOOS, it is preferred that your research output contains at least one EOV. A list of the EOVs supported by CIOOS can be found [here](https://cioos.ca/essential-ocean-variables/). The Global Ocean Observing System (GOOS) Expert Panels have identified the EOVs based on their impact and feasibility, and a list of EOVs can be found [here](https://goosocean.org/what-we-do/framework/essential-ocean-variables/), and a list of ECV [here](https://gcos.wmo.int/site/global-climate-observing-system-gcos/essential-climate-variables).  
@@ -76,7 +76,7 @@ Please contact info@cioos.ca to determine the best solution for your research pr
 
 ## IV. Preservation  
 
-**Q1.** Où et pendant combien de temps allez-vous déposer ou archiver vos données et matériels supplémentaires (c'est-à-dire les protocoles) pour leur préservation à long terme et leur accès à la fin de votre projet de recherche ?   
+**Q1.** Where and how long will you deposit or archive your data and supplemental materials (i.e. protocols) for long-term preservation and access at the end of your research project?      
 
 **Q1. Guidance**  
 Data archiving or preservation is different from data storage. Archiving is the practice of moving data to a long-term data storage system (i.e. repository) where it can be located and retrieved as needed. This decision can be driven by external policies (e.g. funding agencies, journal publishers, etc.). Recommended repositories for CIOOS are the Ocean Biodiversity Information System (OBIS) for biological data, and ERDDAP for physical and geochemical oceanography data. Alternatively, data can be archived in public repositories such as as [Federated Research Data Repository](https://www.frdr-dfdr.ca/repo/?locale=en) (FRDR), [DRYAD Digital Repository](https://datadryad.org/), [Zenodo](https://zenodo.org/) and [Open Science Framework](https://osf.io/). An overview of research data repositories can be found at [Registry of research Data Repositories](https://www.re3data.org/)(re3data) website. 
@@ -95,13 +95,13 @@ Raw data are the data directly obtained from the instrument, simulation or surve
 
 Consider which data or other research outputs may need to be shared in order to meet institutional or funding requirements, and which may be restricted because of confidentiality/privacy/intellectual property considerations.  
 
-**Q2.** Vos données et résultats de recherche peuvent-ils être partagés avec une licence ouverte ?   
+**Q2.** Can your data and research outputs be shared with an open license?  
 
 **Q2. Guidance**  
 For data sharing through CIOOS, it is recommended to apply an open license such as the [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/), open government licenses (e.g. [Open Government Licence - Canada](https://open.canada.ca/en/open-government-licence-canada)) or a public domain license (e.g. [CC0](https://creativecommons.org/public-domain/cc0/)). 
 Licenses determine what uses can be made of your data. Funding agencies and/or data repositories may have end-user license requirements in place; if not, they may still be able to guide you in what license to attach. Note that only the intellectual property rights holder(s) can issue a license, so it is crucial to clarify who owns those rights (see Section VII).  
 
-**Q3.** Quelles mesures seront prises pour aider la communauté de recherche à savoir que vos résultats de recherche existent ?
+**Q3.** What steps will be taken to help the research community know that your research outputs exist?  
 
 **Q3. Guidance** 
 Describe how CIOOS helps meet funder requirements for openly accessible data, and is a community resource. Possibilities include: data registries, metadata catalogues, repositories, indexes, word of mouth, publications, social media. CIOOS recommends each data record to have a unique digital object identifier (DOI). CIOOS RAs can assist with minting of new DOIs, or link to existing DOIs. It is recommended that collaborators and affiliated organizations have persistent identifiers (e.g. ORCID and ROR).   
@@ -156,4 +156,5 @@ Restrictions can be imposed by limiting physical access to storage devices, by p
 **Q3.** If applicable, what strategies will you undertake to address secondary uses of sensitive data?   
 
 **Q3. Guidance**  
+
 Obtaining the appropriate consent from research participants is an important step in assuring that the data may be shared with researchers outside your project. The consent statement (e.g. an MoU or Research Agreement) may identify certain conditions clarifying the uses of the data (both beyond and throughout the active phase of the project) by other researchers, or whether the data is only available upon request, and who will provide that access.   
