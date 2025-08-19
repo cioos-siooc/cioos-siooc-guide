@@ -157,14 +157,15 @@ Des restrictions peuvent être imposées en limitant l'accès physique aux péri
 **Q4 Directives**  
 L'obtention du consentement approprié des participants à la recherche est une étape importante pour garantir que les données puissent être partagées avec des chercheurs extérieurs à votre projet. La déclaration de consentement (par exemple, un protocole d'accord ou un accord de recherche) peut préciser certaines conditions clarifiant l'utilisation des données (au-delà et tout au long de la phase active du projet) par d'autres chercheurs, ou si les données ne sont accessibles que sur demande, et qui en fournira l'accès.
 
-## VIII. Historique des versions et contributeurs
+## VIII. Historique des versions et contributeurs  
 
-Version: 1, Mise à jour 2023-11-23
-Dernière révision:
-Développé par: Tim van der Stap (Hakai Institute, SIOOC Pacifique), Chantel Ridsdale (Ocean Networks Canada, SIOOC Pacifique), Comfort Eboigbe (Marine Institute, SIOOC Atlantique), Mathilde Couturier (OGSL), Jeff Cullis (SIOOC Atlantique)
-Révisé par: Jared McLellan (SIOOC Atlantique), Brett Johnson (SIOOC Pacifique), Ray Brunsting (SIOOC Pacifique)
-Traduit de l'anglais par: Mathilde Couturier (OGSL)
-Révision de la traduction par: Omnain Kutos (OGSL)
+Version: 1, Mise à jour 2023-11-23  
+Dernière révision:  
+Développé par: Tim van der Stap (Hakai Institute, SIOOC Pacifique), Chantel Ridsdale (Ocean Networks Canada, SIOOC Pacifique), Comfort Eboigbe (Marine Institute, SIOOC Atlantique), Mathilde Couturier (OGSL), Jeff Cullis (SIOOC Atlantique)  
+Révisé par: Jared McLellan (SIOOC Atlantique), Brett Johnson (SIOOC Pacifique), Ray Brunsting (SIOOC Pacifique)  
+Traduit de l'anglais par: Mathilde Couturier (OGSL)  
+Révision de la traduction par: Omnain Kutos (OGSL)  
+
 
 
 
