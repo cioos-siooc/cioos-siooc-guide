@@ -8,5 +8,5 @@ In addition to general principles, the documentation also addresses data managem
 
 _This documentation is currently under development and will be enriched with additional information over time._  
 
-Citation:   
-St-Lawrence Global Observatory, CIOOS Atlantic, & CIOOS Pacific. (2025). Guide to good practices in data management. https://doi.org/10.26071/ZNJP-MN84.
+**Citation:** St-Lawrence Global Observatory, CIOOS Atlantic, & CIOOS Pacific. (2025). Guide to good practices in data management. https://doi.org/10.26071/ZNJP-MN84.
+
