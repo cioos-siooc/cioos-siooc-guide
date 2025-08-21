@@ -224,7 +224,8 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  flex: 1 1 260px; /* allow wrapping but target ~260px */
+  flex: 1 1 260px;
+  /* allow wrapping but target ~260px */
   width: 260px;
   max-width: 280px;
   height: 160px;
