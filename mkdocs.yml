@@ -1,5 +1,5 @@
 site_name: Guide de gestion de données
-site_url: https://cioos-siooc.github.io/cioos-siooc-guide/
+site_url: https://guide.cioos.ca
 repo_name: cioos-siooc/cioos-siooc-guide
 repo_url: https://github.com/cioos-siooc/cioos-siooc-guide/
 edit_uri: edit/main/docs/
@@ -45,14 +45,15 @@ nav:
       - ./pgd/pgdcioos.md
 
 extra:
+  generator: false
   alternate:
     # Switch to English
     - name: English
-      link: /cioos-siooc-guide/en/
+      link: /en/
       lang: en
     # Switch to French
     - name: Français
-      link: /cioos-siooc-guide/
+      link: /
       lang: fr
 
   social:
