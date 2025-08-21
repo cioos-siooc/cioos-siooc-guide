@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>https://guide.cioos.ca/development/</loc>
+        <lastmod>2025-08-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://guide.cioos.ca/development/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://guide.cioos.ca/developmenten/"/>
+    </url>
+    <url>
+        <loc>https://guide.cioos.ca/development/guide/accueil/</loc>
+        <lastmod>2025-08-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://guide.cioos.ca/development/guide/accueil/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://guide.cioos.ca/developmenten/guide/accueil/"/>
+    </url>
+    <url>
+        <loc>https://guide.cioos.ca/development/guide/annexes/</loc>
+        <lastmod>2025-08-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://guide.cioos.ca/development/guide/annexes/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://guide.cioos.ca/developmenten/guide/annexes/"/>
+    </url>
+    <url>
+        <loc>https://guide.cioos.ca/development/guide/dictionnaire/</loc>
+        <lastmod>2025-08-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://guide.cioos.ca/development/guide/dictionnaire/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://guide.cioos.ca/developmenten/guide/dictionnaire/"/>
+    </url>
+    <url>
+        <loc>https://guide.cioos.ca/development/guide/faircare/</loc>
+        <lastmod>2025-08-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://guide.cioos.ca/development/guide/faircare/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://guide.cioos.ca/developmenten/guide/faircare/"/>
+    </url>
+    <url>
+        <loc>https://guide.cioos.ca/development/guide/guide/</loc>
+        <lastmod>2025-08-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://guide.cioos.ca/development/guide/guide/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://guide.cioos.ca/developmenten/guide/guide/"/>
+    </url>
+    <url>
+        <loc>https://guide.cioos.ca/development/guide/recommendations/</loc>
+        <lastmod>2025-08-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://guide.cioos.ca/development/guide/recommendations/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://guide.cioos.ca/developmenten/guide/recommendations/"/>
+    </url>
+    <url>
+        <loc>https://guide.cioos.ca/development/guide/ressources/</loc>
+        <lastmod>2025-08-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://guide.cioos.ca/development/guide/ressources/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://guide.cioos.ca/developmenten/guide/ressources/"/>
+    </url>
+    <url>
+        <loc>https://guide.cioos.ca/development/guide/template/</loc>
+        <lastmod>2025-08-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://guide.cioos.ca/development/guide/template/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://guide.cioos.ca/developmenten/guide/template/"/>
+    </url>
+    <url>
+        <loc>https://guide.cioos.ca/development/pgd/definitions/</loc>
+        <lastmod>2025-08-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://guide.cioos.ca/development/pgd/definitions/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://guide.cioos.ca/developmenten/pgd/definitions/"/>
+    </url>
+    <url>
+        <loc>https://guide.cioos.ca/development/pgd/pgdcioos/</loc>
+        <lastmod>2025-08-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://guide.cioos.ca/development/pgd/pgdcioos/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://guide.cioos.ca/developmenten/pgd/pgdcioos/"/>
+    </url>
+    <url>
+        <loc>https://guide.cioos.ca/development/en/</loc>
+        <lastmod>2025-08-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://guide.cioos.ca/development/en/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://guide.cioos.ca/development"/>
+    </url>
+    <url>
+        <loc>https://guide.cioos.ca/development/en/guide/accueil/</loc>
+        <lastmod>2025-08-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://guide.cioos.ca/development/en/guide/accueil/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://guide.cioos.ca/developmentguide/accueil/"/>
+    </url>
+    <url>
+        <loc>https://guide.cioos.ca/development/en/guide/annexes/</loc>
+        <lastmod>2025-08-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://guide.cioos.ca/development/en/guide/annexes/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://guide.cioos.ca/developmentguide/annexes/"/>
+    </url>
+    <url>
+        <loc>https://guide.cioos.ca/development/en/guide/dictionnaire/</loc>
+        <lastmod>2025-08-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://guide.cioos.ca/development/en/guide/dictionnaire/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://guide.cioos.ca/developmentguide/dictionnaire/"/>
+    </url>
+    <url>
+        <loc>https://guide.cioos.ca/development/en/guide/faircare/</loc>
+        <lastmod>2025-08-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://guide.cioos.ca/development/en/guide/faircare/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://guide.cioos.ca/developmentguide/faircare/"/>
+    </url>
+    <url>
+        <loc>https://guide.cioos.ca/development/en/guide/guide/</loc>
+        <lastmod>2025-08-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://guide.cioos.ca/development/en/guide/guide/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://guide.cioos.ca/developmentguide/guide/"/>
+    </url>
+    <url>
+        <loc>https://guide.cioos.ca/development/en/guide/recommendations/</loc>
+        <lastmod>2025-08-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://guide.cioos.ca/development/en/guide/recommendations/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://guide.cioos.ca/developmentguide/recommendations/"/>
+    </url>
+    <url>
+        <loc>https://guide.cioos.ca/development/en/guide/ressources/</loc>
+        <lastmod>2025-08-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://guide.cioos.ca/development/en/guide/ressources/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://guide.cioos.ca/developmentguide/ressources/"/>
+    </url>
+    <url>
+        <loc>https://guide.cioos.ca/development/en/guide/template/</loc>
+        <lastmod>2025-08-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://guide.cioos.ca/development/en/guide/template/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://guide.cioos.ca/developmentguide/template/"/>
+    </url>
+    <url>
+        <loc>https://guide.cioos.ca/development/en/pgd/definitions/</loc>
+        <lastmod>2025-08-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://guide.cioos.ca/development/en/pgd/definitions/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://guide.cioos.ca/developmentpgd/definitions/"/>
+    </url>
+    <url>
+        <loc>https://guide.cioos.ca/development/en/pgd/pgdcioos/</loc>
+        <lastmod>2025-08-21</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://guide.cioos.ca/development/en/pgd/pgdcioos/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://guide.cioos.ca/developmentpgd/pgdcioos/"/>
+    </url>
+</urlset>
