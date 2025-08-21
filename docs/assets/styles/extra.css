@@ -219,25 +219,51 @@
   margin: 0 0 1.5rem;
 }
 
-.regions-logos img {
-  height: 90px;
-  width: auto;
-  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, .2));
-  background: #fff;
-  border-radius: 8px;
-  padding: .4rem .7rem;
-  object-fit: contain;
-}
-
+/* Regional logos: fit 3 per row on ~>1100px viewports */
 .regions-logos a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  flex: 1 1 260px; /* allow wrapping but target ~260px */
+  width: 260px;
+  max-width: 280px;
+  height: 160px;
+  background: #fff;
+  border-radius: 12px;
+  padding: .9rem 1.1rem;
+  position: relative;
+}
+
+/* Remove hover elevation */
+.regions-logos a:hover {
+  transform: none;
+}
+
+.regions-logos a::after {
+  /* subtle outline */
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 1px solid rgba(0, 0, 0, .06);
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+.regions-logos img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
 }
 
 @media (max-width:760px) {
-  .regions-logos img {
-    height: 70px;
+  .regions-logos a {
+    flex: 1 1 160px;
+    width: 160px;
+    max-width: 180px;
+    height: 105px;
+    padding: .55rem .7rem;
   }
 
   .feature-card {
