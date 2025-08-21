@@ -2,6 +2,7 @@
 hide:
   - navigation
   - toc
+hide_edit: true
 ---
 
 <div class="top-logo">

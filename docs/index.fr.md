@@ -1,7 +1,9 @@
 ---
+hide_edit: true
 hide:
   - navigation
   - toc
+  - action
 ---
 
 <!-- Section Héro -->
