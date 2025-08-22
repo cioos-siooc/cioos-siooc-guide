@@ -40,6 +40,7 @@ nav:
       - ./guide/template.md
       - ./guide/ressources.md
       - ./guide/annexes.md
+      - ./guide/contributeur.md
   - Data Management Plan:
       - ./pgd/definitions.md
       - ./pgd/pgdcioos.md
