@@ -1,0 +1,1049 @@
+
+<!doctype html>
+<html lang="fr" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://guide.cioos.ca/feature-add-mike/pgd/pgdcioos/">
+      
+      
+        <link rel="prev" href="../definitions/">
+      
+      
+      
+      <link rel="icon" href="../../assets/logos/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.4">
+    
+    
+      
+        <title>PGD du SIOOC - Système intégré d'observation des océans du Canada<br>Guide de gestion de données</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.8608ea7d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Montserrat";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/styles/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#pgd-du-siooc" class="md-skip">
+          Aller au contenu
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="En-tête">
+    <a href="../.." title="Système intégré d&#39;observation des océans du Canada&lt;br&gt;Guide de gestion de données" class="md-header__button md-logo" aria-label="Système intégré d'observation des océans du Canada<br>Guide de gestion de données" data-md-component="logo">
+      
+  <img src="../../assets/logos/favicon.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Système intégré d'observation des océans du Canada<br>Guide de gestion de données
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              PGD du SIOOC
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Sélectionner la langue">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="../../en/pgd/pgdcioos/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="fr" class="md-select__link">
+              Français
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Recherche">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Partager" aria-label="Partager" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Effacer" aria-label="Effacer" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initialisation de la recherche
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/cioos-siooc/cioos-siooc-guide/" title="Aller au dépôt" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    cioos-siooc/cioos-siooc-guide
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Onglets" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  Accueil
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../guide/accueil/" class="md-tabs__link">
+          
+  
+  Guide
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../definitions/" class="md-tabs__link">
+          
+  
+  Plan de gestion de données
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Système intégré d&#39;observation des océans du Canada&lt;br&gt;Guide de gestion de données" class="md-nav__button md-logo" aria-label="Système intégré d'observation des océans du Canada<br>Guide de gestion de données" data-md-component="logo">
+      
+  <img src="../../assets/logos/favicon.svg" alt="logo">
+
+    </a>
+    Système intégré d'observation des océans du Canada<br>Guide de gestion de données
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/cioos-siooc/cioos-siooc-guide/" title="Aller au dépôt" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    cioos-siooc/cioos-siooc-guide
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Accueil
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Guide
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Guide
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/accueil/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Accueil
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/faircare/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Principes FAIR et CARE
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/recommendations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Guide détaillé
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/dictionnaire/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dictionnaire de variables
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/template/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Modèles de fichiers
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/ressources/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ressources utiles
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/annexes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Annexes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Plan de gestion de données
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Plan de gestion de données
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../definitions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Définitions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    PGD du SIOOC
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    PGD du SIOOC
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#i-resultats-du-projet" class="md-nav__link">
+    <span class="md-ellipsis">
+      I. Résultats du projet
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ii-documentation-et-metadonnees" class="md-nav__link">
+    <span class="md-ellipsis">
+      II. Documentation et métadonnées
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#iii-stockage-et-sauvegarde" class="md-nav__link">
+    <span class="md-ellipsis">
+      III. Stockage et sauvegarde
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#iv-preservation" class="md-nav__link">
+    <span class="md-ellipsis">
+      IV. Préservation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v-partage-et-reutilisation" class="md-nav__link">
+    <span class="md-ellipsis">
+      V. Partage et réutilisation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vi-responsabilite-et-ressources" class="md-nav__link">
+    <span class="md-ellipsis">
+      VI. Responsabilité et ressources
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vii-ethique-et-conformite-juridique" class="md-nav__link">
+    <span class="md-ellipsis">
+      VII. Éthique et conformité juridique
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#i-resultats-du-projet" class="md-nav__link">
+    <span class="md-ellipsis">
+      I. Résultats du projet
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ii-documentation-et-metadonnees" class="md-nav__link">
+    <span class="md-ellipsis">
+      II. Documentation et métadonnées
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#iii-stockage-et-sauvegarde" class="md-nav__link">
+    <span class="md-ellipsis">
+      III. Stockage et sauvegarde
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#iv-preservation" class="md-nav__link">
+    <span class="md-ellipsis">
+      IV. Préservation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v-partage-et-reutilisation" class="md-nav__link">
+    <span class="md-ellipsis">
+      V. Partage et réutilisation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vi-responsabilite-et-ressources" class="md-nav__link">
+    <span class="md-ellipsis">
+      VI. Responsabilité et ressources
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vii-ethique-et-conformite-juridique" class="md-nav__link">
+    <span class="md-ellipsis">
+      VII. Éthique et conformité juridique
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/cioos-siooc/cioos-siooc-guide/edit/main/docs/pgd/pgdcioos.fr.md" title="Editer cette page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="pgd-du-siooc">PGD du SIOOC</h1>
+<p>Ce modèle est destiné aux chercheur.es universitaires et gouvernementaux, aux organisations de recherche, aux institutions, aux ONG et aux agences au sein du Canada qui souhaitent rendre les données océaniques plus découvrables et accessibles. Les questions fournies ci-dessous sont destinées à aider les fournisseurs de données à évaluer leurs pratiques de gestion des données, documenter les résultats de recherche attendus, identifier les lacunes et évaluer si le dépôt et l'accès aux données via les AR du SIOOC peuvent bénéficier à la découverte et à l'intégration de leurs données à un niveau mondial.   </p>
+<p>Ce PGD (« Plan de gestion des données et des résultats de recherche ») est adopté du <a href="https://dmp-pgd.ca/">modèle standard de l’Assistant Portage</a>, et modifié pour répondre aux exigences de découverte et d'intégration des données mises en avant par le SIOOC. Bien que les données soient considérées comme un résultat de recherche, ces termes seront utilisés de manière interchangeable tout au long du modèle. Si l'intention est de rendre vos données découvrables via le SIOOC, il est fortement recommandé de remplir ce Plan de gestion des données et des résultats de recherche avant de commencer votre projet de recherche ou de publier vos données.</p>
+<p>Contactez info@cioos.ca pour en savoir plus sur le SIOOC, obtenir de l'aide pour compléter ce modèle et rendre vos données découvrables via le SIOOC.</p>
+<h2 id="i-resultats-du-projet">I. Résultats du projet</h2>
+<p><strong>Q1.</strong> Quels types de données allez-vous collecter, et quels résultats de recherche seront créés, dérivés, acquis et/ou enregistrés?   </p>
+<p><strong>Q1 Directives</strong> <br />
+Selon la définition de DataCite, les résultats de projet de recherche couvrent un large éventail de ressources produites tout au long du projet. Cela inclut par exemple : jeux de données, logiciels, code, rapport, images, vidéos, graphiques, modèles, publications, etc.  </p>
+<p><strong>Q2.</strong> Est-ce que vos résultats de recherche incluent des variables essentielles océaniques (VOEs) ou des variables essentielles climatiques (VECs) ? <br />
+Oui/Non, si oui précisez</p>
+<p><strong>Q2 Directives</strong> <br />
+Pour une intégration des données dans le SIOOC, il est préférable que les données contiennent au moins une VOE. Une liste des VOEs supportée par le SIOOC est disponible <a href="https://cioos.ca/fr/variables-oceaniques-essentielles/">ici</a>. Les groupes d’experts du GOOS (<em>Global Ocean Observing System</em>) ont définis et identifiés des VOEs basés sur leur impact et de leur faisabilité, la liste complète est disponible <a href="https://goosocean.org/what-we-do/framework/essential-ocean-variables/">ici</a>. Une liste des variables essentielles climatiques peut-être retrouvée <a href="https://gcos.wmo.int/site/global-climate-observing-system-gcos/essential-climate-variables">ici</a>.<br />
+Veuillez noter qu'il existe un chevauchement entre les VOEs et les VECs, et les deux contiennent également des sous-variables et des produits dérivés dans leurs fiches de spécifications.  </p>
+<p><strong>Q3.</strong> Quels formats de fichiers vos résultats de recherche auront-ils ? Ces formats permettront-ils la réutilisation des données, le partage et l'accès à long terme aux données ?  </p>
+<p><strong>Q3 Directives</strong> <br />
+Les formats de fichiers recommandés pour le SIOOC sont des formats non propriétaires (format de fichiers ouverts), par exemple : .csv, .netCDF, GeoTiff, .kmz, etc. Des informations supplémentaires sur les formats de fichiers propriétaires par rapport aux formats de fichiers ouverts peuvent être trouvées sur la <a href="https://ubc-library-rc.github.io/rdm/content/02_file_formats.html">bibliothèque de l’UBC</a>. 
+Les formats de fichiers propriétaires nécessitant des logiciels ou matériels spécialisés pour être utilisés ne sont pas recommandés, mais peuvent être nécessaires pour certaines méthodes de collecte ou d'analyse de données.</p>
+<h2 id="ii-documentation-et-metadonnees">II. Documentation et métadonnées</h2>
+<p><strong>Q1.</strong> Quelles documentations et métadonnées seront nécessaires pour que les résultats de la recherche puissent être lus et interprétés correctement à l'avenir ? Décrivez comment la documentation est saisie ou mise à jour de manière cohérente tout au long de la phase active du projet.  </p>
+<p><strong>Q1 Directives</strong><br />
+Une bonne documentation comprend du matériel supplémentaire référencé et des informations sur l'étude ainsi que d'autres informations contextuelles nécessaires pour rendre les résultats de recherche réutilisables par d'autres. Le développement d'un fichier <em><a href="https://ubc-library-rc.github.io/rdm/content/03_create_readme.html">README</a>/Codebook</em> tout au long du cycle de vie du projet peut inclure des éléments tels que : description des méthodes de capture et de collecte des données (par exemple, procédures de laboratoire, instruments), étapes de traitement, description de la granularité des données (par exemple, les taxons ont été identifiés au rang taxonomique le plus bas possible, résolution spatiale), définitions des variables (par exemple, via un dictionnaire de données), unités de mesure, hypothèses et limitations de l'étude, et types d'analyses effectuées (pour chaque type d'échantillon).  </p>
+<p>Pour la documentation des données de modèle, veuillez fournir une description du modèle prévu et (références à) des sources de données d'entrée prévues. Si applicable et disponible, envisagez de fournir le code, les outils et/ou des liens vers des publications existantes décrivant le modèle prévu.  </p>
+<p><strong>Q2.</strong> Si vous utilisez des normes pour la standardisation des données ou des métadonnées et/ou des outils pour documenter et décrire vos données, veuillez les énumérer ici.  </p>
+<p><strong>Q2 Directives</strong><br />
+Pour le SIOOC, les schémas les plus pertinents sont la <a href="https://www.iso.org/standard/53798.html">norme ISO-19115</a> (métadonnées), les <a href="https://cfconventions.org/">Conventions sur le climat et les prévisions</a> (CF) (pour les données océanographiques physiques ou biogéochimiques) et le standard <a href="https://dwc.tdwg.org/">Darwin Core</a> (pour les données sur les occurrences biologiques marines). La documentation et les données fournie dans l'un de ces formats standard, lisibles par machine et librement accessibles, permet un échange efficace d'informations entre les utilisateurs et les systèmes.</p>
+<p>La documentation peut également inclure un vocabulaire contrôlé, qui est une liste normalisée de terminologie pour décrire l'information. Des exemples de vocabulaires contrôlés incluent les <a href="https://www.bodc.ac.uk/resources/products/web_services/vocab/">vocabulaires du NERC</a> ou les mots-clés du <a href="https://www.earthdata.nasa.gov/earth-observation-data/find-data/idn/gcmd-keywords"><em>Global Change Master Directory</em></a> (GCMD) de la NASA.  </p>
+<p><strong>Q3.</strong> Quels sont les processus qui seront mis en place pour améliorer continuellement la qualité des données (révisions, indicateurs de qualité, tests, vérifications, etc.) pendant et après la phase active du projet ? Qui a la responsabilité exécutive de la qualité des données ?  </p>
+<p><strong>Q3 Directives</strong> 
+Parmi les erreurs les plus courantes, on trouve par exemple les doublons, les valeurs manquantes, les valeurs aberrantes dans les données, et le format incorrect (caractère, numérique). Veuillez décrire les processus, mécanismes de rétroaction, outils ou logiciels en place pour identifier ces problèmes et améliorer continuellement la qualité des données pendant et après la phase active de votre projet (par exemple, QARTOD, etc.). Le cas échéant, veuillez fournir des liens vers les scripts utilisés pour nettoyer les données.  </p>
+<h2 id="iii-stockage-et-sauvegarde">III. Stockage et sauvegarde</h2>
+<p><strong>Q1.</strong> Quels sont les besoins de stockage prévus tout au long de la phase active du projet, en termes d’espaces de stockage (en mégaoctets, téraoctets, etc.) et en termes de durée ?</p>
+<p><strong>Q1 Directives</strong><br />
+Les estimations de stockage doivent prendre en compte les exigences de gestion des versions de fichiers, de sauvegarde et croissance au fil du temps. Si vous collectez des données sur une longue période (par exemple, plusieurs mois ou années), votre stratégie de stockage et de sauvegarde des données doit pouvoir s’adapter à l’augmentation du volume de données tout au long du projet actif.  </p>
+<p><strong>Q2.</strong> Comment et où vos données de recherche seront stockées et sauvegardées pendant la phase active du projet ?</p>
+<p><strong>Q2 Directives</strong><br />
+Le risque de perte de données due à une erreur humaine, des catastrophes naturelles ou d'autres incidents doit être pris en compte. Une option pour atténuer ce risque peut inclure, mais ne se limite pas à, la règle de sauvegarde 3-2-1 : <br />
+- Avoir au moins trois copies de vos données. <br />
+- Stocker les copies sur deux types de supports différents. <br />
+- Garder une copie de sauvegarde hors site.  </p>
+<p>Des informations supplémentaires sur les bonnes pratiques de stockage et de sauvegarde sont disponibles auprès de <a href="https://docs.alliancecan.ca/wiki/Storage_and_file_management/fr">l'Alliance de recherche numérique du Canada</a>.  </p>
+<p><strong>Q3.</strong> De quelle manière l’équipe de recherche et les autres collaborateurs vont-ils accéder aux données, les modifier et y contribuer tout au long du projet ? Comment organiserez-vous le nommage et les différentes versions des fichiers dans les dossiers (partagés) ?  </p>
+<p><strong>Q3 Directives</strong><br />
+Un environnement de collaboration idéal facilite la coopération et assure la sécurité des données, tout en étant adoptable par les participants au projet avec une formation minimale. Il est important de suivre les différentes copies ou versions des fichiers, les fichiers détenus dans différents formats ou emplacements, et les informations croisées entre les fichiers. Pour faciliter le suivi des versions de fichiers, il est fortement recommandé de convenir d'un environnement de collaboration (par exemple, Google Drive, GitHub, Sharepoint, etc.) à utiliser tout au long de la phase active du projet, et de décrire les hiérarchies et les conventions de nommage utilisées lors de l'organisation et du partage des fichiers de données. Des structures de fichiers logiques, des conventions de nommage des fichiers, des indications claires des versions des fichiers, etc., contribuent toutes à une meilleure utilisation de vos données pendant et après votre projet de recherche. Ces pratiques aideront à garantir que vous et votre équipe de recherche utilisez la version appropriée de vos données et à minimiser la confusion concernant les copies sur différents ordinateurs et/ou supports. Pour les résultats de recherche en cours, veuillez décrire comment les nouvelles données sont ajoutées (par exemple, pour minimiser les doublons, réconcilier les données différées et en temps réel). Pour des exemples et en savoir plus sur le nommage des fichiers et le contrôle des versions : <a href="https://researchdata.library.ubc.ca/plan/organize-your-data/">UBC Library</a>.  </p>
+<p>Veuillez contacter info@cioos.ca pour déterminer la meilleure solution pour votre projet de recherche.  </p>
+<h2 id="iv-preservation">IV. Préservation</h2>
+<p><strong>Q1.</strong> Où et pendant combien de temps allez-vous déposer ou archiver vos données et matériels supplémentaires (c'est-à-dire les protocoles) pour leur préservation à long terme et leur accès à la fin de votre projet de recherche ?   </p>
+<p><strong>Q1 Directives</strong><br />
+L'archivage ou la préservation des données est différent du stockage des données. L'archivage consiste à déplacer les données vers un système de stockage de données à long terme (c'est-à-dire un dépôt) où elles peuvent être localisées et récupérées au besoin. Cette décision peut être motivée par des politiques externes (par exemple, agences de financement, éditeurs de revues, etc.). Les dépôts recommandés pour le SIOOC sont le Système d'information sur la biodiversité des océans (OBIS) pour les données biologiques, et ERDDAP<sup>TM</sup> pour les données océanographiques physiques et géochimiques. Alternativement, les données peuvent être archivées dans des dépôts publics tels que le <a href="https://www.frdr-dfdr.ca/repo/?locale=fr">Dépôt fédéré de données de recherche</a> (DFDR), <a href="https://datadryad.org/">DRYAD Digital Repository</a>, <a href="https://zenodo.org/">Zenodo</a> et <a href="https://osf.io/">Open Science Framework</a>. Un aperçu des dépôts de données de recherche peut être trouvé sur le <a href="https://www.re3data.org/">Registry of research Data Repositories</a>(re3data).  </p>
+<p>Pour les protocoles, ceux-ci peuvent être archivés dans des dépôts généralistes ou des dépôts plus spécifiques tels que <a href="https://www.protocols.io/">protocols.io</a>, le  <a href="https://www.oceanbestpractices.org/">Ocean Best Practice system</a> ou <a href="https://aquadocs.org/home?tl.page=1">Aquadocs</a>. Certaines associations régionales du SIOOC peuvent également fournir des espaces de stockage.  </p>
+<p>Si vous avez besoin d'aide pour trouver un dépôt ou une archive de données approprié(e), veuillez contacter info@cioos.ca.   </p>
+<h2 id="v-partage-et-reutilisation">V. Partage et réutilisation</h2>
+<p><strong>Q1.</strong> Quelles données de recherche seront partagées et sous quelle forme ? (ex : brut, traité, analysé, modélisé)  </p>
+<p><strong>Q1 Directives</strong> 
+Les données brutes sont les données obtenues directement de l'instrument, de la simulation ou de l’échantillonnage. Les données traitées résultent de certaines manipulations des données brutes pour éliminer les erreurs ou les valeurs aberrantes, préparer les données pour l'analyse, dériver de nouvelles variables ou désidentifier les participants humains. Les données analysées sont les résultats d'analyses qualitatives, statistiques ou mathématiques des données traitées. Elles peuvent être présentées sous forme de graphiques ou de tableaux statistiques. Les données de modèle sont des produits de données utilisés pour simuler des conditions réelles afin de prédire une instance future.   </p>
+<p>Réfléchissez aux données ou autres résultats de recherche qui peuvent nécessiter d'être partagés pour répondre aux exigences institutionnelles ou de financement, et ceux qui peuvent être restreints en raison de considérations de confidentialité, de protection de la vie privée ou de propriété intellectuelle.  </p>
+<p><strong>Q2.</strong> Vos données et résultats de recherche peuvent-ils être partagés avec une licence ouverte ?   </p>
+<p><strong>Q2 Directives</strong><br />
+Pour le partage de données dans le SIOOC, il est recommandé d’appliquer une licence ouverte tel que la <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International (CC BY 4.0)</a>, licence ouverte du gouvernement (ex : <a href="https://open.canada.ca/en/open-government-licence-canada">Licence du gouvernement ouvert - Canada</a>) ou une licence du domaine publique (ex : <a href="https://creativecommons.org/public-domain/cc0/">CC0</a>). 
+Les licences déterminent les utilisations qui peuvent être faites de vos données. Les agences de financement et/ou les dépôts de données peuvent avoir des exigences de licence pour les utilisateurs finaux ; sinon, ils peuvent toujours vous guider sur la licence à attribuer. Notez que seuls les détenteurs des droits de propriété intellectuelle peuvent émettre une licence, il est donc crucial de clarifier qui détient ces droits (voir Section VII).</p>
+<p><strong>Q3.</strong> Quelles mesures seront prises pour aider la communauté de recherche à savoir que vos résultats de recherche existent ?</p>
+<p><strong>Q3 Directives</strong> 
+Décrivez comment le SIOOC aide à répondre aux exigences des financeurs en matière d'accès ouvert aux données, et comment il constitue une ressource communautaire. Les possibilités incluent : des registres de données, des catalogues de métadonnées, des dépôts, des index, le bouche-à-oreille, des publications, les médias sociaux. Le SIOOC recommande que chaque enregistrement de données soit associé à un identifiant pérenne unique (DOI).<br />
+Les associations régionales du SIOOC peuvent émettre de nouveaux DOI ou faire la liaison avec des DOI existants. Il est recommandé que les collaborateurs et les organisations affiliées disposent également d'identifiants persistants (par exemple, ORCID et ROR).  </p>
+<p><strong><em>Exemple de réponse pour les agences de financement :</em></strong>
+Le SIOOC utilise des identifiants pérennes (PID) tels que les DOI, les identifiants ORCID (<em>Open Researcher and Contributor ID</em>) et les identifiants ROR (<em>Research Organization Registry</em>) pour permettre des liaisons faciles entre les résultats de recherche. Le SIOOC crée des citations de données recommandées pour chaque enregistrement de données conformément aux normes/pratiques recommandées ISO 19115 et DataCite, assurant ainsi la conformité aux principes FAIR. Le schéma de métadonnées utilisé dans le SIOOC facilite la lisibilité par des machines et permet le moissonnage des métadonnées par d'autres catalogues de données/métadonnées et points d'accès aux données, tels que DFDR et Google Dataset Search. Enfin, le SIOOC apporte une valeur ajoutée grâce à l'utilisation de vocabulaires contrôlés et à une couverture médiatique et sur les réseaux sociaux.</p>
+<h2 id="vi-responsabilite-et-ressources">VI. Responsabilité et ressources</h2>
+<p><strong>Q1.</strong> Qui sera responsable de la gestion des résultats de recherche de ce projet pendant et après celui-ci ? Veuillez énumérer les tâches spécifiques de gestion des données dont les contributeurs du projet seront responsables.  </p>
+<p><strong>Q1 Directives</strong> <br />
+Votre plan de gestion des données et des résultats de recherche a identifié les activités importantes liées aux données dans votre projet. Identifiez les personnes responsables (individuelles ou organisations) de leur réalisation. Cela pourrait également inclure le calendrier associé à ces responsabilités et toute formation nécessaire pour préparer le personnel à ces tâches.  </p>
+<p><strong>Q2.</strong> Comment les responsabilités en matière de gestion des activités de données seront-elles gérées si des changements substantiels surviennent au sein du personnel supervisant les données du projet, y compris un changement de chercheur principal ? </p>
+<p><strong>Q2 Directives</strong> 
+Indiquez une stratégie de rechange, ou un plan d’urgence, pour ces résultats de recherche au cas où une ou plusieurs personnes responsables de la gestion des résultats partiraient (par exemple, un étudiant diplômé quittant après l’obtention de son diplôme ou un chercheur principal quittant le projet). </p>
+<p><strong>Q3.</strong> De quelles ressources aurez-vous besoin pour mettre en œuvre la gestion de vos résultats de recherche ? Quel sera, selon vous, le coût global ?  </p>
+<p><strong>Q3 Directives</strong> 
+Cette estimation doit intégrer les coûts de gestion des résultats de recherche engagés pendant le projet, ainsi que ceux nécessaires au soutien à long terme des données après la fin du projet. Parmi les éléments à prendre en compte dans cette dernière catégorie de dépenses figurent les coûts de documentation, de conservation et d'accès à long terme aux données. Certains organismes de financement précisent explicitement le soutien qu'ils fourniront pour couvrir les coûts de préparation des données en vue de leur dépôt. Cela peut inclure les aspects techniques de la gestion des données, les besoins en formation, le stockage et la sauvegarde des fichiers, ainsi que la contribution du personnel extérieur au projet.  </p>
+<h2 id="vii-ethique-et-conformite-juridique">VII. Éthique et conformité juridique</h2>
+<p><em>Remarque : Ce modèle de plan de gestion des données et des résultats de recherche est centré sur les données en libre accès destinées à la découverte et à l'accessibilité publique via le SIOOC. Par conséquent, il pourrait ne pas s'appliquer à toutes les données océanographiques, telles que les données sensibles ou à accès restreint. Afin de faciliter la découverte de données via le SIOOC pour ces résultats de recherche, les fournisseurs de données peuvent souhaiter masquer les données (par généralisation, anonymisation, omission ou dépersonnalisation), imposer un embargo sur les données sensibles ou envisager de créer un enregistrement de métadonnées uniquement pour permettre la découverte.</em></p>
+<p><em>Si vous avez besoin d'aide pour déterminer si vos données (ou une partie) sont sensibles et nécessitent un accès restreint, ou pour créer un enregistrement de métadonnées uniquement, veuillez contacter info@cioos.ca.</em></p>
+<p><strong>Q1.</strong> À qui appartient la propriété intellectuelle des résultats de la recherche et comment cette personne ou cette institution gérera-t-elle les questions juridiques, éthiques et de propriété intellectuelle ?  </p>
+<p><strong>Q1 Directives</strong>
+Veuillez inclure ici une description des droits de propriété, de licence et de propriété intellectuelle des résultats de la recherche. Les conditions de réutilisation doivent être clairement énoncées, conformément aux exigences légales et éthiques applicables (par exemple, consentement du sujet, autorisations, restrictions, etc.).</p>
+<p>Le respect de la législation sur la protection de la vie privée et des lois susceptibles d'imposer des restrictions de contenu des données doit être discuté avec le responsable de la protection de la vie privée ou le bureau des services de recherche de votre établissement. Les comités d'éthique de la recherche sont au cœur du processus de recherche.  </p>
+<p><strong>Q2.</strong> Votre projet inclut-il la participation de partenaires autochtones et, si oui, respecte-t-il les principes CARE et PCAP ?  </p>
+<p><strong>Q2 Directives</strong><br />
+Réfléchissez à l'impact ou aux avantages que votre recherche pourrait apporter aux communautés locales de la région concernée. Toute recherche impliquant des partenaires autochtones nécessite une sensibilisation à la souveraineté des données autochtones, conformément aux principes <a href="https://www.gida-global.org/care">CARE</a> et <a href="https://fnigc.ca/fr/les-principes-de-pcap-des-premieres-nations/">PCAP</a>. Ces ressources aideront les chercheurs non autochtones à comprendre les exigences inhérentes à la collecte de données en collaboration avec des partenaires autochtones, leur permettant ainsi de procéder de manière appropriée avant, pendant et après la fin du projet. Outre ces ressources, les communautés autochtones devraient être sensibilisées à la manière de soutenir efficacement leur souveraineté des données et les principes CARE.  </p>
+<p><strong>Q3.</strong> Si votre projet de recherche comprend des données sensibles ou restreintes, comment garantirez-vous que les droits de propriété intellectuelle sont protégés et que les données sensibles ou restreintes sont gérées de manière sécurisée et accessibles uniquement aux membres approuvés du projet, pendant la phase active de la recherche ?  </p>
+<p><strong>Q3 Directives</strong> 
+Déterminez où, comment et à qui les données sensibles ayant une valeur reconnue à long terme devraient être mises à disposition, ainsi que leur durée d'archivage. Les cas peuvent inclure, sans s'y limiter, les aires marines protégées (AMP), les données des communautés autochtones, les espèces menacées, etc. Les considérations relatives aux données sensibles et restreintes doivent être discutées avec les parties concernées (partenaires des communautés autochtones) et les gestionnaires de données, et être conformes aux exigences de financement.</p>
+<p>Décrivez les problèmes anticipés liés au partage des données et les mesures envisageables pour les atténuer. Ces problèmes peuvent concerner, entre autres, la confidentialité, l'absence d'accords de consentement ou des préoccupations relatives aux droits de propriété intellectuelle. Dans certains cas, une période d'embargo peut être justifiée ; ces cas peuvent être définis par la politique de l'organisme de financement relative aux données de recherche.</p>
+<p>Des restrictions peuvent être imposées en limitant l'accès physique aux périphériques de stockage, en stockant les données sur des ordinateurs sans accès réseau externe (c'est-à-dire à Internet), en les protégeant par mot de passe et en chiffrant les fichiers. Les données sensibles ne doivent jamais être partagées par e-mail ou via des services de stockage cloud comme Dropbox.  </p>
+<p><strong>Q4.</strong> Le cas échéant, quelles stratégies mettrez-vous en œuvre pour faire face aux utilisations secondaires des données sensibles ?  </p>
+<p><strong>Q4 Directives</strong><br />
+L'obtention du consentement approprié des participants à la recherche est une étape importante pour garantir que les données puissent être partagées avec des chercheurs extérieurs à votre projet. La déclaration de consentement (par exemple, un protocole d'accord ou un accord de recherche) peut préciser certaines conditions clarifiant l'utilisation des données (au-delà et tout au long de la phase active du projet) par d'autres chercheurs, ou si les données ne sont accessibles que sur demande, et qui en fournira l'accès.</p>
+
+
+
+
+
+
+
+  
+    
+  
+  
+    
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Dernière mise à jour">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">4 juillet 2025</span>
+  </span>
+
+    
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Créé">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">10 avril 2025</span>
+  </span>
+
+    
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Retour en haut de la page
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/cioos-siooc" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "header.autohide", "navigation.path", "navigation.top", "search.suggest", "search.highlight", "search.share", "content.action.edit"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}, "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.f1b6f286.min.js"></script>
+      
+    
+  </body>
+</html>
