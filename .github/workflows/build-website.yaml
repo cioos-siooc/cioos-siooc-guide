@@ -35,8 +35,9 @@ jobs:
       - name: Install uv
         uses: astral-sh/setup-uv@v5
       - name: Deploy docs with mike
+        env:
+          BRANCH_NAME: ${{ github.head_ref || github.ref_name }}
         run: |
-          BRANCH_NAME=${GITHUB_REF##*/}
           if [ "$BRANCH_NAME" = "main" ]; then
             uv run mike deploy --push "$BRANCH_NAME" latest
             uv run mike set-default --push latest
