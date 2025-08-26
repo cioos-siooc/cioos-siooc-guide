@@ -1,5 +1,10 @@
 [
   {
+    "version": "merge",
+    "title": "merge",
+    "aliases": []
+  },
+  {
     "version": "main",
     "title": "main",
     "aliases": [

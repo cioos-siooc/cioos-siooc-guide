@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>https://guide.cioos.ca/merge/</loc>
+        <lastmod>2025-08-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://guide.cioos.ca/merge/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://guide.cioos.ca/mergeen/"/>
+    </url>
+    <url>
+        <loc>https://guide.cioos.ca/merge/guide/accueil/</loc>
+        <lastmod>2025-08-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://guide.cioos.ca/merge/guide/accueil/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://guide.cioos.ca/mergeen/guide/accueil/"/>
+    </url>
+    <url>
+        <loc>https://guide.cioos.ca/merge/guide/annexes/</loc>
+        <lastmod>2025-08-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://guide.cioos.ca/merge/guide/annexes/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://guide.cioos.ca/mergeen/guide/annexes/"/>
+    </url>
+    <url>
+        <loc>https://guide.cioos.ca/merge/guide/dictionnaire/</loc>
+        <lastmod>2025-08-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://guide.cioos.ca/merge/guide/dictionnaire/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://guide.cioos.ca/mergeen/guide/dictionnaire/"/>
+    </url>
+    <url>
+        <loc>https://guide.cioos.ca/merge/guide/faircare/</loc>
+        <lastmod>2025-08-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://guide.cioos.ca/merge/guide/faircare/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://guide.cioos.ca/mergeen/guide/faircare/"/>
+    </url>
+    <url>
+        <loc>https://guide.cioos.ca/merge/guide/guide/</loc>
+        <lastmod>2025-08-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://guide.cioos.ca/merge/guide/guide/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://guide.cioos.ca/mergeen/guide/guide/"/>
+    </url>
+    <url>
+        <loc>https://guide.cioos.ca/merge/guide/recommendations/</loc>
+        <lastmod>2025-08-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://guide.cioos.ca/merge/guide/recommendations/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://guide.cioos.ca/mergeen/guide/recommendations/"/>
+    </url>
+    <url>
+        <loc>https://guide.cioos.ca/merge/guide/ressources/</loc>
+        <lastmod>2025-08-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://guide.cioos.ca/merge/guide/ressources/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://guide.cioos.ca/mergeen/guide/ressources/"/>
+    </url>
+    <url>
+        <loc>https://guide.cioos.ca/merge/guide/template/</loc>
+        <lastmod>2025-08-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://guide.cioos.ca/merge/guide/template/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://guide.cioos.ca/mergeen/guide/template/"/>
+    </url>
+    <url>
+        <loc>https://guide.cioos.ca/merge/pgd/definitions/</loc>
+        <lastmod>2025-08-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://guide.cioos.ca/merge/pgd/definitions/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://guide.cioos.ca/mergeen/pgd/definitions/"/>
+    </url>
+    <url>
+        <loc>https://guide.cioos.ca/merge/pgd/pgdcioos/</loc>
+        <lastmod>2025-08-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://guide.cioos.ca/merge/pgd/pgdcioos/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://guide.cioos.ca/mergeen/pgd/pgdcioos/"/>
+    </url>
+    <url>
+        <loc>https://guide.cioos.ca/merge/en/</loc>
+        <lastmod>2025-08-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://guide.cioos.ca/merge/en/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://guide.cioos.ca/merge"/>
+    </url>
+    <url>
+        <loc>https://guide.cioos.ca/merge/en/guide/accueil/</loc>
+        <lastmod>2025-08-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://guide.cioos.ca/merge/en/guide/accueil/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://guide.cioos.ca/mergeguide/accueil/"/>
+    </url>
+    <url>
+        <loc>https://guide.cioos.ca/merge/en/guide/annexes/</loc>
+        <lastmod>2025-08-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://guide.cioos.ca/merge/en/guide/annexes/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://guide.cioos.ca/mergeguide/annexes/"/>
+    </url>
+    <url>
+        <loc>https://guide.cioos.ca/merge/en/guide/dictionnaire/</loc>
+        <lastmod>2025-08-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://guide.cioos.ca/merge/en/guide/dictionnaire/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://guide.cioos.ca/mergeguide/dictionnaire/"/>
+    </url>
+    <url>
+        <loc>https://guide.cioos.ca/merge/en/guide/faircare/</loc>
+        <lastmod>2025-08-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://guide.cioos.ca/merge/en/guide/faircare/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://guide.cioos.ca/mergeguide/faircare/"/>
+    </url>
+    <url>
+        <loc>https://guide.cioos.ca/merge/en/guide/guide/</loc>
+        <lastmod>2025-08-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://guide.cioos.ca/merge/en/guide/guide/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://guide.cioos.ca/mergeguide/guide/"/>
+    </url>
+    <url>
+        <loc>https://guide.cioos.ca/merge/en/guide/recommendations/</loc>
+        <lastmod>2025-08-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://guide.cioos.ca/merge/en/guide/recommendations/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://guide.cioos.ca/mergeguide/recommendations/"/>
+    </url>
+    <url>
+        <loc>https://guide.cioos.ca/merge/en/guide/ressources/</loc>
+        <lastmod>2025-08-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://guide.cioos.ca/merge/en/guide/ressources/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://guide.cioos.ca/mergeguide/ressources/"/>
+    </url>
+    <url>
+        <loc>https://guide.cioos.ca/merge/en/guide/template/</loc>
+        <lastmod>2025-08-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://guide.cioos.ca/merge/en/guide/template/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://guide.cioos.ca/mergeguide/template/"/>
+    </url>
+    <url>
+        <loc>https://guide.cioos.ca/merge/en/pgd/definitions/</loc>
+        <lastmod>2025-08-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://guide.cioos.ca/merge/en/pgd/definitions/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://guide.cioos.ca/mergepgd/definitions/"/>
+    </url>
+    <url>
+        <loc>https://guide.cioos.ca/merge/en/pgd/pgdcioos/</loc>
+        <lastmod>2025-08-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://guide.cioos.ca/merge/en/pgd/pgdcioos/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://guide.cioos.ca/mergepgd/pgdcioos/"/>
+    </url>
+</urlset>
