@@ -20,10 +20,5 @@
     "version": "development",
     "title": "development",
     "aliases": []
-  },
-  {
-    "version": "add-mike",
-    "title": "add-mike",
-    "aliases": []
   }
 ]
