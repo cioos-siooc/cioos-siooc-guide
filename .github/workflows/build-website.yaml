@@ -5,6 +5,7 @@ on:
     branches:
       - main
       - development
+      - feature/add-mike
   pull_requests:
     branches:
       - development
