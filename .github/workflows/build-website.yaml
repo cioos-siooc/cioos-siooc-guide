@@ -19,6 +19,8 @@ permissions:
 jobs:
   # Single deploy job since we're just deploying
   deploy:
+    env:
+      BRANCH_NAME: ${{ github.head_ref || github.ref_name }}
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -35,8 +37,6 @@ jobs:
       - name: Install uv
         uses: astral-sh/setup-uv@v5
       - name: Deploy docs with mike
-        env:
-          BRANCH_NAME: ${{ github.head_ref || github.ref_name }}
         run: |
           if [ "$BRANCH_NAME" = "main" ]; then
             uv run mike deploy --push "$BRANCH_NAME" latest
