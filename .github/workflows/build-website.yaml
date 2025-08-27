@@ -60,11 +60,11 @@ jobs:
         uses: peter-evans/find-comment@v3
         with:
           issue-number: ${{ github.event.pull_request.number }}
-          body-includes: "🧪🎉 This version of the website is available at: "
+          body-includes: "🧪🎉 This version of the website will be available shortly at: "
       - name: Add comment to PR
         if: github.event_name == 'pull_request' && steps.find-comment.outputs.comment-id == ''
         uses: peter-evans/create-or-update-comment@v3
         with:
           issue-number: ${{ github.event.pull_request.number }}
           body: |
-            🧪🎉 This version of the website is available at: https://guide.cioos.ca/${{ env.VERSION_NAME }}
+            🧪🎉 This version of the website will be available shortly at: https://guide.cioos.ca/${{ env.VERSION_NAME }}
