@@ -13,18 +13,13 @@ hide_edit: true
   <div class="hero__content">
     <h1>Data Management Guide</h1>
     <p class="hero__tagline">Practical guidance, standards, and tools for FAIR & CARE ocean data stewardship across Canada.</p>
-    <div class="hero__actions">
-      <a class="md-button md-button--primary" href="guide/accueil/">Get Started</a>
-      <a class="md-button" href="guide/faircare/">FAIR & CARE</a>
-      <a class="md-button" href="pgd/pgdcioos/">Data Management Plan</a>
-    </div>
   </div>
 </div>
 <!-- Key Features / Quick Links -->
 <div class="feature-grid">
   <div class="feature-card">
     <h3>Why this guide?</h3>
-    <p>Shared practices that make ocean observations more discoverable, interoperable, and reusable while respecting Indigenous data governance.</p>
+    <p>Shared practices that make ocean observations more discoverable, interoperable, and reusable.</p>
     <a class="feature-link" href="guide/accueil/">Overview →</a>
   </div>
   <div class="feature-card">
@@ -54,7 +49,7 @@ hide_edit: true
   </div>
 </div>
 
-### Regional Associations
+<h3 style="text-align: center;">Regional Associations</h3>
 <div class="regions-logos" aria-label="CIOOS Regional Associations">
   <a href="https://cioospacific.ca/" aria-label="CIOOS Pacific">
     <img src="../assets/logos/CioosPac_EN.PNG" alt="CIOOS Pacific" />

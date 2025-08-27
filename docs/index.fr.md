@@ -14,11 +14,6 @@ hide:
   <div class="hero__content">
     <h1>Guide de gestion des données</h1>
     <p class="hero__tagline">Conseils pratiques, normes et outils pour une gestion des données océanographiques conforme aux principes FAIR & CARE.</p>
-    <div class="hero__actions">
-      <a class="md-button md-button--primary" href="guide/accueil/">Commencer</a>
-      <a class="md-button" href="guide/faircare/">FAIR & CARE</a>
-      <a class="md-button" href="pgd/pgdcioos/">Plan de gestion</a>
-    </div>
   </div>
 </div>
 
@@ -26,7 +21,7 @@ hide:
 <div class="feature-grid">
   <div class="feature-card">
     <h3>Pourquoi ce guide ?</h3>
-    <p>Des pratiques partagées pour rendre les observations océaniques plus découvrables, interopérables et réutilisables tout en respectant la gouvernance des données autochtones.</p>
+    <p>Des pratiques partagées pour rendre les observations océaniques plus découvrables, interopérables et réutilisables.</p>
     <a class="feature-link" href="guide/accueil/">Aperçu →</a>
   </div>
   <div class="feature-card">
@@ -55,8 +50,7 @@ hide:
     <a class="feature-link" href="pgd/pgdcioos/">Créer un PGD →</a>
   </div>
 </div>
-
-### Associations régionales
+<h3 style="text-align: center;">Associations régionales</h3>
 <div class="regions-logos" aria-label="Associations régionales du SIOOC">
   <a href="https://cioospacific.ca/fr/accueil/" aria-label="CIOOS Pacifique">
     <img src="./assets/logos/CioosPac_FR.PNG" alt="CIOOS Pacifique" />
