@@ -51,6 +51,59 @@
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
+  
+
+
+  <script
+  defer
+  data-domain="guide.cioos.ca,all.cioos.ca"
+  src="https://plausible.cioos.ca/js/script.file-downloads.hash.outbound-links.local.js"
+  
+></script>
+
+<script>
+  window.plausible = window.plausible || function () { (window.plausible.q = window.plausible.q || []).push(arguments) };
+
+  /* Register event handlers after documented loaded */
+  document.addEventListener("DOMContentLoaded", function () {
+    /* Set up search tracking */
+    if (document.forms.search) {
+      var query = document.forms.search.query;
+      query.addEventListener("blur", function() {
+        if (this.value) plausible("Search", { props: { search_term: this.value } });
+      })
+    }
+
+    /* Set up feedback, i.e. "Was this page helpful?" */
+    document$.subscribe(function () {
+      var feedback = document.forms.feedback;
+      if (typeof feedback === "undefined") return;
+
+      /* Send feedback to Plausible */
+      for (var button of feedback.querySelectorAll("[type=submit]")) {
+        button.addEventListener("click", function (ev) {
+          ev.preventDefault();
+
+          var page = document.location.pathname;
+          var value = this.getAttribute("data-md-value");
+          console.log("[feedback] User clicked", { value });
+          plausible(`Feedback: ${value}`);
+
+          /* Disable form and show note, if given */
+          feedback.firstElementChild.disabled = true;
+          var note = feedback.querySelector(".md-feedback__note [data-md-value='" + value + "']");
+          if (note) note.hidden = false;
+        })
+
+        /* Show feedback */
+        feedback.hidden = false;
+      }
+    });
+  });
+</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
 
     
     
@@ -739,7 +792,7 @@
 
 
 <div class="top-logo">
-  <a href="/en/" aria-label="CIOOS home (English)"><img class="hero__logo" src="/assets/logos/cioos-national-color_en.svg" alt="CIOOS" /></a>
+  <a href="/en/" aria-label="CIOOS home (English)"><img class="hero__logo" src="../assets/logos/cioos-national-color_en.svg" alt="CIOOS" /></a>
 </div>
 <!-- Hero Section -->
 <div class="hero" role="banner">
@@ -790,13 +843,13 @@
 <h3 id="regional-associations">Regional Associations</h3>
 <div class="regions-logos" aria-label="CIOOS Regional Associations">
   <a href="https://cioospacific.ca/" aria-label="CIOOS Pacific">
-    <img src="/assets/logos/CioosPac_EN.PNG" alt="CIOOS Pacific" />
+    <img src="../assets/logos/CioosPac_EN.PNG" alt="CIOOS Pacific" />
   </a>
   <a href="https://ogsl.ca/en/home-slgo/" aria-label="SLGO Gulf of St. Lawrence">
-    <img src="/assets/logos/SLGO_Logo.png" alt="SLGO" />
+    <img src="../assets/logos/SLGO_Logo.png" alt="SLGO" />
   </a>
   <a href="https://cioosatlantic.ca/" aria-label="CIOOS Atlantic">
-    <img src="/assets/logos/CioosAtl_EN.PNG" alt="CIOOS Atlantic" />
+    <img src="../assets/logos/CioosAtl_EN.PNG" alt="CIOOS Atlantic" />
   </a>
 </div>
 
@@ -814,6 +867,8 @@
   
 
 
+
+  
 
 
   
