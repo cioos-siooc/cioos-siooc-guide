@@ -288,37 +288,3 @@
   font-size: .85rem;
   box-shadow: 0 1px 2px rgba(0, 0, 0, .06);
 }
-
-/* Dark scheme adjustments */
-@media (prefers-color-scheme: dark) {
-  .hero__actions .md-button {
-    background: #0e3b35;
-    color: #fff;
-    border-color: #2e6e63;
-  }
-
-  .hero__actions .md-button:hover {
-    background: var(--md-primary-fg-color);
-    color: #0d2925;
-  }
-
-  .hero__actions .md-button.md-button--primary {
-    background: var(--md-primary-fg-color);
-    color: #0d2925;
-    border-color: var(--md-primary-fg-color);
-  }
-
-  .hero__actions .md-button.md-button--primary:hover {
-    background: #0e3b35;
-    color: #fff;
-  }
-
-  .feature-card {
-    --card-bg: #1f3a37;
-    border-color: #28554f;
-  }
-
-  .feature-card:hover {
-    border-color: var(--md-primary-fg-color);
-  }
-}
