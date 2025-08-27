@@ -67,4 +67,4 @@ jobs:
         with:
           issue-number: ${{ github.event.pull_request.number }}
           body: |
-            🧪🎉 This version of the website is available at: https://guide.cioos.ca/$VERSION_NAME
+            🧪🎉 This version of the website is available at: https://guide.cioos.ca/${{ env.VERSION_NAME }}
