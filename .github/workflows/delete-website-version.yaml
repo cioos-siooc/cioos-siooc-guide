@@ -35,5 +35,5 @@ jobs:
 
       - name: Deploy docs with mike
         run: |
-          uv run mike delete "$VERSION_NAME"
+          uv run mike delete "$VERSION_NAME" --push
           
