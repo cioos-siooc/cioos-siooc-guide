@@ -46,21 +46,29 @@ nav:
 
 extra:
   generator: false
+  version:
+    provider: mike
   alternate:
     # Switch to English
     - name: English
-      link: /en/
+      link: en/
       lang: en
     # Switch to French
     - name: Français
-      link: /
+      link: ./
       lang: fr
 
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/cioos-siooc
 
+  analytics:
+    provider: plausible
+    domain: guide.cioos.ca,all.cioos.ca
+    src: "https://plausible.cioos.ca/js/script.file-downloads.hash.outbound-links.local.js"
+
 plugins:
+  - material-plausible
   - search:
       lang: fr
   - i18n:
