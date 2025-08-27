@@ -160,9 +160,13 @@
 
 .feature-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  /* Center tracks so last row items are centered when the row isn't full */
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 360px));
   gap: 1.2rem;
   margin: 2rem 0 2.5rem;
+  justify-content: center;
+  /* stretch items to fill their grid track width */
+  justify-items: stretch;
 }
 
 .feature-card {
@@ -177,6 +181,9 @@
   gap: .4rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, .04), 0 4px 14px -6px rgba(0, 0, 0, .08);
   transition: box-shadow .25s, transform .25s, border-color .25s;
+  /* keep a pleasant max width and center within grid cell */
+  width: 100%;
+  max-width: 360px;
 }
 
 .feature-card:hover {
@@ -269,6 +276,7 @@
 
   .feature-card {
     padding: 1rem;
+  max-width: 100%;
   }
 }
 
