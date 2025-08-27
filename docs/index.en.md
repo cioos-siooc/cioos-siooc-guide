@@ -62,6 +62,6 @@ hide_edit: true
   </a>
 </div>
 
-<div class="intro-note">
+<div class="intro-note" style="text-align: center;">
 <p><strong>Open & Evolving:</strong> This guide is community-maintained. Use the edit button on any page to contribute improvements.</p>
 </div>
