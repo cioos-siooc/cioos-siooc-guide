@@ -4,16 +4,25 @@ on:
   push:
     branches:
       - main
+      - development
+      - feature/add-mike
+  pull_request:
+    branches:
+      - development
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
+  pull-requests: write
+  issues: write
 
 jobs:
   # Single deploy job since we're just deploying
   deploy:
+    env:
+      BRANCH_NAME: ${{ github.head_ref || github.ref_name }}
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -21,17 +30,41 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Configure git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
       - name: Install uv
         uses: astral-sh/setup-uv@v5
-      - name: Build website
-        run: uv run mkdocs build --site-dir site
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+      - name: Define variables
+        run: |
+          BRANCH_NAME='${{ github.head_ref || github.ref_name }}'
+          BRANCH_NAME_TRIMMED=$(printf '%s' "$BRANCH_NAME" | sed -E 's/^[[:space:]]+//; s/[[:space:]]+$//')
+          VERSION_NAME=$(printf '%s' "$BRANCH_NAME_TRIMMED" | tr -c '[:alnum:]-' '-' | sed -E 's/-{2,}/-/g; s/^-+//; s/-+$//')
+          echo "BRANCH_NAME=$BRANCH_NAME" >> $GITHUB_ENV
+          echo "VERSION_NAME=$VERSION_NAME" >> $GITHUB_ENV
+
+      - name: Deploy docs with mike
+        run: |
+          if [ "$BRANCH_NAME" = "main" ]; then
+            uv run mike deploy --push "$VERSION_NAME" latest
+            uv run mike set-default --push latest
+          else
+            uv run mike deploy --push "$VERSION_NAME"
+          fi
+      - name: Check if message already exists
+        if: github.event_name == 'pull_request'
+        id: find-comment
+        uses: peter-evans/find-comment@v3
         with:
-          # Upload entire repository
-          path: "./site"
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+          issue-number: ${{ github.event.pull_request.number }}
+          body-includes: "🧪🎉 This version of the website is available at: "
+      - name: Add comment to PR
+        if: github.event_name == 'pull_request' && steps.find-comment.outputs.comment-id == ''
+        uses: peter-evans/create-or-update-comment@v3
+        with:
+          issue-number: ${{ github.event.pull_request.number }}
+          body: |
+            🧪🎉 This version of the website is available at: https://guide.cioos.ca/${{ env.VERSION_NAME }}

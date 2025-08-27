@@ -47,14 +47,16 @@ nav:
 
 extra:
   generator: false
+  version:
+    provider: mike
   alternate:
     # Switch to English
     - name: English
-      link: /en/
+      link: en/
       lang: en
     # Switch to French
     - name: Français
-      link: /
+      link: ./
       lang: fr
 
   social:
