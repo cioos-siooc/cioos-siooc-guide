@@ -8,7 +8,7 @@ hide:
 
 <!-- Section Héro -->
 <div class="top-logo">
-  <a href="/" aria-label="Accueil SIOOC"><img class="hero__logo" src="/assets/logos/cioos-national-color_fr.svg" alt="SIOOC" /></a>
+  <a href="/" aria-label="Accueil SIOOC"><img class="hero__logo" src="./assets/logos/cioos-national-color_fr.svg" alt="SIOOC" /></a>
 </div>
 <div class="hero" role="banner">
   <div class="hero__content">
@@ -59,13 +59,13 @@ hide:
 ### Associations régionales
 <div class="regions-logos" aria-label="Associations régionales du SIOOC">
   <a href="https://cioospacific.ca/fr/accueil/" aria-label="CIOOS Pacifique">
-    <img src="assets/logos/CioosPac_FR.PNG" alt="CIOOS Pacifique" />
+    <img src="./assets/logos/CioosPac_FR.PNG" alt="CIOOS Pacifique" />
   </a>
   <a href="https://ogsl.ca/fr/accueil/" aria-label="OGSL">
-    <img src="assets/logos/OGSL_Logo.png" alt="OGSL" />
+    <img src="./assets/logos/OGSL_Logo.png" alt="OGSL" />
   </a>
   <a href="https://cioosatlantic.ca/fr/" aria-label="CIOOS Atlantique">
-    <img src="assets/logos/CioosAtl_FR.PNG" alt="CIOOS Atlantique" />
+    <img src="./assets/logos/CioosAtl_FR.PNG" alt="CIOOS Atlantique" />
   </a>
 </div>
 

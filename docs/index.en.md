@@ -6,7 +6,7 @@ hide_edit: true
 ---
 
 <div class="top-logo">
-  <a href="/en/" aria-label="CIOOS home (English)"><img class="hero__logo" src="/assets/logos/cioos-national-color_en.svg" alt="CIOOS" /></a>
+  <a href="/en/" aria-label="CIOOS home (English)"><img class="hero__logo" src="../assets/logos/cioos-national-color_en.svg" alt="CIOOS" /></a>
 </div>
 <!-- Hero Section -->
 <div class="hero" role="banner">
@@ -57,13 +57,13 @@ hide_edit: true
 ### Regional Associations
 <div class="regions-logos" aria-label="CIOOS Regional Associations">
   <a href="https://cioospacific.ca/" aria-label="CIOOS Pacific">
-    <img src="/assets/logos/CioosPac_EN.PNG" alt="CIOOS Pacific" />
+    <img src="../assets/logos/CioosPac_EN.PNG" alt="CIOOS Pacific" />
   </a>
   <a href="https://ogsl.ca/en/home-slgo/" aria-label="SLGO Gulf of St. Lawrence">
-    <img src="/assets/logos/SLGO_Logo.png" alt="SLGO" />
+    <img src="../assets/logos/SLGO_Logo.png" alt="SLGO" />
   </a>
   <a href="https://cioosatlantic.ca/" aria-label="CIOOS Atlantic">
-    <img src="/assets/logos/CioosAtl_EN.PNG" alt="CIOOS Atlantic" />
+    <img src="../assets/logos/CioosAtl_EN.PNG" alt="CIOOS Atlantic" />
   </a>
 </div>
 
