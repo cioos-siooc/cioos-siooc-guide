@@ -48,7 +48,7 @@ jobs:
 
       - name: Update mkdocs.yml
         run: |
-          sed -i "s\edit_uri: edit/main/docs/\edit_uri: edit/$VERSION_NAME/docs/\" mkdocs.yml
+          sed -i "s|edit_uri: edit/main/docs/|edit_uri: edit/$VERSION_NAME/docs/|" mkdocs.yml
           if [ "$BRANCH_NAME" = "main" ]; then
             sed -i "s/version_selector: true/version_selector: false/" mkdocs.yml
           fi
