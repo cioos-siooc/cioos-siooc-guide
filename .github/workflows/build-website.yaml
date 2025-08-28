@@ -46,6 +46,13 @@ jobs:
           echo "BRANCH_NAME=$BRANCH_NAME" >> $GITHUB_ENV
           echo "VERSION_NAME=$VERSION_NAME" >> $GITHUB_ENV
 
+      - name: Update mkdocs.yml
+        run: |
+          sed -i "s|edit_uri: edit/main/docs/|edit_uri: edit/$VERSION_NAME/docs/|" mkdocs.yml
+          if [ "$BRANCH_NAME" = "main" ]; then
+            sed -i "s/version_selector: true/version_selector: false/" mkdocs.yml
+          fi
+
       - name: Deploy docs with mike
         run: |
           if [ "$BRANCH_NAME" = "main" ]; then

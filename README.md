@@ -50,7 +50,5 @@ We are also using some extensions:
 
 Live web site is made available at:  https://cioos-siooc.github.io/cioos-siooc-guide/
 
-## Versioned Documentation (mike)
-
 We use [mike](https://github.com/jimporter/mike) to manage multiple published versions of the site on GitHub Pages.
 

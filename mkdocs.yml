@@ -68,6 +68,8 @@ extra:
     src: "https://plausible.cioos.ca/js/script.file-downloads.hash.outbound-links.local.js"
 
 plugins:
+  - mike:
+      version_selector: true
   - material-plausible
   - search:
       lang: fr
