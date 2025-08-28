@@ -12,6 +12,11 @@
     "aliases": []
   },
   {
+    "version": "feature-add-contributors",
+    "title": "feature-add-contributors",
+    "aliases": []
+  },
+  {
     "version": "development",
     "title": "development",
     "aliases": []
