@@ -1,0 +1,24 @@
+{% if page.edit_url %}
+
+{# Edit button (show only if not explicitly hidden) #}
+{% if "content.action.edit" in features and not page.meta.hide_edit %}
+<a href="{{ page.edit_url }}" title="{{ lang.t('action.edit') }}" class="md-content__button md-icon" rel="edit">
+    {% set icon = config.theme.icon.edit or "material/file-edit-outline" %}
+    {% include ".icons/" ~ icon ~ ".svg" %}
+</a>
+{% endif %}
+
+{# View (raw) button – leave unchanged, or also guard with a flag if you like #}
+{% if "content.action.view" in features %}
+{% if "/blob/" in page.edit_url %}
+{% set part = "blob" %}
+{% else %}
+{% set part = "edit" %}
+{% endif %}
+<a href="{{ page.edit_url | replace(part, 'raw') }}" title="{{ lang.t('action.view') }}"
+    class="md-content__button md-icon">
+    {% set icon = config.theme.icon.view or "material/file-eye-outline" %}
+    {% include ".icons/" ~ icon ~ ".svg" %}
+</a>
+{% endif %}
+{% endif %}
