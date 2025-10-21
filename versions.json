@@ -7,11 +7,6 @@
     ]
   },
   {
-    "version": "feature-improve-home-page",
-    "title": "feature-improve-home-page",
-    "aliases": []
-  },
-  {
     "version": "feature-branch-specific-mkdocs-yml",
     "title": "feature-branch-specific-mkdocs-yml",
     "aliases": []
