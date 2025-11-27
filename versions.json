@@ -20,5 +20,10 @@
     "version": "development",
     "title": "development",
     "aliases": []
+  },
+  {
+    "version": "20251127-AnnexeFrImprovments",
+    "title": "20251127-AnnexeFrImprovments",
+    "aliases": []
   }
 ]
