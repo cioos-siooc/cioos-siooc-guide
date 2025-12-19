@@ -45,7 +45,8 @@ nav:
   - Data Management Plan:
       - ./pgd/definitions.md
       - ./pgd/pgdcioos.md
-
+  - Platforms:
+      - ./platforms/erddap.md
 extra:
   generator: false
   version:
@@ -107,3 +108,5 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
