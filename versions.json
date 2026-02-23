@@ -7,11 +7,6 @@
     ]
   },
   {
-    "version": "fix-fix-github-page-pr-deployment",
-    "title": "fix-fix-github-page-pr-deployment",
-    "aliases": []
-  },
-  {
     "version": "feature-branch-specific-mkdocs-yml",
     "title": "feature-branch-specific-mkdocs-yml",
     "aliases": []
