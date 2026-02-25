@@ -106,7 +106,7 @@ Par conséquent, il est recommandé de fournir des informations sur les méthode
 
 La variable **samplingProtocol**, qui doit obligatoirement apparaître dans la table d’événement (Event Core), permet notamment de clarifier la notion d’absence, le cas échéant.
 
-## Le « Basis of Record » ou l'origine de l'observation  
+## Le Basis of Record
 
 Dans le contexte de la norme du Darwin Core, la variable ***basisOfRecord*** décrit l’origine de l'observation. Elle fournit des informations sur la manière dont les données ont été obtenues et sur la forme sous laquelle elles sont stockées.
 
@@ -250,5 +250,6 @@ Dans cette table, chaque ligne représente un événement d'échantillonnage ou 
 Dans le cas où plusieurs protocoles d’échantillonnage ont été appliqués lors d’un même événement, le Darwin Core émet la recommandation de séparer les valeurs avec l’utilisation de l’espace-barre verticale-espace (“ | “).
 
 Ex : Casier à homard | Casier à hormard modifié
+
 
 
