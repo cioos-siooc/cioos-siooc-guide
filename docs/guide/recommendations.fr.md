@@ -78,7 +78,7 @@ Dans la mesure du possible, dans le cas de données de biodiversité, chaque obs
 | 2024-07-16 | 48.1331         | \-69.1706        | P01       | senne            | trait 2 | Éperlan arc-en-ciel | Osmerus mordax   | present          | livingSpecimen | 10           | 2               |
 | 2024-07-16 | 48.1331         | \-69.1706        | P01       | senne            | trait 2 | Éperlan arc-en-ciel | Osmerus mordax   | present          | livingSpecimen | NA           | 45              |
 
-* *Pour plus d’information sur le [basisOfRecord](#le-basis-of-record) et l[’occurrenceStatus](#le-statut-d-occurrence) se référer à l’Annexe 1*
+* *Pour plus d’information sur le [basisOfRecord](./annexes.fr.md#le-basis-of-record) et l[’occurrenceStatus](./annexes.fr.md#le-statut-d-occurrence) se référer à l’Annexe 1*
 
 **Caractérisation par transect et/ou quadrats**
 
