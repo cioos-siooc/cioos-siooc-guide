@@ -5,7 +5,7 @@ Le terme «données sensibles» englobe toutes les données qui doivent être pr
 L'accès à ces données doit être restreint, voire interdit. Leur protection peut être requise pour des raisons juridiques, éthiques, relatives à la vie privée ou à la propriété intellectuelle.
 Bien que les données sensibles soient souvent associées à la recherche impliquant des êtres humains, il est important de savoir que toutes les disciplines peuvent produire des données sensibles sous différentes formes et à divers niveaux de risque. Les données sensibles peuvent concerner des groupes sociaux, des organisations, la faune, des habitats ou des technologies propriétaires.
 
- ### Catégories courantes de données sensibles:
+### Catégories courantes de données sensibles:
 
 * Données biomédicales: informations génétiques, physiologiques ou liées à la santé provenant d’êtres humains, d’animaux ou de plantes. Cela peut inclure des mesures de laboratoire, des échantillons de tissus ou des séquences génétiques pouvant révéler des caractéristiques ou des vulnérabilités sensibles.
 * Données personnelles: informations permettant d’identifier une personne, directement ou indirectement. Adresse et numéro de téléphone personnels, numéro d’identification gouvernemental, attributs économiques, culturels ou sociaux.
