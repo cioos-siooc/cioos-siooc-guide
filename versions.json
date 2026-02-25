@@ -7,11 +7,6 @@
     ]
   },
   {
-    "version": "gannej-patch-1",
-    "title": "gannej-patch-1",
-    "aliases": []
-  },
-  {
     "version": "feature-branch-specific-mkdocs-yml",
     "title": "feature-branch-specific-mkdocs-yml",
     "aliases": []
