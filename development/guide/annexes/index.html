@@ -680,9 +680,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#le-basis-of-record-ou-le-type-de-source-pour-les-donnees-enregistrees" class="md-nav__link">
+  <a href="#le-basis-of-record-ou-lorigine-de-lobservation" class="md-nav__link">
     <span class="md-ellipsis">
-      Le « Basis of Record » ou le type de source pour les données enregistrées
+      Le « Basis of Record » ou l'origine de l'observation
     </span>
   </a>
   
@@ -906,9 +906,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#le-basis-of-record-ou-le-type-de-source-pour-les-donnees-enregistrees" class="md-nav__link">
+  <a href="#le-basis-of-record-ou-lorigine-de-lobservation" class="md-nav__link">
     <span class="md-ellipsis">
-      Le « Basis of Record » ou le type de source pour les données enregistrées
+      Le « Basis of Record » ou l'origine de l'observation
     </span>
   </a>
   
@@ -1038,14 +1038,131 @@
 <p>Il est important de noter que la détermination de l'absence d'une espèce peut être influencée par divers facteurs, notamment les techniques de collecte des données, les saisons, les conditions environnementales et la compétence des observateurs. L’absence peut essentiellement signifier deux faits bien distincts : (1) dans un lieu et à un moment donné, le spécimen n’a pas été observé, mais il n’est pas possible de dire qu’il n’existe pas en cet endroit donné; ou (2) le spécimen est absent parce qu’il n’existe pas dans ce lieu donné. Ces deux interprétations peuvent mener à des conclusions complètement différentes.</p>
 <p>Par conséquent, il est recommandé de fournir des informations sur les méthodes de collecte des données et sur la fiabilité des observations lors de l'utilisation de la variable occurrenceStatus. En ce sens, si vous constatez l’absence d’un spécimen, notez aussi de <em>quelle absence</em> il est question, car cette information sera pertinente à intégrer parmi les métadonnées.</p>
 <p>La variable <strong>samplingProtocol</strong>, qui doit obligatoirement apparaître dans la table d’événement (Event Core), permet notamment de clarifier la notion d’absence, le cas échéant.</p>
-<h2 id="le-basis-of-record-ou-le-type-de-source-pour-les-donnees-enregistrees">Le « Basis of Record » ou le type de source pour les données enregistrées</h2>
-<p>Dans le contexte de la norme du Darwin Core, la variable <strong><em>basisOfRecord</em></strong> décrit la nature de l'observation qui a servi de source pour les données enregistrées. Elle fournit des informations sur la manière dont les données ont été obtenues et sur la forme sous laquelle elles sont stockées.</p>
-<p>Les valeurs possibles sont normalisées, c’est-à-dire qu’il faut choisir parmi les valeurs définies par le Darwin Core. Les plus utilisées sont généralement <em>PreservedSpecimen</em>, <em>LivingSpecimen</em> et <em>HumanObservation</em>. Les définitions que nous proposons visent à faciliter la détermination de quelle valeur choisir :</p>
-<p><strong>PreservedSpecimen :</strong> Cette valeur indique que les données ont été collectées à partir d'un spécimen conservé, généralement dans un musée, une collection ou un autre établissement similaire. Les spécimens conservés peuvent inclure des animaux naturalisés, des plantes séchées, des échantillons d'ADN, etc.</p>
-<p>Exemple : un inventaire de poissons est réalisé pour un lieu donné. Parmi les poissons, certains sont congelés afin d’y prélever certaines mesures (comme la taille, le sexe, etc.). Dans le tableau des mesures prises sur les spécimens, sous la variable <em>basisOfRecord</em>, il faudra alors noter <em>PreservedSpecimen</em>.</p>
-<p><strong>LivingSpecimen :</strong> Cette valeur indique que les données ont été collectées à partir d'un spécimen vivant, c'est-à-dire un organisme qui est encore en vie au moment de la collecte des données. Cela peut inclure des observations sur le terrain d'animaux, de plantes ou d'autres organismes vivants.</p>
-<p>Exemple : un inventaire de poissons est réalisé pour un lieu donné. Les poissons sont pêchés, comptés et des mesures sont prises. Les poissons sont finalement relâchés à l’eau. Dans les tableaux d’occurrences et des mesures prises sur les spécimens, sous la variable <em>basisOfRecord</em>, il faudra alors noter <em>LivingSpecimen</em>.</p>
-<p><strong>HumanObservation :</strong> Cette valeur indique que les données ont été collectées par l'observation directe d'un observateur humain. Par exemple, des observations de comportements d'animaux dans la nature, des relevés de terrain effectués par des scientifiques ou des naturalistes amateurs, etc.</p>
+<h2 id="le-basis-of-record-ou-lorigine-de-lobservation">Le « Basis of Record » ou l'origine de l'observation</h2>
+<p>Dans le contexte de la norme du Darwin Core, la variable <strong><em>basisOfRecord</em></strong> décrit l’origine de l'observation. Elle fournit des informations sur la manière dont les données ont été obtenues et sur la forme sous laquelle elles sont stockées.</p>
+<p>Les valeurs possibles sont normalisées, c’est-à-dire qu’il faut choisir parmi les valeurs définies par le Darwin Core. Nous proposons ici les 6 valeurs les plus fréquentes. Les définitions que nous proposons visent à faciliter la détermination de quelle valeur choisir. Attention à bien respecter les majuscules et minuscules !</p>
+<p><strong>HumanObservation :</strong> Cette valeur indique que les données ont été collectées par l'observation directe d'un observateur humain. Par exemple, des observations de comportements d'animaux dans la nature, des relevés de terrain effectués par des scientifiques ou des naturalistes amateurs, etc. C’est le terme le plus utilisé lors des inventaires sur le terrain, surtout lorsque l’identification est effectuée sur le terrain.</p>
+<p><strong>MachineObservation :</strong> Cette valeur indique que l’observation a été effectuée au moyen d’une machine comme un détecteur passif de chauve-souris (Anabat), une caméra de chasse ou un enregistreur (SM4 par exemple). Bien qu’un humain fasse l’identification, l’observation en tant que telle a été effectuée par l’appareil.</p>
+<p><strong>MaterialSample :</strong> Ce terme s’applique aux occurrences dont l’identification est effectuée en laboratoire. Un échantillon (de sédiments par exemple) est récolté, conservé dans un contenant, probablement avec de l’éthanol, et les organismes qui s’y trouvent sont identifiés plus tard en laboratoire. Après l’identification, les organismes peuvent être conservés à long terme et joindre une collection ou être simplement jetés.</p>
+<p><strong>PreservedSpecimen, LivingSpecimen et FossilSpecimen :</strong> Ces 3 termes s’appliquent aux organismes respectivement préservés, vivants ou fossilisés faisant partie d’une collection. <strong>PreservedSpecimen</strong> concerne les données collectées à partir d'un spécimen conservé, généralement dans un musée, une collection ou un autre établissement similaire. Les spécimens conservés peuvent inclure des animaux naturalisés, des plantes séchées, des échantillons d'ADN, des organismes préservés dans l’éthanol, etc. <strong>LivingSpecimen</strong> indique que les données ont été collectées à partir d'un spécimen vivant qui ne serait pas à l’état sauvage, donc dans un aquarium, un zoo ou un jardin botanique par exemple. FossilSpecimen concerne les organismes à l’état fossile. 
+Si l’un de ces 3 derniers termes est utilisé, il faut alors idéalement ajouter les colonnes <strong>institutionCode</strong>, <strong>collectionCode</strong> et <strong>catalogNumber</strong> afin d’identifier respectivement l’institution possédant la collection, l’identifiant de la collection et l’identifiant du spécimen dans cette collection. </p>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .table-container {
+      margin-bottom: 40px;    
+    }
+    table {
+      border-collapse: collapse;
+      width: max-content;
+    }    
+    th, td {
+      padding: 6px 10px;
+      text-align: center;
+      white-space: nowrap;
+    }
+    thead {
+      background-color: #f0f0f0;
+    }    
+  </style>
+</head>
+<body>
+
+<h4>Le tableau suivant présente une récapitulation de ces termes et des contextes dans lesquels ils peuvent être utilisés :</h4>
+<div class="table-container">
+  <table>
+    <thead>
+      <tr>
+        <th></th>
+        <th>HumanObservation</th>
+        <th>MachineObservation</th>
+        <th>MaterialSample</th>
+        <th>PreservedSpecimen</th>
+        <th>FossilSpecimen</th>
+        <th>LivingSpecimen</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Observation directe</td>
+        <td>oui</td>
+        <td>non</td>
+        <td>oui</td>
+        <td>oui</td>
+        <td>oui</td>
+        <td>oui</td>
+      </tr>
+      <tr>
+        <td>Observation indirecte</td>
+        <td>non</td>
+        <td>oui</td>
+        <td>non</td>
+        <td>non</td>
+        <td>non</td>
+        <td>non</td>
+      </tr>
+      <tr>
+        <td>Identification en laboratoire</td>
+        <td>non</td>
+        <td>oui</td>
+        <td>oui</td>
+        <td>oui</td>
+        <td>oui</td>
+        <td>oui ou non</td>
+      </tr>
+      <tr>
+        <td>Observation en nature</td>
+        <td>oui</td>
+        <td>oui</td>
+        <td>oui</td>
+        <td>non</td>
+        <td>non</td>
+        <td>non</td>
+      </tr>
+      <tr>
+        <td>Observation en captivité, en culture, etc</td>
+        <td>non</td>
+        <td>non</td>
+        <td>non</td>
+        <td>oui</td>
+        <td>oui</td>
+        <td>oui</td>
+      </tr>     
+      <tr>
+        <td>Organisme vivant</td>
+        <td>oui ou non</td>
+        <td>oui</td>
+        <td>non</td>
+        <td>non</td>
+        <td>non</td>
+        <td>oui</td>
+      </tr>     
+      <tr>
+        <td>Possibilité de confirmer l’identification plus tard</td>
+        <td>non</td>
+        <td>oui, tant que les images ou enregistrements sont conservés</td>
+        <td>oui, si les spécimens ne sont pas jetés</td>
+        <td>oui</td>
+        <td>oui</td>
+        <td>oui</td>
+      </tr>     
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>
+
+<div style="margin-left: 20px;">
+<small>Dans le Darwin Core, il existe une variable (colonne) “vitality” qui ne doit pas être confondue avec “LivingSpecimen”, une valeur possible de la variable “basisOfRecord”. “vitality” sert à préciser si l’organisme était vivant ou non au moment de l’observation. Si cette variable est incluse, sa valeur serait “vivant|alive” dans le cas d’un “basisOfRecord” ayant la valeur “LivingSpecimen” ou “mort|dead” pour “PreservedSpecimen”, “FossilSpecimen” et “MaterialSample”. </small><br>
+</div>
+
 <h2 id="le-protocole-dechantillonnage">Le protocole d’échantillonnage</h2>
 <p>La variable <strong>samplingProtocol</strong> doit apparaître dans la table d’événement (Event Core). La table d’événement est utilisée pour enregistrer des informations sur les événements d'échantillonnage ou d'observation, c'est-à-dire les occasions où des échantillons biologiques ont été collectés ou des observations ont été réalisées.</p>
 <p><img alt="" src="../../assets/images/SamplingProtocol.png" /></p>
@@ -1074,7 +1191,7 @@
     <span class="md-icon" title="Dernière mise à jour">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">2 juillet 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">27 novembre 2025</span>
   </span>
 
     
