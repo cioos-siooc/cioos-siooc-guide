@@ -14,7 +14,7 @@ Bien que les données sensibles soient souvent associées à la recherche impliq
 
 Il est important de noter que même lorsque des jeux de données pris individuellement semblent non sensibles, leur combinaison peut créer de nouveaux risques. Le croisement de différentes sources peut permettre la réidentification de participants à une recherche ou révéler l’emplacement exact d’espèces ou de ressources qui devraient demeurer protégées.
 
-##  Pourquoi faire preuve de prudence dans le partage des données ?
+## Pourquoi faire preuve de prudence dans le partage des données ?
 
 Le partage de données sensibles sans mesures de protection appropriées peut engendrer des risques importants pour les individus, les communautés, les institutions et les écosystèmes. 
 Ces risques varient selon la nature des données, mais peuvent être regroupés en trois catégories:
@@ -71,7 +71,8 @@ Lors du choix d’une technique de transformation des données, il est important
 
 ### Données de biodiversité
 
-Plusieurs variables peuvent être ajustées afin de réduire la sensibilité des données sur la biodiversité, notamment :
+Plusieurs variables peuvent être ajustées afin de réduire la sensibilité des données sur la biodiversité, notamment:
+
 * Les dates, qui peuvent être généralisées à l’année (tout en restant conformes à la norme ISO).
 * L’identification taxonomique, qui peut être rapportée à un rang supérieur (par exemple, le genre ou la famille plutôt que l’espèce).
 * Le type de signalement, où les données peuvent être exprimées en présence/absence plutôt qu’en nombre exact d’observations.
@@ -88,7 +89,8 @@ Pour être partagées publiquement en toute sécurité, que ce soit par le biais
 
 ## Conclusion
 
-Les données sensibles doivent être manipulées avec soin à chaque étape du projet de recherche, de la collecte à l’analyse, au stockage et au partage. Lorsqu’elles sont gérées de manière responsable, elles peuvent également ouvrir la voie à de nouvelles perspectives et orientations de recherche. La gestion adéquate des données sensibles nécessite :
+Les données sensibles doivent être manipulées avec soin à chaque étape du projet de recherche, de la collecte à l’analyse, au stockage et au partage. Lorsqu’elles sont gérées de manière responsable, elles peuvent également ouvrir la voie à de nouvelles perspectives et orientations de recherche. La gestion adéquate des données sensibles nécessite:
+
 * L’évaluation des risques,
 * L’application de méthodes sécurisées de stockage et de traitement,
 * L’exercice d’un jugement éthique,
