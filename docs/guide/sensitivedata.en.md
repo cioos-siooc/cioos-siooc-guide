@@ -20,6 +20,7 @@ Linking different sources may allow re-identification of research participants o
 
 Sharing sensitive data without appropriate safeguards can create significant risks for individuals, communities, institutions, and ecosystems. 
 These risks vary depending on the nature of the data, but they can be grouped into three categories:
+
 * Individual risks, which include reputational harm, discrimination or stigmatization, and emotional or psychological distress. 
 * Collective risks, which include endangerment of vulnerable species, habitats, or culturally significant sites and unwanted disclosure of ancestral, traditional, or community knowledge. 
 * Institutional risks, which include legal or regulatory penalties for non-compliance, loss of funding or partnerships, and breaches of intellectual property or confidentiality agreements
@@ -31,6 +32,7 @@ When sensitive data is mismanaged, it can undermine scientific integrity, strain
 
 The responsibility for determining the level of sensitivity lies with the data producer. 
 This assessment should be guided by several key elements:
+
 * The respect for any agreements, whether written or verbal, made with participants, communities, or data owners,
 * Compliance with institutional policies, national regulations, and relevant legal frameworks,
 * Ethical and moral considerations, protecting the privacy, safety and trust of the research participants and their communities, 
@@ -52,6 +54,7 @@ What matters is that participants fully understand the purpose of the research, 
 
 Storing sensitive data securely is essential to preventing unauthorized access or loss. 
 Good storage practices apply to all research data, but sensitive data requires an additional layer of protection to prevent any unwanted or unauthorized access: 
+
 * Encryption: Encoding data so that only individuals with the appropriate decryption key can access it. This adds an important layer of protection, especially when transferring or storing data on shared systems.
 * Secure storage locations: Using institutional servers or certified cloud services that meet recognized security standards. These environments typically include strong access controls, audit logs, and regular security updates.
 * Access-control mechanisms: Restricting access to only those who need the data to carry out their work. This may involve password protection, multi-factor authentication, or assigning role-specific permissions.
@@ -60,6 +63,7 @@ This approach helps ensure that sensitive data remains protected even in the eve
 ## How to analyze sensitive data
 
 To reduce identification risks during analysis, researchers can apply different techniques depending on the nature of the data and the level of detail needed. 
+
 * Aggregation: providing summary values rather than individual ones. This can include reporting averages instead of individual measurements, or grouping people into broader categories or communities. For example, grouping species by genus or using the average salary rather than individual one. 
 * Generalization: Reducing the precision of certain variables. For example, replacing specific job titles with broader categories such as “manager,” or enlarging geographic areas instead of providing precise coordinates.
 * Anonymization (irreversible): Removing all direct and indirect identifiers in a way that makes re-identification impossible. Once anonymized, the data cannot be traced back to its original source.
@@ -71,6 +75,7 @@ When choosing a data transformation technique, it is important to preserve the v
 ### Biodiversity data
 
 Several variables can be adjusted to reduce the sensitivity of biodiversity records, including:
+
 * Dates, which can be generalized to the year level (while remaining ISO-compliant).
 * Taxonomic identification, which can be reported at a higher rank (e.g., genus or family rather than species).
 * Occurrence reporting, where records can be expressed as presence/absence instead of providing exact observation counts.
@@ -88,6 +93,7 @@ To be shared publicly safely either through a scientific publication or as a dat
 ## Conclusion
 
 Sensitive data must be handled with care at every stage of the research project, from collection to analysis, storage, and sharing. When managed responsibly, these data can also open the door to new insights and research directions. Handling sensitive data correctly requires:
+
 * Assessing risk,
 * Applying secure storage and processing methods,
 * Using ethical judgment,
