@@ -51,7 +51,8 @@ L’essentiel est que les participants comprennent pleinement l’objectif de la
 ## Comment stocker des données sensibles
 
 Le stockage sécurisé des données sensibles est essentiel pour prévenir tout accès non autorisé ou toute perte. 
-Les bonnes pratiques de stockage s’appliquent à toutes les données de recherche, mais les données sensibles nécessitent une couche de protection supplémentaire afin d’éviter tout accès indésirable ou non autorisé :
+Les bonnes pratiques de stockage s’appliquent à toutes les données de recherche, mais les données sensibles nécessitent une couche de protection supplémentaire afin d’éviter tout accès indésirable ou non autorisé:
+
 * Chiffrement : encodage des données afin que seules les personnes disposant de la clé de déchiffrement appropriée puissent y accéder. Cela ajoute une couche de protection importante, particulièrement lors du transfert ou du stockage sur des systèmes partagés.
 * Emplacements de stockage sécurisés : utilisation de serveurs institutionnels ou de services infonuagiques certifiés répondant à des normes de sécurité reconnues. Ces environnements comprennent généralement des contrôles d’accès robustes, des journaux d’audit et des mises à jour de sécurité régulières.
 * Mécanismes de contrôle d’accès : restriction de l’accès aux seules personnes ayant besoin des données pour accomplir leur travail. Cela peut inclure la protection par mot de passe, l’authentification multifactorielle ou l’attribution d’autorisations spécifiques selon les rôles.
