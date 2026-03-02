@@ -5,11 +5,15 @@ on:
     branches:
       - main
       - development
-      - feature/add-mike
   pull_request:
     branches:
       - development
       - main
+    types:
+      - opened
+      - synchronize
+      - reopened
+      - closed
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
@@ -22,6 +26,7 @@ permissions:
 jobs:
   # Single deploy job since we're just deploying
   deploy:
+    if: github.event_name == 'push' || github.event_name == 'pull_request'
     env:
       BRANCH_NAME: ${{ github.head_ref || github.ref_name }}
     environment:
@@ -29,10 +34,23 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout (push)
+        if: github.event_name == 'push'
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+      - name: Checkout (pull_request)
+        if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ github.event.pull_request.head.sha }}
+          repository: ${{ github.event.pull_request.head.repo.full_name }}
+      - name: Guard against fork PRs
+        if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name != github.repository
+        run: |
+          echo "Skipping deployment for forked PRs."
+          exit 0
       - name: Configure git
         run: |
           git config --global user.name "github-actions[bot]"
@@ -76,3 +94,32 @@ jobs:
           issue-number: ${{ github.event.pull_request.number }}
           body: |
             🧪🎉 This version of the website will be available shortly at: https://guide.cioos.ca/${{ env.VERSION_NAME }}
+
+  cleanup-preview:
+    if: github.event_name == 'pull_request' && github.event.action == 'closed'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Guard against fork PRs
+        if: github.event.pull_request.head.repo.full_name != github.repository
+        run: |
+          echo "Skipping cleanup for forked PRs."
+          exit 0
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Configure git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+      - name: Define variables
+        run: |
+          BRANCH_NAME='${{ github.head_ref || github.ref_name }}'
+          BRANCH_NAME_TRIMMED=$(printf '%s' "$BRANCH_NAME" | sed -E 's/^[[:space:]]+//; s/[[:space:]]+$//')
+          VERSION_NAME=$(printf '%s' "$BRANCH_NAME_TRIMMED" | tr -c '[:alnum:]-' '-' | sed -E 's/-{2,}/-/g; s/^-+//; s/-+$//')
+          echo "VERSION_NAME=$VERSION_NAME" >> $GITHUB_ENV
+      - name: Delete preview with mike
+        run: |
+          uv run mike delete --push "$VERSION_NAME"

@@ -75,7 +75,7 @@ Whenever possible, in the case of biodiversity data, each observation should hav
 | 2024-07-16 | 48.1331         | \-69.1706        | P01       | senne            | trait 2 | Éperlan arc-en-ciel | Osmerus mordax   | present          | livingSpecimen | 10           | 2               |
 | 2024-07-16 | 48.1331         | \-69.1706        | P01       | senne            | trait 2 | Éperlan arc-en-ciel | Osmerus mordax   | present          | livingSpecimen | NA           | 45              |
  
-* *For more information on the [basisOfRecord](#the-basis-of-record) and the [occurrenceStatus](#the-status-of-occurrence) refer to Appendix 1*  
+* *For more information on the [basisOfRecord](./annexes.en.md#the-basis-of-record) and the [occurrenceStatus](./annexes.en.md#the-status-of-occurrence) refer to Appendix 1* 
 
 **Characterization by transect and/or quadrats**  
 
@@ -180,4 +180,5 @@ The table below presents the same information, but in a comprehensive and intero
 > - Add stationID (if possible and relevant)
 > - Add sampleID (if possible and relevant)
 > - Create a data dictionary (if possible and relevant)  
+
 
