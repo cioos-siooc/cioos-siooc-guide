@@ -80,8 +80,8 @@ Several variables can be adjusted to reduce the sensitivity of biodiversity reco
 * Taxonomic identification, which can be reported at a higher rank (e.g., genus or family rather than species).
 * Occurrence reporting, where records can be expressed as presence/absence instead of providing exact observation counts.
 
-The precise localization of an observation can be sensitive, especially when it relates vulnerable or endangered species. 
-For biodiversity data, OBIS (Ocean Biodiversity Information System) uses WKT (Well-Known Text) polygons to spatially generalize or obscure sensitive data by defining a geographic area—rather than a precise point location—where a species occurrence is reported.
+The precise localization of an observation can be sensitive, especially when it relates vulnerable or endangered species; there are many ways to obscure that information. 
+For example, OBIS (Ocean Biodiversity Information System) uses WKT (Well-Known Text) polygons to spatially generalize or obscure sensitive data by defining a geographic area—rather than a precise point location—where a species occurrence is reported.
 Instead of publishing exact coordinates the record is associated with a polygon representing a broader area such as a grid cell, protected zone, or custom boundary. 
 The WKT format encodes this polygon geometry as a text string, allowing it to be stored, shared, and interpreted consistently across geospatial systems. 
 By linking occurrence data to these polygons, OBIS preserves spatial context for ecological analysis while reducing the risk of revealing exact locations of sensitive biodiversity features.
