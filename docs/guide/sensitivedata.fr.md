@@ -78,8 +78,8 @@ Plusieurs variables peuvent être ajustées afin de réduire la sensibilité des
 * L’identification taxonomique, qui peut être rapportée à un rang supérieur (par exemple, le genre ou la famille plutôt que l’espèce).
 * Le type de signalement, où les données peuvent être exprimées en présence/absence plutôt qu’en nombre exact d’observations.
 
-La localisation précise d’une observation peut également être sensible, en particulier lorsqu’elle concerne des espèces vulnérables ou menacées. 
-Pour les données de biodiversité, OBIS (Ocean Biodiversity Information System) utilise des polygones en WKT (Well-Known Text) afin de généraliser spatialement ou d’obscurcir les données sensibles en définissant une zone géographique — plutôt qu’un point précis — où l’occurrence est rapportée.
+La localisation précise d’une observation peut également être sensible, en particulier lorsqu’elle concerne des espèces vulnérables ou menacées; il existe plusieurs méthodes pour généraliser cette information. 
+Par exemple, OBIS (Ocean Biodiversity Information System) utilise des polygones en WKT (Well-Known Text) afin de généraliser spatialement ou d’obscurcir les données sensibles en définissant une zone géographique — plutôt qu’un point précis — où l’occurrence est rapportée.
 Au lieu de publier des coordonnées exactes, l’enregistrement est associé à un polygone représentant une unité plus large, comme une cellule de grille, une zone protégée ou une limite définie sur mesure. 
 Le format WKT encode la géométrie de ce polygone sous forme de chaîne de texte normalisée, ce qui facilite son stockage, son partage et son interprétation de manière cohérente entre différents systèmes géospatiaux. 
 En reliant les données d’occurrence à ces polygones, OBIS conserve un contexte spatial utile pour l’analyse écologique tout en réduisant le risque de révéler des localisations sensibles.
