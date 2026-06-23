@@ -36,9 +36,16 @@ Cette évaluation devrait être guidée par plusieurs éléments clés :
 * Des considérations éthiques et morales visant à protéger la vie privée, la sécurité et la confiance des participants à la recherche et de leurs communautés,
 * La reconnaissance que la sensibilité peut évoluer dans le temps ; par exemple, une fois un article scientifique publié, certains risques réputationnels peuvent diminuer, tandis que d’autres peuvent persister ou même augmenter selon le contexte.
 
-![Grille de sensibilité des données](../assets/images/grillesensibilite.png)  
+### Grille de sensibilité des données Sensitivity table  
+| Niveau | Risques  | Données | Exemples | SIOOC |
+| :-------- | :-------- | :-------- | :----------- | :----- | 
+| 1 | minimal | Publiques | Code source, cartes océanographiques | Partageable | 
+| 2 | modéré | Non publiques | Analyses gémoniques anonymisées, transcriptions d'entrevues dépersonalisées | Partageable | 
+| 3 | élevé | Non publiques | Données de suivi télémétrique, données pré-publication, sites d'échantillonage confidentiels | Non-partageable |
+| 4 | très élevé high | Non publiques | Données liées à la sécurité nationale, donnnées génétiques |  Non-partageable |
+
 /// caption
-Adaptée de la classification des risques de Calcul Québec.
+Adaptée de la grille créée par Calcul Québec.
 ///
 
 ## Comment collecter des données sensibles
