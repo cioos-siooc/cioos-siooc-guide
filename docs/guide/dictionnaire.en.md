@@ -4,7 +4,7 @@
 
 To facilitate data reuse and interoperability, it is important to use a common vocabulary to designate different variables. Some standards have been designed for this purpose, such as the [CF Convention](https://cfconventions.org/) vocabulary for oceanographic physical-chemistry data, or the vocabulary from the [Darwin Core](https://dwc.tdwg.org/list/) for biology and biodiversity data. These controlled vocabularies assign unique terms to a specific variable. For example, without any standard, a simple variable _depth_ could be interpreted in many different ways (figure below). In the CF Convention, however, _depth_ will be specifically defined as the "vertical distance below the surface," and other variables such as *sea_floor_depth* will precisely designate the depth of the seafloor from the water's surface.  
 
-![Exemple de profondeur](../assets/images/profondeur_standard.png)  
+![Exemple de profondeur](../assets/images/depth_standard.png)  
 
 Although the use of a controlled vocabulary from the outset is strongly recommended, in some cases, the terms associated with the different variables may not seem intuitive and may not be practical to use in the field or during analyses. It is therefore important to always build and associate a dictionary of variables with the databases themselves. This dictionary will contain as much metadata as possible associated with each variable to maximize the chances of the data being interpreted correctly. For example, for *depth* variables, the dictionary information could be:
 **depth_r**  
