@@ -40,12 +40,12 @@ This assessment should be guided by several key elements:
 
 
 ### Sensitivity table  
-| Level | Risks  | Data | Examples | OGSL |
+| Level | Risks  | Data | Examples | CIOOS |
 | :-------- | :-------- | :-------- | :----------- | :----- | 
 | 1 | minimal | Public | Open source models, oceanographic maps | Shareable | 
 | 2 | moderate | Not public | Anonymized interview transcripts | Shareable | 
-| 3 | high | Not public | Sampling sites, pre-publication datasets | Shareable |
-| 4 | very high | Not public | National security data, genetic data | Shareable |
+| 3 | high | Not public | Sampling sites, pre-publication datasets | Not shareable |
+| 4 | very high | Not public | National security data, genetic data | Not shareable |
 
 /// caption
 Adapted from the risk classification created by Calcul Québec.
