@@ -38,7 +38,15 @@ This assessment should be guided by several key elements:
 * Ethical and moral considerations, protecting the privacy, safety and trust of the research participants and their communities, 
 * Awareness that sensitivity can evolve over time; for example, once a scientific article is published, certain reputational risks may decrease, while other risks may persist or even increase depending on context.
 
-![Data sensitivity matrix](../assets/images/sensitivitymatrix.png)  
+
+### Sensitivity table  
+| Level | Risks  | Data | Examples | OGSL |
+| :-------- | :-------- | :-------- | :----------- | :----- | 
+| 1 | minimal | Public | Open source models, oceanographic maps | Shareable | 
+| 2 | moderate | Not public | Anonymized interview transcripts | Shareable | 
+| 3 | high | Not public | Sampling sites, pre-publication datasets | Shareable |
+| 4 | very high | Not public | National security data, genetic data | Shareable |
+
 /// caption
 Adapted from the risk classification created by Calcul Québec.
 ///
