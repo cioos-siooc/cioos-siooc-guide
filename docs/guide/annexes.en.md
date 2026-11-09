@@ -95,10 +95,6 @@ It is important to note that not detecting a species can be influenced by a vari
 
 Therefore, it is recommended to provide information on data collection methods and the reliability of observations when using the occurrenceStatus variable. Therefore, if you notice the absence of a specimen, also note the *absence*, as this information will be relevant to include in the metadata.  
 
-## The sampling protocol
-
-The **samplingProtocol** variable, which must appear in the Event Core table, allows you to sum up what kind of sampling was done. The value provided should be as short as possible, for example, point counts, trawl fishing, vegetation transect... 
-
 ## The Basis of Record
 
 In the context of the Darwin Core standard, the ***basisOfRecord*** variable is mandatory. It provides information on the basis on which the observation was made. It is not the same as the sampling protocol but the protocol can help determine the ***basisOfRecord***.  
