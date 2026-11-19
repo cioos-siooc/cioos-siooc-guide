@@ -26,7 +26,16 @@ permissions:
 jobs:
   # Single deploy job since we're just deploying
   deploy:
-    if: github.event_name == 'push' || github.event_name == 'pull_request'
+    # Skip closed PRs (handled by cleanup-preview) and fork PRs (no write token).
+    if: >-
+      github.event_name == 'push' ||
+      (github.event_name == 'pull_request' &&
+       github.event.action != 'closed' &&
+       github.event.pull_request.head.repo.full_name == github.repository)
+    # Serialize every job that pushes to gh-pages so they don't reject each other.
+    concurrency:
+      group: gh-pages
+      cancel-in-progress: false
     env:
       BRANCH_NAME: ${{ github.head_ref || github.ref_name }}
     environment:
@@ -34,23 +43,11 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout (push)
-        if: github.event_name == 'push'
+      - name: Checkout
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - name: Checkout (pull_request)
-        if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-          ref: ${{ github.event.pull_request.head.sha }}
-          repository: ${{ github.event.pull_request.head.repo.full_name }}
-      - name: Guard against fork PRs
-        if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name != github.repository
-        run: |
-          echo "Skipping deployment for forked PRs."
-          exit 0
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
       - name: Configure git
         run: |
           git config --global user.name "github-actions[bot]"
@@ -59,10 +56,8 @@ jobs:
         uses: astral-sh/setup-uv@v5
       - name: Define variables
         run: |
-          BRANCH_NAME='${{ github.head_ref || github.ref_name }}'
           BRANCH_NAME_TRIMMED=$(printf '%s' "$BRANCH_NAME" | sed -E 's/^[[:space:]]+//; s/[[:space:]]+$//')
           VERSION_NAME=$(printf '%s' "$BRANCH_NAME_TRIMMED" | tr -c '[:alnum:]-' '-' | sed -E 's/-{2,}/-/g; s/^-+//; s/-+$//')
-          echo "BRANCH_NAME=$BRANCH_NAME" >> $GITHUB_ENV
           echo "VERSION_NAME=$VERSION_NAME" >> $GITHUB_ENV
 
       - name: Update mkdocs.yml
@@ -96,14 +91,17 @@ jobs:
             🧪🎉 This version of the website will be available shortly at: https://guide.cioos.ca/${{ env.VERSION_NAME }}
 
   cleanup-preview:
-    if: github.event_name == 'pull_request' && github.event.action == 'closed'
+    if: >-
+      github.event_name == 'pull_request' &&
+      github.event.action == 'closed' &&
+      github.event.pull_request.head.repo.full_name == github.repository
+    concurrency:
+      group: gh-pages
+      cancel-in-progress: false
+    env:
+      BRANCH_NAME: ${{ github.head_ref }}
     runs-on: ubuntu-latest
     steps:
-      - name: Guard against fork PRs
-        if: github.event.pull_request.head.repo.full_name != github.repository
-        run: |
-          echo "Skipping cleanup for forked PRs."
-          exit 0
       - name: Checkout
         uses: actions/checkout@v4
         with:
@@ -116,10 +114,14 @@ jobs:
         uses: astral-sh/setup-uv@v5
       - name: Define variables
         run: |
-          BRANCH_NAME='${{ github.head_ref || github.ref_name }}'
           BRANCH_NAME_TRIMMED=$(printf '%s' "$BRANCH_NAME" | sed -E 's/^[[:space:]]+//; s/[[:space:]]+$//')
           VERSION_NAME=$(printf '%s' "$BRANCH_NAME_TRIMMED" | tr -c '[:alnum:]-' '-' | sed -E 's/-{2,}/-/g; s/^-+//; s/-+$//')
           echo "VERSION_NAME=$VERSION_NAME" >> $GITHUB_ENV
       - name: Delete preview with mike
         run: |
-          uv run mike delete --push "$VERSION_NAME"
+          # The preview may never have been deployed (e.g. its build failed).
+          if uv run mike list --json | jq -e --arg v "$VERSION_NAME" 'any(.[]; .version == $v)' > /dev/null; then
+            uv run mike delete --push "$VERSION_NAME"
+          else
+            echo "No preview version '$VERSION_NAME' to delete."
+          fi
