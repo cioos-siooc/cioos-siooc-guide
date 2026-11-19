@@ -2,16 +2,18 @@
 
 ## Biodiversity Data and Definition of Terms  
 
-This appendix is ​​intended to provide information on the DarwinCore format.  
+Since January 2021, SLGO chose to adopt the DarwinCore standard as suggested by [OBIS](https://obis.org/) (_Ocean Biodiversity Information System_). It is a peer-reviewed data structure used worldwide by the scientific community. This appendix is ​​intended to provide information on the DarwinCore format, which is not required to share data with SLGO since expertise and specialized tools have made it easier for data scientists to standardize data. This section aims to familiarize you with the format.
 
 The DarwinCore format structure is based on the principles of Event Cores, which are associated with Occurrence Extension tables and, where applicable, Extended Measurements (or Facts) derived from occurrences and events (Occurrence and Event EMoF). Unique identifiers (eventID, occurrenceID, measurementID) are used to link these tables.  
 
 ## Event Table (Event Core)  
 
-* The Event Table is part of the Darwin Core data structure, contained in a separate spreadsheet (e.g., an .xlsx file), which contains information about collection or observation events associated with specimens or occurrences.
-* This table allows us to document the contextual details surrounding the collection or observation of species, which is crucial for understanding, interpreting, and comparing biodiversity data.   
+The Event Table is part of the Darwin Core data structure, contained in a separate spreadsheet (e.g., an .xlsx file), which **contains information about collection or observation events** associated with specimens or occurrences.
+This table allows us to **document the contextual details (where, when, how) surrounding the collection or observation of species**, and makes a list of every sampling session. This information is crucial for understanding, interpreting, and comparing biodiversity data. 
 
-An Event Table therefore provides information about where and when specimen observations were made and where abiotic measurements were taken to characterize the environments where the observations took place. The essential variables that must be included include:  
+An Event Table therefore provides information about where and when specimen observations were made and where abiotic measurements were taken to characterize the environments where the observations took place.
+
+The essential variables that must be included include: 
 
 - Date and time (at least the year);  
 - Geographic coordinates;  
@@ -20,8 +22,7 @@ An Event Table therefore provides information about where and when specimen obse
 
 ## Occurrence Table (Occurrence Extension)
 
-* The occurrence table is another part of the Darwin Core data structure, also included in a separate spreadsheet, which allows you to indicate **which specimens** were observed and their abundance during different events;  
-* It constitutes a kind of **inventory of the biodiversity** observed (or not observed) based on the events.  
+The occurrence table is another part of the Darwin Core data structure, also included in a separate spreadsheet, which allows you to indicate **which specimens** were observed and their abundance during different events. It constitutes a kind of **inventory of the biodiversity** observed (or not observed) based on the events. 
 
 The variables to include are:  
 
@@ -40,10 +41,7 @@ Minimal structure of an archiving structure meeting Darwin Core standards.
 
 ## Occurrence Measurements Table (EMoF Occurrence)  
 
-* The occurrence measurements table is an extension file associated with the occurrences table;  
-* It allows you to record specific measurements, such as length, weight, sex, etc., associated with individual species occurrences;  
-* Each record in the occurrence measurements table is linked to a specific occurrence and contains information about the measurement taken, as well as other relevant metadata such as the measurement method, unit of measurement, etc.;  
-* This table complements the occurrence data by providing additional quantitative or qualitative details about each specimen, allowing for more in-depth biodiversity analysis based on data collected in the field or in other collection contexts.  
+The occurrence measurements table is an extension file associated with the occurrences table. It allows you to record specific measurements, such as length, weight, sex, etc., associated with individual species occurrences. Each record in the occurrence measurements table is linked to a specific occurrence and contains information about the measurement taken, as well as other relevant metadata such as the measurement method, unit of measurement, etc. This table complements the occurrence data by providing additional quantitative or qualitative details about each specimen, allowing for more in-depth biodiversity analysis based on data collected in the field or in other collection contexts.
 
 In the figure below, there is a fourth table corresponding to the extended measurements taken on occurrences. However, this guide will not focus on this table. Physicochemical measurements taken during events (Event EMoF), such as water temperature, marine substrate qualification, water level, etc. can be integrated directly into the event table (Event Core).  
 
@@ -86,31 +84,30 @@ First, you should know that each identifier must be globally unique, meaning it 
 
 ## Occurrence Status  
 
-The **occurrenceStatus** variable refers to the presence or absence of an organism in a given location at a given time. This variable is used to describe whether a specimen or observation of a particular species was observed or collected in a specific location at a given time.  
+The **occurrenceStatus** variable refers to the detection of an organism in a given location at a given time. This variable is used to describe whether a specimen or a particular species was detected or not in a specific location at a given time. 
 
-There are only two possible values ​​that can be entered under the occurrenceStatus variable: ***present*** and ***absent***. The OGSL provides definitions for each value:  
+There are only two possible values ​​that can be entered under the occurrenceStatus variable: ***detected*** and ***notDetected***. The SLGO provides definitions for each value: 
 
-* Present: When the occurrenceStatus is defined as "present," it means that the organism in question was observed or collected in the study area or at the specified location. Presence can be confirmed by direct detection of the organism itself or by indirect methods such as acoustic recordings or DNA traces.   
-* Absent: When the occurrence status is defined as "absent," it indicates that the organism in question has not been observed or collected in the study area or at the specified location. This can mean that an exhaustive search was conducted and no trace of the organism was found, or that the organism is known to be absent from that specific geographic area or habitat.  
+* **detected**: When the occurrenceStatus is defined as "detected" it means that the organism in question was found in the study area or at the specified location. An occurrence can be detected if the species was directly or indirectly (camera, recorder) observed of if clues of its presence were found (footprints, DNA).
+* **notDetected**: When the occurrenceStatus is defined as "notDetected" it indicates that the organism in question has not been observed or collected in the study area or at the specified location. This can mean that an exhaustive search was conducted and no trace of the organism was found, or that the organism is known to be absent from that specific geographic area or habitat. 
 
-It is important to note that determining whether a species is absent can be influenced by a variety of factors, including data collection techniques, seasons, environmental conditions, and observer skill. Absence can essentially mean two distinct facts: (1) in a given place and time, the specimen was not observed, but it is not possible to say that it does not exist at that given location; or (2) the specimen is absent because it does not exist at that given location. These two interpretations can lead to completely different conclusions.  
+It is important to note that not detecting a species can be influenced by a variety of factors, including data collection techniques, seasons, environmental conditions, and observer skill. Absence can essentially mean two distinct facts: (1) in a given place and time, the specimen was not observed, but it is not possible to say that it does not exist at that given location; or (2) the specimen is absent because it does not exist at that given location. These two interpretations can lead to completely different conclusions.
 
 Therefore, it is recommended to provide information on data collection methods and the reliability of observations when using the occurrenceStatus variable. Therefore, if you notice the absence of a specimen, also note the *absence*, as this information will be relevant to include in the metadata.  
 
-The **samplingProtocol** variable, which must appear in the Event Core table, allows you to clarify the notion of absence, if applicable.  
 ## The Basis of Record
 
-In the context of the Darwin Core standard, the ***basisOfRecord*** variable describes the origin of the observation. It provides information on how the data were obtained and the form in which they are stored.  
+In the context of the Darwin Core standard, the ***basisOfRecord*** variable is mandatory. It provides information on the basis on which the observation was made. It is not the same as the sampling protocol but the protocol can help determine the ***basisOfRecord***.  
 
 The possible values are standardized, meaning you must select one of the values defined by Darwin Core. We present here the 6 most frequently used values. The definitions we provide are intended to make it easier to determine which value to choose. Be sure to respect uppercase and lowercase characters!  
 
-**HumanObservation:** Indicates that the data were collected through the direct observation of a human observer. For example, observations of animal behavior in nature, field surveys conducted by scientists or amateur naturalists, etc. This is the most commonly used term for field inventories, especially when species identification is carried out in the field.
+**HumanObservation**: Indicates that the observation was directly made by a human on the field. For example, observations of animal behavior in nature, field surveys conducted by scientists or amateur naturalists, etc. This is the most commonly used term for field inventories, especially when species identification is carried out in the field.
 
-**MachineObservation:** Indicates that the observation was made using a device, such as a passive bat detector (e.g., Anabat), a trail camera, or an autonomous recorder (e.g., an SM4). Even if a human performs the identification, the actual observation was made by the device.
+**MachineObservation**: Indicates that the observation was made using a device, such as a passive bat detector (e.g., Anabat), a trail camera, or an autonomous recorder (e.g., an SM4). Even if a human performs the identification in the lab or office, the actual observation was made by the device in the field.
 
-**MaterialSample:** Applies to occurrences identified in a laboratory setting. A sample (e.g., sediment) is collected, stored in a container, likely preserved with ethanol, and the organisms within it are identified later in the lab. After identification, organisms may be stored long-term and added to a collection, or simply discarded.
+**MaterialSample**: Applies to occurrences identified in a laboratory setting from a field sample. A typical case is a sediment sample stored in a container, likely preserved with ethanol, and the organisms within it are identified later in the lab. After identification, organisms may be stored long-term and added to a collection, or simply discarded.
 
-**PreservedSpecimen, LivingSpecimen, and FossilSpecimen:** These three terms apply to organisms in a collection that are, respectively, preserved, living, or fossilized. **PreservedSpecimen** refers to data collected from a specimen stored in a museum, collection, or similar institution. Preserved specimens may include taxidermied animals, dried plant samples, DNA samples, organisms stored in ethanol, etc. **LivingSpecimen** refers to data collected from a living organism not in the wild, such as in an aquarium, zoo, or botanical garden. FossilSpecimen applies to fossil organisms.
+**PreservedSpecimen**, **LivingSpecimen** and **FossilSpecimen**: These three terms apply to organisms in a collection that are, respectively, preserved, living, or fossilized. **PreservedSpecimen** refers to data collected from a specimen stored in a museum, collection, or similar institution. Preserved specimens may include taxidermied animals, dried plant samples, DNA samples, organisms stored in ethanol, etc. **LivingSpecimen** refers to data collected from a living organism not in the wild, such as in an aquarium, zoo, or botanical garden. **FossilSpecimen** applies to fossil organisms.
 If one of these last three terms is used, it is recommended to also include the columns **institutionCode**, **collectionCode**, and **catalogNumber** to identify, respectively: the institution that holds the collection, the collection identifier, and the specimen identifier within that collection.
 
 <!DOCTYPE html>
