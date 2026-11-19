@@ -5,25 +5,5 @@
     "aliases": [
       "latest"
     ]
-  },
-  {
-    "version": "feature-branch-specific-mkdocs-yml",
-    "title": "feature-branch-specific-mkdocs-yml",
-    "aliases": []
-  },
-  {
-    "version": "feature-add-contributors",
-    "title": "feature-add-contributors",
-    "aliases": []
-  },
-  {
-    "version": "20251127-AnnexeFrImprovments",
-    "title": "20251127-AnnexeFrImprovments",
-    "aliases": []
-  },
-  {
-    "version": "2025-11-27-BasisOfRecord-correction",
-    "title": "2025-11-27-BasisOfRecord-correction",
-    "aliases": []
   }
 ]
