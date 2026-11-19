@@ -7,11 +7,6 @@
     ]
   },
   {
-    "version": "fix-pr-preview-workflow",
-    "title": "fix-pr-preview-workflow",
-    "aliases": []
-  },
-  {
     "version": "feature-branch-specific-mkdocs-yml",
     "title": "feature-branch-specific-mkdocs-yml",
     "aliases": []
