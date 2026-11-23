@@ -177,8 +177,8 @@ Des exemples de modèles, partiellement et entièrement conformes à cette struc
         <td>urn:lsid:marinespecies.org:taxname:254538</td>
         <td>2</td>
         <td>nombre d'individus</td>
-        <td>present</td>
-        <td>LivingSpecimen</td>
+        <td>detected</td>
+        <td>HumanObservation</td>
         <td>1 individu mort</td>
       </tr>
       <tr>
@@ -195,8 +195,8 @@ Des exemples de modèles, partiellement et entièrement conformes à cette struc
         <td>urn:lsid:marinespecies.org:taxname:158057</td>
         <td>5</td>
         <td>nombre d'individus</td>
-        <td>present</td>
-        <td>LivingSpecimen</td>
+        <td>detected</td>
+        <td>HumanObservation</td>
         <td>NA</td>
       </tr>
       <tr>
@@ -213,8 +213,8 @@ Des exemples de modèles, partiellement et entièrement conformes à cette struc
         <td>urn:lsid:marinespecies.org:taxname:107007</td>
         <td>1</td>
         <td>nombre d'individus</td>
-        <td>present</td>
-        <td>LivingSpecimen</td>
+        <td>detected</td>
+        <td>HumanObservation</td>
         <td>identification incertaine</td>
       </tr>
     </tbody>
@@ -466,8 +466,8 @@ Des exemples de modèles, partiellement et entièrement conformes à cette struc
         <td>urn:lsid:marinespecies.org:taxname:254538</td>
         <td>2</td>
         <td>nombre d'individus</td>
-        <td>present</td>
-        <td>LivingSpecimen</td>
+        <td>detected</td>
+        <td>HumanObservation</td>
         <td>1 individu mort</td>
       </tr>
       <tr>
@@ -480,8 +480,8 @@ Des exemples de modèles, partiellement et entièrement conformes à cette struc
         <td>urn:lsid:marinespecies.org:taxname:158057</td>
         <td>5</td>
         <td>nombre d'individus</td>
-        <td>present</td>
-        <td>LivingSpecimen</td>
+        <td>detected</td>
+        <td>HumanObservation</td>
         <td>NA</td>
       </tr>
       <tr>
@@ -494,8 +494,8 @@ Des exemples de modèles, partiellement et entièrement conformes à cette struc
         <td>urn:lsid:marinespecies.org:taxname:107007</td>
         <td>1</td>
         <td>nombre d'individus</td>
-        <td>present</td>
-        <td>LivingSpecimen</td>
+        <td>detected</td>
+        <td>HumanObservation</td>
         <td>identification incertaine</td>
       </tr>
     </tbody>
@@ -552,3 +552,4 @@ Des exemples de modèles, partiellement et entièrement conformes à cette struc
     </tbody>
   </table>
 </div>
+

@@ -70,10 +70,10 @@ Whenever possible, in the case of biodiversity data, each observation should hav
 
 | <span style="background-color:#FCFC8C">eventDate</span>&nbsp;&nbsp; | <span style="background-color:#FCFC8C">decimalLatitude</span> | <span style="background-color:#FCFC8C">decimalLongitude</span> | <span style="background-color:lightblue">stationID</span> | <span style="background-color:#FCFC8C">samplingProtocol</span> | <span style="background-color:lightblue">event</span>&nbsp;&nbsp; | vernacularName&nbsp;&nbsp;&nbsp; | <span style="background-color:#FCFC8C">scientificName</span>&nbsp;&nbsp;&nbsp;&nbsp; | <span style="background-color:#FFBF00">occurrenceStatus</span> | <span style="background-color:#FCFC8C">basisOfRecord</span>  | longueur\_cm | individualCount |
 | ---------- | --------------- | ---------------- | --------- | ---------------- | ------- | -------------------- | ---------------- | ---------------- | -------------- | ------------ | --------------- |
-| 2024-10-16 | 48.1331         | \-69.1706        | P01       | senne            | trait 1 | Bar rayé            | Morone saxatilis | present          | livingSpecimen | 4.5          | 10              |
-| 2024-07-16 | 48.1331         | \-69.1706        | P01       | senne            | trait 1 | Bar rayé            | Morone saxatilis | present          | livingSpecimen | NA           | 95              |
-| 2024-07-16 | 48.1331         | \-69.1706        | P01       | senne            | trait 2 | Éperlan arc-en-ciel | Osmerus mordax   | present          | livingSpecimen | 10           | 2               |
-| 2024-07-16 | 48.1331         | \-69.1706        | P01       | senne            | trait 2 | Éperlan arc-en-ciel | Osmerus mordax   | present          | livingSpecimen | NA           | 45              |
+| 2024-10-16 | 48.1331         | \-69.1706        | P01       | senne            | trait 1 | Bar rayé            | Morone saxatilis | detected          | HumanObservation | 4.5          | 10              |
+| 2024-07-16 | 48.1331         | \-69.1706        | P01       | senne            | trait 1 | Bar rayé            | Morone saxatilis | detected          | HumanObservation | NA           | 95              |
+| 2024-07-16 | 48.1331         | \-69.1706        | P01       | senne            | trait 2 | Éperlan arc-en-ciel | Osmerus mordax   | detected          | HumanObservation | 10           | 2               |
+| 2024-07-16 | 48.1331         | \-69.1706        | P01       | senne            | trait 2 | Éperlan arc-en-ciel | Osmerus mordax   | detected          | HumanObservation | NA           | 45              |
  
 * *For more information on the [basisOfRecord](./annexes.en.md#the-basis-of-record) and the [occurrenceStatus](./annexes.en.md#the-status-of-occurrence) refer to Appendix 1* 
 
@@ -81,9 +81,9 @@ Whenever possible, in the case of biodiversity data, each observation should hav
 
 | <span style="background-color:#FCFC8C">eventDate</span>  | <span style="background-color:#FCFC8C">decimalLatitude</span> | <span style="background-color:#FCFC8C">decimalLongitude</span> | transect | quadrat | <span style="background-color:#FFBF00">kingdom</span>   | <span style="background-color:#FFBF00">taxonRank</span> | <span style="background-color:#FCFC8C">scientificName</span>   | indivudualCount | <span style="background-color:#FFBF00">occurrenceStatus</span> | <span style="background-color:#FCFC8C">basisOfRecord</span>    |
 | ---------- | --------------- | ---------------- | -------- | ------- | --------- | --------- | ---------------- | :-------------- | :--------------- | ---------------- |
-| 2022-07-16 | 49.300694       | \-123.11667      | 1        | 1       | Chromista | species   | Fucus distichus  | 12              | present          | humanObservation |
-| 2022-07-16 | 49.300694       | \-123.11667      | 1        | 2       | Plantae   | genus     | Mastocarpus      | 0               | absent           | humanObservation |
-| 2022-07-16 | 49.300694       | \-123.11667      | 2        | 1       | Plantae   | species   | Ulva californica | 5               | present          | humanObservation |
+| 2022-07-16 | 49.300694       | \-123.11667      | 1        | 1       | Chromista | species   | Fucus distichus  | 12              | detected          | HumanObservation |
+| 2022-07-16 | 49.300694       | \-123.11667      | 1        | 2       | Plantae   | genus     | Mastocarpus      | 0               | notDetected           | HumanObservation |
+| 2022-07-16 | 49.300694       | \-123.11667      | 2        | 1       | Plantae   | species   | Ulva californica | 5               | detected          | HumanObservation |
 
 **Water quality** (independent measurements not taken simultaneously with species identification)  
 
@@ -180,5 +180,6 @@ The table below presents the same information, but in a comprehensive and intero
 > - Add stationID (if possible and relevant)
 > - Add sampleID (if possible and relevant)
 > - Create a data dictionary (if possible and relevant)  
+
 
 
