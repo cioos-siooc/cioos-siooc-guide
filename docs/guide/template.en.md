@@ -174,8 +174,8 @@ Examples of templates, both partially and fully compliant with this structure, a
         <td>urn:lsid:marinespecies.org:taxname:254538</td>
         <td>2</td>
         <td>nombre d'individus</td>
-        <td>present</td>
-        <td>LivingSpecimen</td>
+        <td>detected</td>
+        <td>HumanObservation</td>
         <td>1 individu mort</td>
       </tr>
       <tr>
@@ -192,8 +192,8 @@ Examples of templates, both partially and fully compliant with this structure, a
         <td>urn:lsid:marinespecies.org:taxname:158057</td>
         <td>5</td>
         <td>nombre d'individus</td>
-        <td>present</td>
-        <td>LivingSpecimen</td>
+        <td>detected</td>
+        <td>HumanObservation</td>
         <td>NA</td>
       </tr>
       <tr>
@@ -210,8 +210,8 @@ Examples of templates, both partially and fully compliant with this structure, a
         <td>urn:lsid:marinespecies.org:taxname:107007</td>
         <td>1</td>
         <td>nombre d'individus</td>
-        <td>present</td>
-        <td>LivingSpecimen</td>
+        <td>detected</td>
+        <td>HumanObservation</td>
         <td>identification incertaine</td>
       </tr>
     </tbody>
@@ -460,8 +460,8 @@ Examples of templates, both partially and fully compliant with this structure, a
         <td>urn:lsid:marinespecies.org:taxname:254538</td>
         <td>2</td>
         <td>nombre d'individus</td>
-        <td>present</td>
-        <td>LivingSpecimen</td>
+        <td>detected</td>
+        <td>HumanObservation</td>
         <td>1 individu mort</td>
       </tr>
       <tr>
@@ -474,8 +474,8 @@ Examples of templates, both partially and fully compliant with this structure, a
         <td>urn:lsid:marinespecies.org:taxname:158057</td>
         <td>5</td>
         <td>nombre d'individus</td>
-        <td>present</td>
-        <td>LivingSpecimen</td>
+        <td>detected</td>
+        <td>HumanObservation</td>
         <td>NA</td>
       </tr>
       <tr>
@@ -488,8 +488,8 @@ Examples of templates, both partially and fully compliant with this structure, a
         <td>urn:lsid:marinespecies.org:taxname:107007</td>
         <td>1</td>
         <td>nombre d'individus</td>
-        <td>present</td>
-        <td>LivingSpecimen</td>
+        <td>detected</td>
+        <td>HumanObservation</td>
         <td>identification incertaine</td>
       </tr>
     </tbody>
@@ -545,4 +545,5 @@ Examples of templates, both partially and fully compliant with this structure, a
       <tr><td>ZIPABC_PLAGE01_2024_ST22</td><td>ZIPABC_PLAGE01_2024_ST22_Crangon</td><td>ZIPABC_PLAGE01_2024_ST22_Crangon_01_age</td><td>âge</td><td>N/D</td><td>NA</td><td>NA</td></tr>
     </tbody>
   </table>
+
 </div>
